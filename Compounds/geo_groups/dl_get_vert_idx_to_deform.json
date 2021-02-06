@@ -1,0 +1,711 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "uri": "file:///CoreArrayOps.json"
+        },
+        {
+            "uri": "file:///Math_types.json"
+        },
+        {
+            "uri": "file:///Math_char.json"
+        },
+        {
+            "uri": "file:///Math_float.json"
+        },
+        {
+            "uri": "file:///Math_double.json"
+        },
+        {
+            "uri": "file:///Math_uint.json"
+        },
+        {
+            "uri": "file:///Math_short.json"
+        },
+        {
+            "uri": "file:///Math_ulong.json"
+        },
+        {
+            "uri": "file:///Math_int.json"
+        },
+        {
+            "uri": "file:///Math_uchar.json"
+        },
+        {
+            "uri": "file:///Math_ushort.json"
+        },
+        {
+            "uri": "file:///Math_long.json"
+        },
+        {
+            "uri": "file:///bifrost_object_i.json"
+        },
+        {
+            "uri": "file:///riv_types.json"
+        },
+        {
+            "uri": "file:///point_types.json"
+        },
+        {
+            "uri": "file:///FCurve.json"
+        },
+        {
+            "uri": "file:///riv_ops.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
+        },
+        {
+            "uri": "file:///Math_conversion.json"
+        },
+        {
+            "uri": "file:///Math_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_slice_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_reverse_array.json"
+        },
+        {
+            "uri": "file:///Math_bool.json"
+        },
+        {
+            "uri": "file:///Math_constants.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds_impl.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds.json"
+        },
+        {
+            "uri": "file:///remove_from_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_empty_array.json"
+        },
+        {
+            "uri": "file:///Core_Constants_default_value.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
+            "uri": "file:///sort_array_and_remove_duplicates.json"
+        },
+        {
+            "uri": "file:///bifrost_geometry_query_types.json"
+        },
+        {
+            "uri": "file:///geometry_types.json"
+        },
+        {
+            "uri": "file:///get_property_any.json"
+        },
+        {
+            "uri": "file:///get_property.json"
+        },
+        {
+            "uri": "file:///get_sub_object.json"
+        },
+        {
+            "uri": "file:///get_point_count.json"
+        },
+        {
+            "uri": "file:///CoreStringOps.json"
+        },
+        {
+            "uri": "file:///Core_Array_flatten_nested_array.json"
+        },
+        {
+            "uri": "file:///find_all_in_array.json"
+        },
+        {
+            "uri": "file:///dl_get_group_index_by_name.json"
+        },
+        {
+            "uri": "file:///dl_get_face_idx_from_group_name.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
+        },
+        {
+            "uri": "file:///get_geo_property.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_from_face_array.json"
+        },
+        {
+            "uri": "file:///dl_get_verts_from_group_name.json"
+        }
+    ],
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "DL_Core::deformers::dl_get_vert_idx_to_deform",
+            "uriImported": "file:///__duplicateCompoundURIHelper__",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/arrays.svg"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/dl_get_vert_idx_to_deform.md"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-803.29 -122.768"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "dl_mesh_object"
+                                                },
+                                                {
+                                                    "metaName": "deform_groups"
+                                                },
+                                                {
+                                                    "metaName": "full_groups"
+                                                },
+                                                {
+                                                    "metaName": "not_groups"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "517.189 -337.413"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "verts_to_deform"
+                                                },
+                                                {
+                                                    "metaName": "deform_group_verts"
+                                                },
+                                                {
+                                                    "metaName": "full_group_verts"
+                                                },
+                                                {
+                                                    "metaName": "not_group_verts"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-981.837 -675.205 2055.34 1278.6"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-98.654 -230.945"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "verts_to_deform",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "dl_mesh_object",
+                    "portDirection": "input",
+                    "portType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "deform_groups",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                },
+                {
+                    "portName": "full_groups",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                },
+                {
+                    "portName": "not_groups",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "*"
+                },
+                {
+                    "portName": "deform_group_verts",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "full_group_verts",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "not_group_verts",
+                    "portDirection": "output"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "define_vert_subset",
+                    "uriImported": "file:///__duplicateCompoundURIHelper__",
+                    "metadata": [
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-867.497 -1059.5 1730.67 1662.4"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-810.188 -179.967"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-1223 -363"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "deform_group_idx"
+                                                        },
+                                                        {
+                                                            "metaName": "full_group_idx"
+                                                        },
+                                                        {
+                                                            "metaName": "not_group_idx"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "726.933 -462.547"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "vert_subset_idx"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "deform_group_idx",
+                            "portDirection": "input",
+                            "portType": "array<uint>"
+                        },
+                        {
+                            "portName": "full_group_idx",
+                            "portDirection": "input",
+                            "portType": "array<uint>"
+                        },
+                        {
+                            "portName": "not_group_idx",
+                            "portDirection": "input",
+                            "portType": "array<uint>"
+                        },
+                        {
+                            "portName": "vert_subset_idx",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "build_array",
+                            "nodeType": "Core::Array::build_array",
+                            "multiInPortNames": [
+                                "vertex_ids",
+                                "vertex_ids1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-918 -462"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "find_in_array",
+                            "nodeType": "Core::Array::find_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "51 -320"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "remove_from_array",
+                            "nodeType": "Core::Array::remove_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "427 -467"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sort_array_and_remove_duplicates",
+                            "nodeType": "Core::Array::sort_array_and_remove_duplicates",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-399 -455"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "build_array.array",
+                            "target": "sort_array_and_remove_duplicates.array"
+                        },
+                        {
+                            "source": "find_in_array.found_index",
+                            "target": "remove_from_array.indices_to_remove"
+                        },
+                        {
+                            "source": "remove_from_array.out_array",
+                            "target": ".vert_subset_idx"
+                        },
+                        {
+                            "source": "sort_array_and_remove_duplicates.unique_array",
+                            "target": "find_in_array.input"
+                        },
+                        {
+                            "source": "sort_array_and_remove_duplicates.unique_array",
+                            "target": "remove_from_array.array"
+                        },
+                        {
+                            "source": ".deform_group_idx",
+                            "target": "build_array.first.vertex_ids"
+                        },
+                        {
+                            "source": ".full_group_idx",
+                            "target": "build_array.first.vertex_ids1"
+                        },
+                        {
+                            "source": ".not_group_idx",
+                            "target": "find_in_array.value"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "remove_from_array.preserve_order",
+                            "valueType": "bool",
+                            "value": "false"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "define_vert_subset",
+                    "nodeType": "define_vert_subset",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "46.7542 -340.276"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "deform_group_verts",
+                    "nodeType": "DL_Core::geometry::dl_get_verts_from_group_name",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-305.049 -312.094"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "full_group_verts",
+                    "nodeType": "DL_Core::geometry::dl_get_verts_from_group_name",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-297.02 -58.7357"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "not_group_verts",
+                    "nodeType": "DL_Core::geometry::dl_get_verts_from_group_name",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-297.02 199.084"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "deform_group_verts.vertex_ids",
+                    "target": "define_vert_subset.deform_group_idx"
+                },
+                {
+                    "source": "full_group_verts.vertex_ids",
+                    "target": "define_vert_subset.full_group_idx"
+                },
+                {
+                    "source": "not_group_verts.vertex_ids",
+                    "target": "define_vert_subset.not_group_idx"
+                },
+                {
+                    "source": "define_vert_subset.vert_subset_idx",
+                    "target": ".verts_to_deform"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "deform_group_verts.dl_mesh_object"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "full_group_verts.dl_mesh_object"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "not_group_verts.dl_mesh_object"
+                },
+                {
+                    "source": ".deform_groups",
+                    "target": "deform_group_verts.deform_groups"
+                },
+                {
+                    "source": ".full_groups",
+                    "target": "full_group_verts.deform_groups"
+                },
+                {
+                    "source": ".not_groups",
+                    "target": "not_group_verts.deform_groups"
+                },
+                {
+                    "source": "deform_group_verts.vertex_ids",
+                    "target": ".deform_group_verts"
+                },
+                {
+                    "source": "full_group_verts.vertex_ids",
+                    "target": ".full_group_verts"
+                },
+                {
+                    "source": "not_group_verts.vertex_ids",
+                    "target": ".not_group_verts"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "define_vert_subset.deform_group_idx",
+                    "valueType": "array<uint>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_vert_subset.full_group_idx",
+                    "valueType": "array<uint>",
+                    "value": []
+                },
+                {
+                    "valueName": "define_vert_subset.not_group_idx",
+                    "valueType": "array<uint>",
+                    "value": []
+                },
+                {
+                    "valueName": "deform_group_verts.dl_mesh_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "deform_group_verts.deform_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "full_group_verts.dl_mesh_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "full_group_verts.deform_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "not_group_verts.dl_mesh_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "not_group_verts.deform_groups",
+                    "valueType": "string",
+                    "value": "*"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

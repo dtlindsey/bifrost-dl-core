@@ -1,0 +1,38 @@
+{
+  "AminoConfigurations": [
+    {
+      "libraryName": "DL_Core",
+      "libraryVersion": "0.0.13",
+      "jsonLibs": [
+        {
+          "path": "array",
+          "files": [ ]
+        },
+        {
+          "path": "deformers",
+          "files": [ ]
+        },
+        {
+          "path": "weighting",
+          "files": [ ]
+        },
+        {
+          "path": "transforms",
+          "files": [ ]
+        },
+        {
+          "path": "geometry",
+          "files": [ ]
+        },
+        {
+          "path": "geo_groups",
+          "files": [ ]
+        },
+        {
+          "path": "beta",
+          "files": [ ]
+        }
+      ]
+    }
+  ]
+}
