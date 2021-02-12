@@ -67,5 +67,3 @@ Equal to the *inLocalMatrix* or the computed SRTMatrix
 ### `world_matrix`
 
 Computed world matrix
-
-## `Outputs`
