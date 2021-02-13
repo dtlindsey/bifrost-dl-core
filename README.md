@@ -16,9 +16,25 @@ Append your BIFROST_LIB_CONFIG_FILES variable to point to the plugin_config.json
 
 ### `maya`
 
-This is where the Maya scripts and example files live.
+#### `example_files`
+
+This is where the Maya scripts and example files live.  These are Maya 2019 files.
+
+1. `basic_deformer_setup.ma:` This is a basic graph showing how you can create groups on a mesh, and use those groups, as well as a weight volume to drive a deformer.
+
+2. `multi_res_geom.mb:` This file has 4 resoltions of Maya geometry in it.  They have poly faces assigned to selection sets, and the included *group_utils.build_group_attrs* was used to generate attributes on the geometry.  There are 2 graphs in this file. *step_1* is used to illustrate how you can write the geom to disk. *step_2* is used to illustrate how you can read that geometry off disk, and on demand change the resolution by selecting which geom index you want to display.
+
+#### `python`
 
 Append your PYTHONPATH in maya to point to the python directory in here.
+
+## Todo
+
+1. Optimizations: the speed of this system needs to be addressed, however it still serves the purpose to illustrate the rigging methods
+   
+2. Expand deformers.
+   
+3. Expand weight volumes.
 
 ## License
 
