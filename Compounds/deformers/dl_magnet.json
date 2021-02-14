@@ -147,7 +147,22 @@
             "uri": "file:///get_sub_object.json"
         },
         {
+            "uri": "file:///update_mesh_adjacency.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
+        },
+        {
+            "uri": "file:///get_point_count.json"
+        },
+        {
             "uri": "file:///erase_property.json"
+        },
+        {
+            "uri": "file:///get_mesh_structure.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
         },
         {
             "uri": "file:///update_mesh_normals.json"
@@ -162,10 +177,16 @@
             "uri": "file:///dl_mult_vector_by_matrix.json"
         },
         {
-            "uri": "file:///dl_compute_deformer_weights.json"
+            "uri": "file:///Math_length_squared.json"
         },
         {
-            "uri": "file:///increment_decrement.json"
+            "uri": "file:///Math_almost_equal.json"
+        },
+        {
+            "uri": "file:///dl_compute_weight_volume.json"
+        },
+        {
+            "uri": "file:///dl_compute_deformer_weights.json"
         },
         {
             "uri": "file:///Core_Array_reverse_array.json"
@@ -198,9 +219,6 @@
             "uri": "file:///sort_array_and_remove_duplicates.json"
         },
         {
-            "uri": "file:///get_point_count.json"
-        },
-        {
             "uri": "file:///CoreStringOps.json"
         },
         {
@@ -214,9 +232,6 @@
         },
         {
             "uri": "file:///dl_get_face_idx_from_group_name.json"
-        },
-        {
-            "uri": "file:///access_offset_array.json"
         },
         {
             "uri": "file:///dl_get_vert_idx_from_face_array.json"
@@ -371,7 +386,6 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_magnet",
-            "uriImported": "file:///dl_magnet.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -379,9 +393,49 @@
                     "metaValue": "../icons/deformers.svg"
                 },
                 {
-                            "metaName": "documentation",
-                            "metaType": "string",
-                            "metaValue": "../docs/dl_magnet.md"
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/dl_magnet.md"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Magnet\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_mode\"\n                    },\n                    {\n                        \"port\": \"magnet\"\n                    },\n                    {\n                        \"port\": \"falseParent\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                },
+                {
+                    "metaName": "terminal_node_disabled_flags",
+                    "metaType": "string",
+                    "metaValue": "Core::Graph::terminal::diagnostic"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-2778.63 -1050.29 5342.34 1082.27"
                 },
                 {
                     "metaName": "io_nodes",
@@ -501,41 +555,6 @@
                     ]
                 },
                 {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Magnet\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_mode\"\n                    },\n                    {\n                        \"port\": \"magnet\"\n                    },\n                    {\n                        \"port\": \"falseParent\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,add"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,multiply"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-2189.1 -1135.34 3028.33 2152.32"
-                },
-                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
@@ -543,12 +562,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "314.18 -306.427"
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::diagnostic"
+                    "metaValue": "2260.4 396.795"
                 }
             ],
             "ports": [
@@ -557,10 +571,6 @@
                     "portDirection": "input",
                     "portType": "Amino::Object",
                     "portDefault": {}
-                },
-                {
-                    "portName": "output_dl_mesh_object",
-                    "portDirection": "output"
                 },
                 {
                     "portName": "deform_mode",
@@ -687,13 +697,46 @@
                     "portDirection": "input",
                     "portType": "bool",
                     "portDefault": "true"
+                },
+                {
+                    "portName": "output_dl_mesh_object",
+                    "portDirection": "output"
                 }
             ],
             "compounds": [
                 {
                     "name": "dl_mult_vector_by_matrix",
-                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Properties,set_point_position"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Mesh,update_mesh_normals"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Constants,float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,matrix_multiply"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-749.54 -837.117 892.964 839.245"
+                        },
                         {
                             "metaName": "io_nodes",
                             "metadata": [
@@ -757,36 +800,6 @@
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Geometry::Properties,set_point_position"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Geometry::Mesh,update_mesh_normals"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Constants,float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Math,matrix_multiply"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-749.54 -837.117 892.964 839.245"
                         }
                     ],
                     "ports": [
@@ -806,7 +819,6 @@
                     "compounds": [
                         {
                             "name": "dl_compose_matrix",
-                            "uriImported": "file:///dl_magnet.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -832,6 +844,11 @@
                                     "metaName": "_recentNode_",
                                     "metaType": "string",
                                     "metaValue": "BifrostGraph,Geometry::Properties,set_point_position"
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "813 -780.426 2325 882.853"
                                 },
                                 {
                                     "metaName": "io_nodes",
@@ -899,11 +916,6 @@
                                             ]
                                         }
                                     ]
-                                },
-                                {
-                                    "metaName": "ViewportRect",
-                                    "metaType": "string",
-                                    "metaValue": "813 -780.426 2325 882.853"
                                 }
                             ],
                             "ports": [
@@ -976,6 +988,51 @@
                                             "metaValue": "1672.16 -709.601"
                                         },
                                         {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -999,51 +1056,6 @@
                                                     "metaValue": "0"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1062,6 +1074,86 @@
                                             "metaValue": "2517.16 -683.442"
                                         },
                                         {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1075,86 +1167,6 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1173,6 +1185,51 @@
                                             "metaValue": "2199.3 -733.147"
                                         },
                                         {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1181,51 +1238,6 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1281,6 +1293,21 @@
                                             "metaValue": "1556.61 -192.965"
                                         },
                                         {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1289,21 +1316,6 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
                                         }
                                     ]
                                 }
@@ -1518,21 +1530,6 @@
                             "valueType": "Math::double4x4",
                             "metadata": [
                                 {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "output",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        },
-                                        {
-                                            "metaName": "output.c3",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
-                                },
-                                {
                                     "metaName": "DisplayMode",
                                     "metaType": "string",
                                     "metaValue": "2"
@@ -1621,6 +1618,21 @@
                                     "metaName": "valuenode_defaultvalue",
                                     "metaType": "string",
                                     "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        },
+                                        {
+                                            "metaName": "output.c3",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1632,16 +1644,6 @@
                                     "metaName": "DisplayMode",
                                     "metaType": "string",
                                     "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "PortExpandedState",
-                                    "metadata": [
-                                        {
-                                            "metaName": "value",
-                                            "metaType": "string",
-                                            "metaValue": "1"
-                                        }
-                                    ]
                                 },
                                 {
                                     "metaName": "LayoutPos",
@@ -1662,6 +1664,16 @@
                                     "metaName": "valuenode_defaultvalue",
                                     "metaType": "string",
                                     "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "value",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -1688,14 +1700,6 @@
                             "target": "matrix_multiply2.first.matrixOut"
                         },
                         {
-                            "source": ".matrix",
-                            "target": "matrix_multiply2.first.matrix1"
-                        },
-                        {
-                            "source": ".vector",
-                            "target": "dl_compose_matrix.translation"
-                        },
-                        {
                             "source": "matrix_multiply2.matrix",
                             "target": "value1.value"
                         },
@@ -1718,6 +1722,14 @@
                         {
                             "source": "to_float.float",
                             "target": ".output"
+                        },
+                        {
+                            "source": ".matrix",
+                            "target": "matrix_multiply2.first.matrix1"
+                        },
+                        {
+                            "source": ".vector",
+                            "target": "dl_compose_matrix.translation"
                         }
                     ],
                     "values": [
@@ -1790,8 +1802,37 @@
                 },
                 {
                     "name": "which_shape_to_use",
-                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Object,get_property"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,set_in_array"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-68.7763 -865.751 1700.36 1420.69"
+                        },
                         {
                             "metaName": "io_nodes",
                             "metadata": [
@@ -1890,44 +1931,9 @@
                                     "metaValue": "Rigid deform always uses baseshape\n"
                                 }
                             ]
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,if"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Object,get_property"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Array,set_in_array"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-68.7763 -865.751 1700.36 1420.69"
                         }
                     ],
                     "ports": [
-                        {
-                            "portName": "point_position",
-                            "portDirection": "output",
-                            "portType": "array<Math::float3>"
-                        },
                         {
                             "portName": "deform_mode",
                             "portDirection": "input",
@@ -1944,11 +1950,6 @@
                             "portType": "Math::float4x4"
                         },
                         {
-                            "portName": "deform_matrix",
-                            "portDirection": "output",
-                            "portType": "Math::float4x4"
-                        },
-                        {
                             "portName": "base_point_positions",
                             "portDirection": "input",
                             "portType": "array<Math::float3>"
@@ -1957,6 +1958,16 @@
                             "portName": "current_point_positions",
                             "portDirection": "input",
                             "portType": "array<Math::float3>"
+                        },
+                        {
+                            "portName": "point_position",
+                            "portDirection": "output",
+                            "portType": "array<Math::float3>"
+                        },
+                        {
+                            "portName": "deform_matrix",
+                            "portDirection": "output",
+                            "portType": "Math::float4x4"
                         },
                         {
                             "portName": "is_rigid",
@@ -2051,10 +2062,6 @@
                     ],
                     "connections": [
                         {
-                            "source": ".deform_mode",
-                            "target": "equal.first"
-                        },
-                        {
                             "source": "equal.output",
                             "target": "if.condition"
                         },
@@ -2063,12 +2070,28 @@
                             "target": "if1.condition"
                         },
                         {
+                            "source": "equal.output",
+                            "target": ".is_rigid"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": ".point_position"
+                        },
+                        {
                             "source": "matrix_multiply.matrix",
                             "target": "if1.false_case"
                         },
                         {
                             "source": "inverse_matrix.inverted",
                             "target": "matrix_multiply.first.inverted"
+                        },
+                        {
+                            "source": "if1.output",
+                            "target": ".deform_matrix"
+                        },
+                        {
+                            "source": ".deform_mode",
+                            "target": "equal.first"
                         },
                         {
                             "source": ".magnet",
@@ -2089,18 +2112,6 @@
                         {
                             "source": ".current_point_positions",
                             "target": "if.false_case"
-                        },
-                        {
-                            "source": "if.output",
-                            "target": ".point_position"
-                        },
-                        {
-                            "source": "if1.output",
-                            "target": ".deform_matrix"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": ".is_rigid"
                         }
                     ],
                     "values": [],
@@ -2201,6 +2212,11 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1836.95 -608.975"
+                        },
+                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -2209,11 +2225,6 @@
                                     "metaValue": "1"
                                 }
                             ]
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1836.95 -608.975"
                         }
                     ]
                 },
@@ -2348,6 +2359,9 @@
                 {
                     "nodeName": "dl_draw_vert_weights",
                     "nodeType": "DL_Core::weighting::dl_draw_vert_weights",
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::diagnostic"
+                    ],
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -2441,35 +2455,103 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "750.386 -934.593"
+                            "metaValue": "717.232 -707.137"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array2",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-86.3337 -668.948"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "subtract1",
+                    "nodeType": "Core::Math::subtract",
+                    "multiInPortNames": [
+                        "output1",
+                        "point_position"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "349.778 -770.462"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add2",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "point_position",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1035.88 -952.237"
                         }
                     ]
                 }
             ],
             "connections": [
                 {
+                    "source": "multiply.output",
+                    "target": "add1.first.output1"
+                },
+                {
+                    "source": "subtract.output",
+                    "target": "multiply.first.output1"
+                },
+                {
+                    "source": "add1.output",
+                    "target": "if1.false_case"
+                },
+                {
                     "source": "if.output",
                     "target": ".output_dl_mesh_object"
-                },
-                {
-                    "source": ".dl_mesh_object",
-                    "target": "if.false_case"
-                },
-                {
-                    "source": ".dl_mesh_object",
-                    "target": "set_point_position.geometry"
                 },
                 {
                     "source": "set_point_position.out_geometry",
                     "target": "update_mesh_normals.mesh"
                 },
                 {
-                    "source": "update_mesh_normals.out_mesh",
-                    "target": "if.true_case"
+                    "source": "set_point_position.out_geometry",
+                    "target": "dl_draw_vert_weights.currentshape_object"
                 },
                 {
-                    "source": ".active",
-                    "target": "if.condition"
+                    "source": "dl_mult_vector_by_matrix.output",
+                    "target": "subtract.first.output1"
+                },
+                {
+                    "source": "dl_mult_vector_by_matrix.output",
+                    "target": "subtract1.first.output1"
+                },
+                {
+                    "source": "update_mesh_normals.out_mesh",
+                    "target": "if.true_case"
                 },
                 {
                     "source": "get_from_array.value",
@@ -2480,92 +2562,32 @@
                     "target": "subtract.first.point_position"
                 },
                 {
-                    "source": "dl_mult_vector_by_matrix.output",
-                    "target": "subtract.first.output1"
-                },
-                {
-                    "source": "set_in_array1.out_array",
-                    "target": "set_point_position.positions"
-                },
-                {
-                    "source": ".deform_mode",
-                    "target": "which_shape_to_use.deform_mode"
-                },
-                {
-                    "source": "which_shape_to_use.point_position",
-                    "target": "get_from_array.array"
-                },
-                {
-                    "source": ".weight_multiplier",
-                    "target": "dl_compute_deformer_weights.weight_multiplier"
-                },
-                {
-                    "source": ".weight_volumes",
-                    "target": "dl_compute_deformer_weights.weight_volumes"
-                },
-                {
-                    "source": "subtract.output",
-                    "target": "multiply.first.output1"
+                    "source": "get_from_array.value",
+                    "target": "add1.first.point_position"
                 },
                 {
                     "source": "get_from_array1.value",
                     "target": "multiply.first.value"
                 },
                 {
-                    "source": "multiply.output",
-                    "target": "add1.first.output1"
+                    "source": "get_from_array1.value",
+                    "target": "multiply1.first.value"
                 },
                 {
-                    "source": ".dl_mesh_object",
-                    "target": "get_property.object"
+                    "source": "set_in_array1.out_array",
+                    "target": "set_point_position.positions"
                 },
                 {
-                    "source": "get_property.value",
-                    "target": "get_point_position.geometry"
-                },
-                {
-                    "source": "get_point_position.point_position",
-                    "target": "which_shape_to_use.base_point_positions"
-                },
-                {
-                    "source": ".dl_mesh_object",
-                    "target": "get_point_position1.geometry"
-                },
-                {
-                    "source": "get_point_position1.point_position",
-                    "target": "which_shape_to_use.current_point_positions"
+                    "source": "which_shape_to_use.point_position",
+                    "target": "get_from_array.array"
                 },
                 {
                     "source": "which_shape_to_use.deform_matrix",
                     "target": "dl_mult_vector_by_matrix.matrix"
                 },
                 {
-                    "source": ".falseParent",
-                    "target": "which_shape_to_use.false_parent"
-                },
-                {
-                    "source": ".magnet",
-                    "target": "which_shape_to_use.magnet"
-                },
-                {
-                    "source": ".display_current_positions",
-                    "target": "dl_draw_vert_weights.display_current_positions"
-                },
-                {
-                    "source": "get_property.value",
-                    "target": "dl_draw_vert_weights.baseshape_object"
-                },
-                {
-                    "source": ".point_size",
-                    "target": "dl_draw_vert_weights.point_size"
-                },
-                {
-                    "source": ".weight_color",
-                    "target": "dl_draw_vert_weights.weight_color"
-                },
-                {
-                    "source": "set_point_position.out_geometry",
-                    "target": "dl_draw_vert_weights.currentshape_object"
+                    "source": "which_shape_to_use.is_rigid",
+                    "target": "if1.condition"
                 },
                 {
                     "source": "dl_compute_deformer_weights.weight_table",
@@ -2576,60 +2598,20 @@
                     "target": "dl_draw_vert_weights.weight_array"
                 },
                 {
-                    "source": "get_from_array.value",
-                    "target": "add1.first.point_position"
+                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "target": "get_from_array1.index"
                 },
                 {
-                    "source": "get_point_position.point_position",
-                    "target": "dl_compute_deformer_weights.baseshape_point_position"
+                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "target": "get_from_array.index"
                 },
                 {
-                    "source": "get_point_position1.point_position",
-                    "target": "dl_compute_deformer_weights.current_point_position"
+                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "target": "set_in_array1.index"
                 },
                 {
-                    "source": "which_shape_to_use.is_rigid",
-                    "target": "if1.condition"
-                },
-                {
-                    "source": "add1.output",
-                    "target": "if1.false_case"
-                },
-                {
-                    "source": "dl_mult_vector_by_matrix.output",
-                    "target": "multiply1.first.output1"
-                },
-                {
-                    "source": "get_from_array1.value",
-                    "target": "multiply1.first.value"
-                },
-                {
-                    "source": "if1.output",
-                    "target": "set_in_array1.value"
-                },
-                {
-                    "source": "multiply1.output",
-                    "target": "if1.true_case"
-                },
-                {
-                    "source": "get_point_position1.point_position",
-                    "target": "set_in_array1.array"
-                },
-                {
-                    "source": ".dl_mesh_object",
-                    "target": "dl_get_vert_idx_to_deform.dl_mesh_object"
-                },
-                {
-                    "source": ".deform_groups",
-                    "target": "dl_get_vert_idx_to_deform.deform_groups"
-                },
-                {
-                    "source": ".full_groups",
-                    "target": "dl_get_vert_idx_to_deform.full_groups"
-                },
-                {
-                    "source": ".not_groups",
-                    "target": "dl_get_vert_idx_to_deform.not_groups"
+                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "target": "get_from_array2.index"
                 },
                 {
                     "source": "dl_get_vert_idx_to_deform.deform_group_verts",
@@ -2644,19 +2626,190 @@
                     "target": "dl_compute_deformer_weights.not_group_vert_idx"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array1.index"
+                    "source": "get_property.value",
+                    "target": "get_point_position.geometry"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array.index"
+                    "source": "get_property.value",
+                    "target": "dl_draw_vert_weights.baseshape_object"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "set_in_array1.index"
+                    "source": "get_point_position.point_position",
+                    "target": "which_shape_to_use.base_point_positions"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "dl_compute_deformer_weights.baseshape_point_position"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "which_shape_to_use.current_point_positions"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "dl_compute_deformer_weights.current_point_position"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "set_in_array1.array"
+                },
+                {
+                    "source": "get_point_position1.point_position",
+                    "target": "get_from_array2.array"
+                },
+                {
+                    "source": "if1.output",
+                    "target": "set_in_array1.value"
+                },
+                {
+                    "source": "multiply1.output",
+                    "target": "add2.first.output1"
+                },
+                {
+                    "source": "get_from_array2.value",
+                    "target": "subtract1.first.point_position"
+                },
+                {
+                    "source": "get_from_array2.value",
+                    "target": "add2.first.point_position"
+                },
+                {
+                    "source": "subtract1.output",
+                    "target": "multiply1.first.output1"
+                },
+                {
+                    "source": "add2.output",
+                    "target": "if1.true_case"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "set_point_position.geometry"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "get_property.object"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "get_point_position1.geometry"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "dl_get_vert_idx_to_deform.dl_mesh_object"
+                },
+                {
+                    "source": ".deform_mode",
+                    "target": "which_shape_to_use.deform_mode"
+                },
+                {
+                    "source": ".magnet",
+                    "target": "which_shape_to_use.magnet"
+                },
+                {
+                    "source": ".falseParent",
+                    "target": "which_shape_to_use.false_parent"
+                },
+                {
+                    "source": ".active",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".weight_multiplier",
+                    "target": "dl_compute_deformer_weights.weight_multiplier"
+                },
+                {
+                    "source": ".deform_groups",
+                    "target": "dl_get_vert_idx_to_deform.deform_groups"
+                },
+                {
+                    "source": ".full_groups",
+                    "target": "dl_get_vert_idx_to_deform.full_groups"
+                },
+                {
+                    "source": ".not_groups",
+                    "target": "dl_get_vert_idx_to_deform.not_groups"
+                },
+                {
+                    "source": ".weight_volumes",
+                    "target": "dl_compute_deformer_weights.weight_volumes"
+                },
+                {
+                    "source": ".weight_color",
+                    "target": "dl_draw_vert_weights.weight_color"
+                },
+                {
+                    "source": ".point_size",
+                    "target": "dl_draw_vert_weights.point_size"
+                },
+                {
+                    "source": ".display_current_positions",
+                    "target": "dl_draw_vert_weights.display_current_positions"
                 }
             ],
             "values": [
+                {
+                    "valueName": "update_mesh_normals.remove_face_vertex_normal",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "dl_compute_deformer_weights.weight_multiplier",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_compute_deformer_weights.weight_volumes",
+                    "valueType": "array<Amino::Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "dl_get_vert_idx_to_deform.dl_mesh_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "dl_get_vert_idx_to_deform.deform_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "dl_get_vert_idx_to_deform.full_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "dl_get_vert_idx_to_deform.not_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "dl_draw_vert_weights.currentshape_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "dl_draw_vert_weights.weight_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "dl_draw_vert_weights.point_size",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "dl_draw_vert_weights.display_current_positions",
+                    "valueType": "bool",
+                    "value": "true"
+                },
                 {
                     "valueName": "get_property.default_and_type",
                     "valueType": "Amino::Object",
