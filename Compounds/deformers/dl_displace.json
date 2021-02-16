@@ -147,6 +147,15 @@
             "uri": "file:///dl_mult_vector_by_matrix.json"
         },
         {
+            "uri": "file:///Math_length_squared.json"
+        },
+        {
+            "uri": "file:///Math_almost_equal.json"
+        },
+        {
+            "uri": "file:///dl_compute_weight_volume.json"
+        },
+        {
             "uri": "file:///dl_compute_deformer_weights.json"
         },
         {
@@ -342,13 +351,13 @@
             "uri": "file:///remove_from_array.json"
         },
         {
+            "uri": "file:///Core_Array_flatten_nested_array.json"
+        },
+        {
             "uri": "file:///Core_Array_empty_array.json"
         },
         {
             "uri": "file:///sort_array_and_remove_duplicates.json"
-        },
-        {
-            "uri": "file:///Core_Array_flatten_nested_array.json"
         },
         {
             "uri": "file:///dl_get_group_index_by_name.json"
@@ -379,9 +388,9 @@
                     "metaValue": "../icons/deformers.svg"
                 },
                 {
-                            "metaName": "documentation",
-                            "metaType": "string",
-                            "metaValue": "../docs/dl_displace.md"
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/dl_displace.md"
                 },
                 {
                     "metaName": "io_nodes",
@@ -475,6 +484,16 @@
                     ]
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"port\": \"point_offset\"\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::geometry,dl_get_vert_idx_to_deform"
+                },
+                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Array,set_in_array"
@@ -495,19 +514,9 @@
                     "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Object,get_property"
-                },
-                {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"port\": \"point_offset\"\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-7.94788 -226.442 2090.81 1486"
+                    "metaValue": "-2305.09 -351.265 5258.89 1069.6"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -517,7 +526,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-199.378 -78.0139"
+                    "metaValue": "3169.73 379.311"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -724,22 +733,6 @@
                     ]
                 },
                 {
-                    "nodeName": "dl_get_vert_idx_to_deform",
-                    "nodeType": "DL_Core::deformers::dl_get_vert_idx_to_deform",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "289.257 303.929"
-                        }
-                    ]
-                },
-                {
                     "nodeName": "get_property",
                     "nodeType": "Core::Object::get_property",
                     "metadata": [
@@ -848,6 +841,22 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "925.045 548.594"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_get_vert_idx_to_deform",
+                    "nodeType": "DL_Core::geometry::dl_get_vert_idx_to_deform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "325.42 317.811"
                         }
                     ]
                 }
@@ -1003,15 +1012,15 @@
                 },
                 {
                     "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "target": "get_from_array2.index"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
                     "target": "get_from_array1.index"
                 },
                 {
                     "source": "dl_get_vert_idx_to_deform.verts_to_deform",
                     "target": "get_from_array.index"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array2.index"
                 },
                 {
                     "source": "dl_get_vert_idx_to_deform.verts_to_deform",

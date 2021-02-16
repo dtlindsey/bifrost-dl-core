@@ -135,78 +135,6 @@
             "uri": "file:///get_point_position.json"
         },
         {
-            "uri": "file:///increment_decrement.json"
-        },
-        {
-            "uri": "file:///Math_array.json"
-        },
-        {
-            "uri": "file:///Core_Array_slice_array.json"
-        },
-        {
-            "uri": "file:///Core_Array_reverse_array.json"
-        },
-        {
-            "uri": "file:///Math_bool.json"
-        },
-        {
-            "uri": "file:///Math_constants.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_bounds_impl.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_bounds.json"
-        },
-        {
-            "uri": "file:///remove_from_array.json"
-        },
-        {
-            "uri": "file:///Core_Array_empty_array.json"
-        },
-        {
-            "uri": "file:///Core_Constants_default_value.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_is_empty.json"
-        },
-        {
-            "uri": "file:///sort_array_and_remove_duplicates.json"
-        },
-        {
-            "uri": "file:///get_sub_object.json"
-        },
-        {
-            "uri": "file:///get_point_count.json"
-        },
-        {
-            "uri": "file:///CoreStringOps.json"
-        },
-        {
-            "uri": "file:///Core_Array_flatten_nested_array.json"
-        },
-        {
-            "uri": "file:///find_all_in_array.json"
-        },
-        {
-            "uri": "file:///dl_get_group_index_by_name.json"
-        },
-        {
-            "uri": "file:///dl_get_face_idx_from_group_name.json"
-        },
-        {
-            "uri": "file:///access_offset_array.json"
-        },
-        {
-            "uri": "file:///dl_get_vert_idx_from_face_array.json"
-        },
-        {
-            "uri": "file:///dl_get_verts_from_group_name.json"
-        },
-        {
-            "uri": "file:///dl_get_vert_idx_to_deform.json"
-        },
-        {
             "uri": "file:///dl_build_array_with_default_value.json"
         },
         {
@@ -214,6 +142,15 @@
         },
         {
             "uri": "file:///dl_mult_vector_by_matrix.json"
+        },
+        {
+            "uri": "file:///Math_length_squared.json"
+        },
+        {
+            "uri": "file:///Math_almost_equal.json"
+        },
+        {
+            "uri": "file:///dl_compute_weight_volume.json"
         },
         {
             "uri": "file:///dl_compute_deformer_weights.json"
@@ -228,6 +165,9 @@
             "uri": "file:///materials.json"
         },
         {
+            "uri": "file:///Math_bool.json"
+        },
+        {
             "uri": "file:///erase_property.json"
         },
         {
@@ -240,7 +180,19 @@
             "uri": "file:///delete_points.json"
         },
         {
+            "uri": "file:///find_all_in_array.json"
+        },
+        {
             "uri": "file:///get_geo_property_check.json"
+        },
+        {
+            "uri": "file:///Math_constants.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds_impl.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds.json"
         },
         {
             "uri": "file:///add_points_to_points.json"
@@ -252,7 +204,13 @@
             "uri": "file:///construct_points.json"
         },
         {
+            "uri": "file:///CoreStringOps.json"
+        },
+        {
             "uri": "file:///string_to_array.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
         },
         {
             "uri": "file:///jotun_rand.json"
@@ -270,10 +228,25 @@
             "uri": "file:///random_value.json"
         },
         {
+            "uri": "file:///get_sub_object.json"
+        },
+        {
+            "uri": "file:///get_point_count.json"
+        },
+        {
+            "uri": "file:///Math_array.json"
+        },
+        {
             "uri": "file:///Math_vector4_to_vector3.json"
         },
         {
+            "uri": "file:///Core_Constants_default_value.json"
+        },
+        {
             "uri": "file:///cumulative_sum_array.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
         },
         {
             "uri": "file:///get_strands_structure.json"
@@ -354,6 +327,9 @@
             "uri": "file:///create_arrow_strands.json"
         },
         {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
             "uri": "file:///point_scope.json"
         },
         {
@@ -361,6 +337,39 @@
         },
         {
             "uri": "file:///dl_draw_vert_weights.json"
+        },
+        {
+            "uri": "file:///Core_Array_slice_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_reverse_array.json"
+        },
+        {
+            "uri": "file:///remove_from_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_flatten_nested_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_empty_array.json"
+        },
+        {
+            "uri": "file:///sort_array_and_remove_duplicates.json"
+        },
+        {
+            "uri": "file:///dl_get_group_index_by_name.json"
+        },
+        {
+            "uri": "file:///dl_get_face_idx_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_from_face_array.json"
+        },
+        {
+            "uri": "file:///dl_get_verts_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_to_deform.json"
         }
     ],
     "namespaces": [],
@@ -376,9 +385,9 @@
                     "metaValue": "../icons/deformers.svg"
                 },
                 {
-                            "metaName": "documentation",
-                            "metaType": "string",
-                            "metaValue": "../docs/dl_translate.md"
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/dl_translate.md"
                 },
                 {
                     "metaName": "io_nodes",
@@ -492,6 +501,16 @@
                     ]
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"port\": \"translate\"\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::geometry,dl_get_vert_idx_to_deform"
+                },
+                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,DL_Core::weighting,dl_draw_vert_weights"
@@ -512,14 +531,9 @@
                     "metaValue": "BifrostGraph,Core::Constants,float"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,set_in_array"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-2169.56 -724.912 3003.47 2134.65"
+                    "metaValue": "-3641.42 28.7684 6558 1333.83"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -529,12 +543,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-510.844 -81.2234"
-                },
-                {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"port\": \"translate\"\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "2665.64 364.868"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -784,22 +793,6 @@
                     ]
                 },
                 {
-                    "nodeName": "dl_get_vert_idx_to_deform",
-                    "nodeType": "DL_Core::deformers::dl_get_vert_idx_to_deform",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-1204.72 133.586"
-                        }
-                    ]
-                },
-                {
                     "nodeName": "get_from_array",
                     "nodeType": "Core::Array::get_from_array",
                     "metadata": [
@@ -876,6 +869,22 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1882.22 482.997"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_get_vert_idx_to_deform1",
+                    "nodeType": "DL_Core::geometry::dl_get_vert_idx_to_deform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1195.31 115.037"
                         }
                     ]
                 }
@@ -1007,42 +1016,42 @@
                 },
                 {
                     "source": ".dl_mesh_object",
-                    "target": "dl_get_vert_idx_to_deform.dl_mesh_object"
+                    "target": "dl_get_vert_idx_to_deform1.dl_mesh_object"
                 },
                 {
                     "source": ".deform_groups",
-                    "target": "dl_get_vert_idx_to_deform.deform_groups"
+                    "target": "dl_get_vert_idx_to_deform1.deform_groups"
                 },
                 {
                     "source": ".full_groups",
-                    "target": "dl_get_vert_idx_to_deform.full_groups"
+                    "target": "dl_get_vert_idx_to_deform1.full_groups"
                 },
                 {
                     "source": ".not_groups",
-                    "target": "dl_get_vert_idx_to_deform.not_groups"
+                    "target": "dl_get_vert_idx_to_deform1.not_groups"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.deform_group_verts",
+                    "source": "dl_get_vert_idx_to_deform1.deform_group_verts",
                     "target": "dl_compute_deformer_weights.deform_group_vert_idx"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.full_group_verts",
+                    "source": "dl_get_vert_idx_to_deform1.full_group_verts",
                     "target": "dl_compute_deformer_weights.full_group_vert_idx"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.not_group_verts",
+                    "source": "dl_get_vert_idx_to_deform1.not_group_verts",
                     "target": "dl_compute_deformer_weights.not_group_vert_idx"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
                     "target": "get_from_array1.index"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
                     "target": "get_from_array.index"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
                     "target": "set_in_array.index"
                 }
             ],

@@ -189,60 +189,6 @@
             "uri": "file:///dl_compute_deformer_weights.json"
         },
         {
-            "uri": "file:///Core_Array_reverse_array.json"
-        },
-        {
-            "uri": "file:///Math_bool.json"
-        },
-        {
-            "uri": "file:///Math_constants.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_bounds_impl.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_bounds.json"
-        },
-        {
-            "uri": "file:///remove_from_array.json"
-        },
-        {
-            "uri": "file:///Core_Array_empty_array.json"
-        },
-        {
-            "uri": "file:///Core_Constants_default_value.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_is_empty.json"
-        },
-        {
-            "uri": "file:///sort_array_and_remove_duplicates.json"
-        },
-        {
-            "uri": "file:///CoreStringOps.json"
-        },
-        {
-            "uri": "file:///Core_Array_flatten_nested_array.json"
-        },
-        {
-            "uri": "file:///find_all_in_array.json"
-        },
-        {
-            "uri": "file:///dl_get_group_index_by_name.json"
-        },
-        {
-            "uri": "file:///dl_get_face_idx_from_group_name.json"
-        },
-        {
-            "uri": "file:///dl_get_vert_idx_from_face_array.json"
-        },
-        {
-            "uri": "file:///dl_get_verts_from_group_name.json"
-        },
-        {
-            "uri": "file:///dl_get_vert_idx_to_deform.json"
-        },
-        {
             "uri": "file:///get_property_keys.json"
         },
         {
@@ -250,6 +196,9 @@
         },
         {
             "uri": "file:///materials.json"
+        },
+        {
+            "uri": "file:///Math_bool.json"
         },
         {
             "uri": "file:///set_point_shape.json"
@@ -261,7 +210,19 @@
             "uri": "file:///delete_points.json"
         },
         {
+            "uri": "file:///find_all_in_array.json"
+        },
+        {
             "uri": "file:///get_geo_property_check.json"
+        },
+        {
+            "uri": "file:///Math_constants.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds_impl.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds.json"
         },
         {
             "uri": "file:///add_points_to_points.json"
@@ -271,6 +232,9 @@
         },
         {
             "uri": "file:///construct_points.json"
+        },
+        {
+            "uri": "file:///CoreStringOps.json"
         },
         {
             "uri": "file:///string_to_array.json"
@@ -289,6 +253,9 @@
         },
         {
             "uri": "file:///Math_vector4_to_vector3.json"
+        },
+        {
+            "uri": "file:///Core_Constants_default_value.json"
         },
         {
             "uri": "file:///cumulative_sum_array.json"
@@ -372,6 +339,9 @@
             "uri": "file:///create_arrow_strands.json"
         },
         {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
             "uri": "file:///point_scope.json"
         },
         {
@@ -379,6 +349,36 @@
         },
         {
             "uri": "file:///dl_draw_vert_weights.json"
+        },
+        {
+            "uri": "file:///Core_Array_reverse_array.json"
+        },
+        {
+            "uri": "file:///remove_from_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_flatten_nested_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_empty_array.json"
+        },
+        {
+            "uri": "file:///sort_array_and_remove_duplicates.json"
+        },
+        {
+            "uri": "file:///dl_get_group_index_by_name.json"
+        },
+        {
+            "uri": "file:///dl_get_face_idx_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_from_face_array.json"
+        },
+        {
+            "uri": "file:///dl_get_verts_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_to_deform.json"
         }
     ],
     "namespaces": [],
@@ -386,6 +386,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_magnet",
+            "uriImported": "file:///dl_magnet.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -403,39 +404,9 @@
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Magnet\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_mode\"\n                    },\n                    {\n                        \"port\": \"magnet\"\n                    },\n                    {\n                        \"port\": \"falseParent\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,add"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,multiply"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
-                },
-                {
                     "metaName": "terminal_node_disabled_flags",
                     "metaType": "string",
                     "metaValue": "Core::Graph::terminal::diagnostic"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-2778.63 -1050.29 5342.34 1082.27"
                 },
                 {
                     "metaName": "io_nodes",
@@ -555,6 +526,36 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::geometry,dl_get_vert_idx_to_deform"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-5397.31 -1098.88 9465.67 1925.22"
+                },
+                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
@@ -562,7 +563,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "2260.4 396.795"
+                    "metaValue": "2448.87 301.994"
                 }
             ],
             "ports": [
@@ -706,6 +707,7 @@
             "compounds": [
                 {
                     "name": "dl_mult_vector_by_matrix",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -819,6 +821,7 @@
                     "compounds": [
                         {
                             "name": "dl_compose_matrix",
+                            "uriImported": "file:///dl_magnet.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -988,51 +991,6 @@
                                             "metaValue": "1672.16 -709.601"
                                         },
                                         {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1056,6 +1014,51 @@
                                                     "metaValue": "0"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1074,86 +1077,6 @@
                                             "metaValue": "2517.16 -683.442"
                                         },
                                         {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1167,6 +1090,86 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1185,51 +1188,6 @@
                                             "metaValue": "2199.3 -733.147"
                                         },
                                         {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1238,6 +1196,51 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
                                         }
                                     ]
                                 },
@@ -1293,21 +1296,6 @@
                                             "metaValue": "1556.61 -192.965"
                                         },
                                         {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
-                                            "metaName": "valuenode_defaultvalue",
-                                            "metaType": "string",
-                                            "metaValue": "0"
-                                        },
-                                        {
                                             "metaName": "PortExpandedState",
                                             "metadata": [
                                                 {
@@ -1316,6 +1304,21 @@
                                                     "metaValue": "1"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
+                                        },
+                                        {
+                                            "metaName": "valuenode_defaultvalue",
+                                            "metaType": "string",
+                                            "metaValue": "0"
                                         }
                                     ]
                                 }
@@ -1540,86 +1543,6 @@
                                     "metaValue": "-407.998 -433.496"
                                 },
                                 {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
                                     "metaName": "PortExpandedState",
                                     "metadata": [
                                         {
@@ -1633,6 +1556,86 @@
                                             "metaValue": "1"
                                         }
                                     ]
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
                                 }
                             ]
                         },
@@ -1651,21 +1654,6 @@
                                     "metaValue": "-125.744 -451.581"
                                 },
                                 {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
                                     "metaName": "PortExpandedState",
                                     "metadata": [
                                         {
@@ -1674,6 +1662,21 @@
                                             "metaValue": "1"
                                         }
                                     ]
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
                                 }
                             ]
                         },
@@ -1802,6 +1805,7 @@
                 },
                 {
                     "name": "which_shape_to_use",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2272,7 +2276,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "34.5114 -881.802"
+                            "metaValue": "-76.468 -888.084"
                         }
                     ]
                 },
@@ -2337,22 +2341,6 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-601.34 564.088"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "dl_get_vert_idx_to_deform",
-                    "nodeType": "DL_Core::deformers::dl_get_vert_idx_to_deform",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-824.48 -246.811"
                         }
                     ]
                 },
@@ -2514,6 +2502,22 @@
                             "metaValue": "1035.88 -952.237"
                         }
                     ]
+                },
+                {
+                    "nodeName": "dl_get_vert_idx_to_deform1",
+                    "nodeType": "DL_Core::geometry::dl_get_vert_idx_to_deform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-915.839 -54.0059"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -2598,34 +2602,6 @@
                     "target": "dl_draw_vert_weights.weight_array"
                 },
                 {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array1.index"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array.index"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "set_in_array1.index"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                    "target": "get_from_array2.index"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.deform_group_verts",
-                    "target": "dl_compute_deformer_weights.deform_group_vert_idx"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.full_group_verts",
-                    "target": "dl_compute_deformer_weights.full_group_vert_idx"
-                },
-                {
-                    "source": "dl_get_vert_idx_to_deform.not_group_verts",
-                    "target": "dl_compute_deformer_weights.not_group_vert_idx"
-                },
-                {
                     "source": "get_property.value",
                     "target": "get_point_position.geometry"
                 },
@@ -2698,10 +2674,6 @@
                     "target": "get_point_position1.geometry"
                 },
                 {
-                    "source": ".dl_mesh_object",
-                    "target": "dl_get_vert_idx_to_deform.dl_mesh_object"
-                },
-                {
                     "source": ".deform_mode",
                     "target": "which_shape_to_use.deform_mode"
                 },
@@ -2722,18 +2694,6 @@
                     "target": "dl_compute_deformer_weights.weight_multiplier"
                 },
                 {
-                    "source": ".deform_groups",
-                    "target": "dl_get_vert_idx_to_deform.deform_groups"
-                },
-                {
-                    "source": ".full_groups",
-                    "target": "dl_get_vert_idx_to_deform.full_groups"
-                },
-                {
-                    "source": ".not_groups",
-                    "target": "dl_get_vert_idx_to_deform.not_groups"
-                },
-                {
                     "source": ".weight_volumes",
                     "target": "dl_compute_deformer_weights.weight_volumes"
                 },
@@ -2748,6 +2708,50 @@
                 {
                     "source": ".display_current_positions",
                     "target": "dl_draw_vert_weights.display_current_positions"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "dl_get_vert_idx_to_deform1.dl_mesh_object"
+                },
+                {
+                    "source": ".deform_groups",
+                    "target": "dl_get_vert_idx_to_deform1.deform_groups"
+                },
+                {
+                    "source": ".full_groups",
+                    "target": "dl_get_vert_idx_to_deform1.full_groups"
+                },
+                {
+                    "source": ".not_groups",
+                    "target": "dl_get_vert_idx_to_deform1.not_groups"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.not_group_verts",
+                    "target": "dl_compute_deformer_weights.not_group_vert_idx"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.full_group_verts",
+                    "target": "dl_compute_deformer_weights.full_group_vert_idx"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.deform_group_verts",
+                    "target": "dl_compute_deformer_weights.deform_group_vert_idx"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
+                    "target": "get_from_array1.index"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
+                    "target": "set_in_array1.index"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
+                    "target": "get_from_array2.index"
+                },
+                {
+                    "source": "dl_get_vert_idx_to_deform1.verts_to_deform",
+                    "target": "get_from_array.index"
                 }
             ],
             "values": [
@@ -2765,26 +2769,6 @@
                     "valueName": "dl_compute_deformer_weights.weight_volumes",
                     "valueType": "array<Amino::Object>",
                     "value": []
-                },
-                {
-                    "valueName": "dl_get_vert_idx_to_deform.dl_mesh_object",
-                    "valueType": "Amino::Object",
-                    "value": {}
-                },
-                {
-                    "valueName": "dl_get_vert_idx_to_deform.deform_groups",
-                    "valueType": "string",
-                    "value": "*"
-                },
-                {
-                    "valueName": "dl_get_vert_idx_to_deform.full_groups",
-                    "valueType": "string",
-                    "value": "*"
-                },
-                {
-                    "valueName": "dl_get_vert_idx_to_deform.not_groups",
-                    "valueType": "string",
-                    "value": "*"
                 },
                 {
                     "valueName": "dl_draw_vert_weights.currentshape_object",
