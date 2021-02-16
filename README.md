@@ -5,6 +5,13 @@ The hope for this open source project, is that it will expand the style of chara
 
 This is built around using Autodesk Bifrost and contains a number of compounds that can be used to build other compounds.  I decided to start working in Bifrost, as this already gives users in multiple Autodesk applications access to the same rigging procedures, which has been long overdue in our industry.  Hopefully Bifrost will continue to grow, and hook into many other applications.
 
+## Baseline and Requirements
+
+Tested in Maya 2019 and using Bifrost 2.2.0
+
+Rebel Pack needed, currently using 0.4.0
+
+https://area.autodesk.com/downloads/rebel-pack-040/
 
 ## Repo Structure
 
