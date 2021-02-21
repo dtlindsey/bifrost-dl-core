@@ -15,6 +15,16 @@
             "uriImported": "file:///dl_all_array_elements_match.json",
             "metadata": [
                 {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/arrays.svg"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/dl_all_array_elements_match.md"
+                },
+                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
@@ -41,6 +51,9 @@
                                                 },
                                                 {
                                                     "metaName": "match_value"
+                                                },
+                                                {
+                                                    "metaName": "none_match"
                                                 }
                                             ]
                                         }
@@ -81,7 +94,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-25.0423 -160.846 999.684 688.062"
+                    "metaValue": "-55.0812 -140.611 1059.58 764.224"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -91,7 +104,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-88.833 -156.333"
+                    "metaValue": "-136.833 -184.333"
                 }
             ],
             "ports": [
@@ -107,6 +120,12 @@
                 {
                     "portName": "match_value",
                     "portDirection": "input"
+                },
+                {
+                    "portName": "none_match",
+                    "portDirection": "input",
+                    "portType": "bool",
+                    "portDefault": "false"
                 }
             ],
             "compounds": [
@@ -130,36 +149,6 @@
                             "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
                         },
                         {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-564.336 -291.849 962.71 662.613"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Array,get_from_array"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,User::MJCG::Core::Logic,all_elements_true"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Constants,float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Array,array_size"
-                        },
-                        {
                             "metaName": "io_nodes",
                             "metadata": [
                                 {
@@ -172,11 +161,6 @@
                                                     "metaName": "DisplayMode",
                                                     "metaType": "string",
                                                     "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-584.755 -110"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
@@ -192,8 +176,16 @@
                                                         },
                                                         {
                                                             "metaName": "match_value"
+                                                        },
+                                                        {
+                                                            "metaName": "none_match"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-730.086 -153.966"
                                                 }
                                             ]
                                         }
@@ -211,11 +203,6 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "200.567 -86.7182"
-                                                },
-                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -225,12 +212,47 @@
                                                             "metaName": "output"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "495.73 -51.6493"
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,User::MJCG::Core::Logic,all_elements_true"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-740.695 -515.523 1491.13 1075.48"
                         }
                     ],
                     "ports": [
@@ -257,6 +279,11 @@
                         {
                             "portName": "output",
                             "portDirection": "output"
+                        },
+                        {
+                            "portName": "none_match",
+                            "portDirection": "input",
+                            "portType": "bool"
                         }
                     ],
                     "compoundNodes": [
@@ -272,7 +299,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-324.122 -263.635"
+                                    "metaValue": "-395.487 -416.058"
                                 }
                             ]
                         },
@@ -288,7 +315,39 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-65.639 -71.5734"
+                                    "metaValue": "-92.862 101.309"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "186.443 -30.8175"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "not_equal",
+                            "nodeType": "Core::Logic::not_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-104.165 -153"
                                 }
                             ]
                         }
@@ -297,14 +356,6 @@
                         {
                             "source": "get_from_array.value",
                             "target": "equal.first"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": ".looping_condition"
-                        },
-                        {
-                            "source": "equal.output",
-                            "target": ".output"
                         },
                         {
                             "source": ".current_index",
@@ -317,6 +368,34 @@
                         {
                             "source": ".match_value",
                             "target": "equal.second"
+                        },
+                        {
+                            "source": ".none_match",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "equal.output",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": ".output"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": ".looping_condition"
+                        },
+                        {
+                            "source": "get_from_array.value",
+                            "target": "not_equal.first"
+                        },
+                        {
+                            "source": ".match_value",
+                            "target": "not_equal.second"
+                        },
+                        {
+                            "source": "not_equal.output",
+                            "target": "if.true_case"
                         }
                     ],
                     "values": [],
@@ -387,6 +466,10 @@
                 {
                     "source": "do_while.output",
                     "target": ".output"
+                },
+                {
+                    "source": ".none_match",
+                    "target": "do_while.none_match"
                 }
             ],
             "values": [
@@ -394,6 +477,11 @@
                     "valueName": "do_while.max_iterations",
                     "valueType": "long",
                     "value": "10"
+                },
+                {
+                    "valueName": "do_while.none_match",
+                    "valueType": "bool",
+                    "value": "false"
                 }
             ],
             "reservedNodeNames": [
