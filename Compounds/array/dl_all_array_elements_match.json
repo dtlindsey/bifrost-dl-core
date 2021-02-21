@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::array::dl_all_array_elements_match",
-            "uriImported": "file:///__duplicateCompoundURIHelper__",
+            "uriImported": "file:///dl_all_array_elements_match.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -91,19 +91,18 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "2587.38 -1065.91"
+                    "metaValue": "-88.833 -156.333"
                 }
             ],
             "ports": [
                 {
                     "portName": "array",
-                    "portDirection": "input",
-                    "portType": "array<bool>",
-                    "portDefault": []
+                    "portDirection": "input"
                 },
                 {
                     "portName": "output",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "bool"
                 },
                 {
                     "portName": "match_value",
@@ -113,8 +112,13 @@
             "compounds": [
                 {
                     "name": "do_while",
-                    "uriImported": "file:///__duplicateCompoundURIHelper__",
+                    "uriImported": "file:///dl_all_array_elements_match.json",
                     "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -369,6 +373,10 @@
                     "target": "do_while.max_iterations"
                 },
                 {
+                    "source": ".match_value",
+                    "target": "do_while.match_value"
+                },
+                {
                     "source": ".array",
                     "target": "do_while.array"
                 },
@@ -379,10 +387,6 @@
                 {
                     "source": "do_while.output",
                     "target": ".output"
-                },
-                {
-                    "source": ".match_value",
-                    "target": "do_while.match_value"
                 }
             ],
             "values": [
