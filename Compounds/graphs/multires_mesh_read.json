@@ -666,6 +666,11 @@
                     "metaValue": "DL_Core/geometry"
                 },
                 {
+                    "metaName": "thumbnail",
+                    "metaType": "string",
+                    "metaValue": "./multires_mesh_read.png"
+                },
+                {
                     "metaName": "description",
                     "metaType": "string",
                     "metaValue": "Example graph on how to read a multires .bob file and on demand be able to swap geometry within Bifrost while it's being deformed."
