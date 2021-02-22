@@ -1,0 +1,1745 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "dependencies": [
+        {
+            "uri": "file:///bifrost_object_i.json"
+        },
+        {
+            "uri": "file:///Math_types.json"
+        },
+        {
+            "uri": "file:///bifrost_geometry_query_types.json"
+        },
+        {
+            "uri": "file:///geometry_types.json"
+        },
+        {
+            "uri": "file:///read_bifrost_object.json"
+        },
+        {
+            "uri": "file:///riv_types.json"
+        },
+        {
+            "uri": "file:///point_types.json"
+        },
+        {
+            "uri": "file:///FCurve.json"
+        },
+        {
+            "uri": "file:///riv_ops.json"
+        },
+        {
+            "uri": "file:///Math_float.json"
+        },
+        {
+            "uri": "file:///Math_double.json"
+        },
+        {
+            "uri": "file:///Math_conversion.json"
+        },
+        {
+            "uri": "file:///Math_long.json"
+        },
+        {
+            "uri": "file:///Math_char.json"
+        },
+        {
+            "uri": "file:///Math_int.json"
+        },
+        {
+            "uri": "file:///Math_short.json"
+        },
+        {
+            "uri": "file:///Math_uchar.json"
+        },
+        {
+            "uri": "file:///Math_uint.json"
+        },
+        {
+            "uri": "file:///Math_ulong.json"
+        },
+        {
+            "uri": "file:///Math_ushort.json"
+        },
+        {
+            "uri": "file:///Math_quaternion_to_matrix.json"
+        },
+        {
+            "uri": "file:///Math_compose_transform_matrix.json"
+        },
+        {
+            "uri": "file:///Math_multiply_quaternions.json"
+        },
+        {
+            "uri": "file:///Math_euler_to_quaternion.json"
+        },
+        {
+            "uri": "file:///Math_degrees_to_radians.json"
+        },
+        {
+            "uri": "file:///set_property_any.json"
+        },
+        {
+            "uri": "file:///set_property.json"
+        },
+        {
+            "uri": "file:///dl_xform.json"
+        },
+        {
+            "uri": "file:///volume_types.json"
+        },
+        {
+            "uri": "file:///has_property.json"
+        },
+        {
+            "uri": "file:///get_property_any.json"
+        },
+        {
+            "uri": "file:///get_property.json"
+        },
+        {
+            "uri": "file:///create_volume_geo_prop.json"
+        },
+        {
+            "uri": "file:///is_a.json"
+        },
+        {
+            "uri": "file:///create_object_from_schema.json"
+        },
+        {
+            "uri": "file:///is_a_mesh.json"
+        },
+        {
+            "uri": "file:///is_a_strands.json"
+        },
+        {
+            "uri": "file:///is_a_points.json"
+        },
+        {
+            "uri": "file:///is_a_volume.json"
+        },
+        {
+            "uri": "file:///get_geo_schema_type.json"
+        },
+        {
+            "uri": "file:///switch_is_a.json"
+        },
+        {
+            "uri": "file:///get_target_component.json"
+        },
+        {
+            "uri": "file:///create_data_geo_prop.json"
+        },
+        {
+            "uri": "file:///get_geo_component_count.json"
+        },
+        {
+            "uri": "file:///set_geo_property.array.json"
+        },
+        {
+            "uri": "file:///set_geo_property.scalar.json"
+        },
+        {
+            "uri": "file:///set_point_position.json"
+        },
+        {
+            "uri": "file:///Math_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_slice_array.json"
+        },
+        {
+            "uri": "file:///CoreArrayOps.json"
+        },
+        {
+            "uri": "file:///get_geo_property.json"
+        },
+        {
+            "uri": "file:///get_point_position.json"
+        },
+        {
+            "uri": "file:///get_sub_object.json"
+        },
+        {
+            "uri": "file:///erase_property.json"
+        },
+        {
+            "uri": "file:///update_mesh_normals.json"
+        },
+        {
+            "uri": "file:///dl_build_array_with_default_value.json"
+        },
+        {
+            "uri": "file:///dl_mult_vector_by_matrix.json"
+        },
+        {
+            "uri": "file:///Math_length_squared.json"
+        },
+        {
+            "uri": "file:///Math_almost_equal.json"
+        },
+        {
+            "uri": "file:///dl_compute_weight_volume.json"
+        },
+        {
+            "uri": "file:///dl_compute_deformer_weights.json"
+        },
+        {
+            "uri": "file:///get_property_keys.json"
+        },
+        {
+            "uri": "file:///is_empty.json"
+        },
+        {
+            "uri": "file:///materials.json"
+        },
+        {
+            "uri": "file:///Math_bool.json"
+        },
+        {
+            "uri": "file:///set_point_shape.json"
+        },
+        {
+            "uri": "file:///delete_points_in_points.json"
+        },
+        {
+            "uri": "file:///delete_points.json"
+        },
+        {
+            "uri": "file:///find_all_in_array.json"
+        },
+        {
+            "uri": "file:///get_geo_property_check.json"
+        },
+        {
+            "uri": "file:///Math_constants.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds_impl.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_bounds.json"
+        },
+        {
+            "uri": "file:///add_points_to_points.json"
+        },
+        {
+            "uri": "file:///validate_points.json"
+        },
+        {
+            "uri": "file:///construct_points.json"
+        },
+        {
+            "uri": "file:///CoreStringOps.json"
+        },
+        {
+            "uri": "file:///string_to_array.json"
+        },
+        {
+            "uri": "file:///increment_decrement.json"
+        },
+        {
+            "uri": "file:///jotun_rand.json"
+        },
+        {
+            "uri": "file:///fluids_types.json"
+        },
+        {
+            "uri": "file:///fluids_nodedefs.json"
+        },
+        {
+            "uri": "file:///random_value.json"
+        },
+        {
+            "uri": "file:///get_point_count.json"
+        },
+        {
+            "uri": "file:///Math_vector4_to_vector3.json"
+        },
+        {
+            "uri": "file:///Core_Constants_default_value.json"
+        },
+        {
+            "uri": "file:///cumulative_sum_array.json"
+        },
+        {
+            "uri": "file:///access_offset_array.json"
+        },
+        {
+            "uri": "file:///get_strands_structure.json"
+        },
+        {
+            "uri": "file:///update_point_strand_index.json"
+        },
+        {
+            "uri": "file:///int_filter.json"
+        },
+        {
+            "uri": "file:///get_array_indices.json"
+        },
+        {
+            "uri": "file:///check_point_strand_index.json"
+        },
+        {
+            "uri": "file:///update_strands_ratio.json"
+        },
+        {
+            "uri": "file:///int_array_filter.json"
+        },
+        {
+            "uri": "file:///set_geo_property_data.json"
+        },
+        {
+            "uri": "file:///set_sub_object_property.json"
+        },
+        {
+            "uri": "file:///validate_strands.json"
+        },
+        {
+            "uri": "file:///construct_strands.json"
+        },
+        {
+            "uri": "file:///create_strands_from_counts.json"
+        },
+        {
+            "uri": "file:///twice_of.json"
+        },
+        {
+            "uri": "file:///standard_surface_mat.json"
+        },
+        {
+            "uri": "file:///half_of.json"
+        },
+        {
+            "uri": "file:///Math_change_range.json"
+        },
+        {
+            "uri": "file:///change_range.json"
+        },
+        {
+            "uri": "file:///set_strands_shape.json"
+        },
+        {
+            "uri": "file:///Arnold_enums.json"
+        },
+        {
+            "uri": "file:///set_Arnold_parameter.json"
+        },
+        {
+            "uri": "file:///Arnold_ray_types.json"
+        },
+        {
+            "uri": "file:///Arnold_ray_bitmask.json"
+        },
+        {
+            "uri": "file:///validate_mesh.json"
+        },
+        {
+            "uri": "file:///set_Arnold_geo_settings.json"
+        },
+        {
+            "uri": "file:///set_Arnold_strands_settings.json"
+        },
+        {
+            "uri": "file:///create_arrow_strands.json"
+        },
+        {
+            "uri": "file:///Core_Array_array_is_empty.json"
+        },
+        {
+            "uri": "file:///point_scope.json"
+        },
+        {
+            "uri": "file:///object_terminal.json"
+        },
+        {
+            "uri": "file:///dl_draw_vert_weights.json"
+        },
+        {
+            "uri": "file:///Core_Array_reverse_array.json"
+        },
+        {
+            "uri": "file:///remove_from_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_flatten_nested_array.json"
+        },
+        {
+            "uri": "file:///Core_Array_empty_array.json"
+        },
+        {
+            "uri": "file:///sort_array_and_remove_duplicates.json"
+        },
+        {
+            "uri": "file:///dl_get_group_index_by_name.json"
+        },
+        {
+            "uri": "file:///dl_get_face_idx_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_from_face_array.json"
+        },
+        {
+            "uri": "file:///dl_get_verts_from_group_name.json"
+        },
+        {
+            "uri": "file:///dl_get_vert_idx_to_deform.json"
+        },
+        {
+            "uri": "file:///dl_magnet.json"
+        },
+        {
+            "uri": "file:///influence_fields_types.json"
+        },
+        {
+            "uri": "file:///get_geo_target_count.json"
+        },
+        {
+            "uri": "file:///volume_nodedefs.json"
+        },
+        {
+            "uri": "file:///interpret_auto_port_as_vector.json"
+        },
+        {
+            "uri": "file:///assign_diagnostic_material.json"
+        },
+        {
+            "uri": "file:///dl_planar_weight_volume.json"
+        },
+        {
+            "uri": "file:///dl_sphere_weight_volume.json"
+        }
+    ],
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "DL_Core::geometry::examples::multires_mesh_read",
+            "uriImported": "stream:/step_2Shape",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-600.541 568.902"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "shoulderPivot"
+                                                },
+                                                {
+                                                    "metaName": "shoulderRig"
+                                                },
+                                                {
+                                                    "metaName": "elbowPivot"
+                                                },
+                                                {
+                                                    "metaName": "elbowRig"
+                                                },
+                                                {
+                                                    "metaName": "lShoulderVol1"
+                                                },
+                                                {
+                                                    "metaName": "lShoulderVol2"
+                                                },
+                                                {
+                                                    "metaName": "lShoulderVol3"
+                                                },
+                                                {
+                                                    "metaName": "lElbowVol1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1532.7 280.495"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "value"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#6d0e10"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-357.078 -311.419 721.902 511.123"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Select Geom Resolution 0-3\n"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,build_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_sphere_weight_volume"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_planar_weight_volume"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::deformers,dl_magnet"
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "891.792 1152.2 515.408 219"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Elbow Volumes\n"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#296d33"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop2",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "150.939 1016.7 434.754 820.508"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Shoulder Volumes.  Order in array matters for computation\n"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop3",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-5.74263 323.614 612.107 417.449"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#5b6d2b"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Xform nodes.  These work slightly different than normal maya transforms. \nTry moving the pivot around while the Rig driver is not identity\n"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop4",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "887.682 69.9836 605.038 765.518"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Deformers.  Try moving around the volumes, or changing the deform groups\n"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-525.458 -181.938 2111.24 1824.75"
+                },
+                {
+                    "metaName": "compoundIsGraph",
+                    "metaValue": "true"
+                },
+                {
+                    "metaName": "author",
+                    "metaType": "string",
+                    "metaValue": "Daniel Lindsey"
+                },
+                {
+                    "metaName": "category",
+                    "metaType": "string",
+                    "metaValue": "DL_Core/geometry"
+                },
+                {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "Example graph on how to read a multires .bob file and on demand be able to swap geometry within Bifrost while it's being deformed."
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "value",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                },
+                {
+                    "portName": "shoulderPivot",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0.918944776f",
+                            "y": "-0.287173063f",
+                            "z": "0.270318598f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0.298277646f",
+                            "y": "0.954479158f",
+                            "z": "6.9388939e-18f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "-0.258013457f",
+                            "y": "0.080629997f",
+                            "z": "0.962770939f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "20.2937336f",
+                            "y": "141.47612f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "shoulderRig",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "elbowPivot",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0.901429951f",
+                            "y": "0f",
+                            "z": "0.432924986f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "-0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "-0.432924986f",
+                            "y": "-0f",
+                            "z": "0.901429951f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "44.3080673f",
+                            "y": "134.832047f",
+                            "z": "6.8957715f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "elbowRig",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "lShoulderVol1",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "-0.983267069f",
+                            "y": "-0.182169825f",
+                            "z": "-1.22464685e-16f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "-0.182169825f",
+                            "y": "0.983267069f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "1.20415488e-16f",
+                            "y": "2.23093705e-17f",
+                            "z": "-1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "20.2937336f",
+                            "y": "141.47612f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "lShoulderVol2",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0.557753682f",
+                            "y": "0.215092719f",
+                            "z": "0.801652014f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "-0.331857115f",
+                            "y": "0.943069696f",
+                            "z": "-0.0221453663f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "-0.760776997f",
+                            "y": "-0.253682256f",
+                            "z": "0.597380638f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "17.154871f",
+                            "y": "142.457016f",
+                            "z": "11.7125864f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "lShoulderVol3",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0.918944776f",
+                            "y": "-0.287173063f",
+                            "z": "0.270318598f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0.298277646f",
+                            "y": "0.954479158f",
+                            "z": "6.9388939e-18f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "-0.258013457f",
+                            "y": "0.080629997f",
+                            "z": "0.962770939f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "14.0463495f",
+                            "y": "143.428436f",
+                            "z": "-5.86132717f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "lElbowVol1",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "-0.901429951f",
+                            "y": "0f",
+                            "z": "-0.432924986f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0.432924986f",
+                            "y": "0f",
+                            "z": "-0.901429951f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "46.2905617f",
+                            "y": "134.832047f",
+                            "z": "7.84789467f",
+                            "w": "1f"
+                        }
+                    }
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "geom_selector",
+                    "uriImported": "stream:/step_2Shape",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_objects"
+                                                        },
+                                                        {
+                                                            "metaName": "output"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "value"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "out_objects",
+                            "portDirection": "input",
+                            "portType": "array<Amino::Object>"
+                        },
+                        {
+                            "portName": "value",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "output",
+                            "portDirection": "input",
+                            "portType": "uint"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "geom_selector",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-351 -269"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "max",
+                            "nodeType": "Core::Math::max",
+                            "multiInPortNames": [
+                                "output",
+                                "minimum"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-341.432 170.532"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "min",
+                            "nodeType": "Core::Math::min",
+                            "multiInPortNames": [
+                                "output",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-418.297 500.246"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "to_unsigned_int",
+                            "nodeType": "Core::Type_Conversion::to_unsigned_int",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "4.46431 269.648"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "3"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-703.581 562.882"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "3"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-606.417 130.076"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": ".out_objects",
+                            "target": "geom_selector.array"
+                        },
+                        {
+                            "source": "to_unsigned_int.unsigned_int",
+                            "target": "geom_selector.index"
+                        },
+                        {
+                            "source": "geom_selector.value",
+                            "target": ".value"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "max.first.output"
+                        },
+                        {
+                            "source": "min.minimum",
+                            "target": "max.first.minimum"
+                        },
+                        {
+                            "source": "max.maximum",
+                            "target": "to_unsigned_int.from"
+                        },
+                        {
+                            "source": ".output",
+                            "target": "min.first.output"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "min.first.output1"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "geom_selector.index",
+                            "valueType": "long",
+                            "value": "3"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "long",
+                            "value": "3"
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "long",
+                            "value": "0"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "read_Bifrost_object",
+                    "nodeType": "File::Geometry::read_Bifrost_object",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-265.666 -274.066"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "uint",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-265.666 -7.06644"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "3"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "geom_selector",
+                    "nodeType": "geom_selector",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "39.334 -185.066"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_xform",
+                    "nodeType": "DL_Core::transforms::dl_xform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "7.68641 407.338"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_xform1",
+                    "nodeType": "DL_Core::transforms::dl_xform",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "333.644 542.196"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_magnet",
+                    "nodeType": "DL_Core::deformers::dl_magnet",
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::diagnostic"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "938.756 247.322"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_magnet1",
+                    "nodeType": "DL_Core::deformers::dl_magnet",
+                    "deactivatedTerminals": [
+                        "Core::Graph::terminal::diagnostic"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1244.03 450.235"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_planar_weight_volume",
+                    "nodeType": "DL_Core::weighting::dl_planar_weight_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "238.74 1164.35"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_planar_weight_volume1",
+                    "nodeType": "DL_Core::weighting::dl_planar_weight_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "901.792 1209.12"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_sphere_weight_volume",
+                    "nodeType": "DL_Core::weighting::dl_sphere_weight_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "252.943 1407.03"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_sphere_weight_volume1",
+                    "nodeType": "DL_Core::weighting::dl_sphere_weight_volume",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "248.196 1611.45"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_array",
+                    "nodeType": "Core::Array::build_array",
+                    "multiInPortNames": [
+                        "weight_volume"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1172.2 1162.2"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_array1",
+                    "nodeType": "Core::Array::build_array",
+                    "multiInPortNames": [
+                        "weight_volume",
+                        "weight_volume1",
+                        "weight_volume2"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "639.517 791.879"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "read_Bifrost_object.out_objects",
+                    "target": "geom_selector.out_objects"
+                },
+                {
+                    "source": "value.output",
+                    "target": "geom_selector.output"
+                },
+                {
+                    "source": ".shoulderPivot",
+                    "target": "dl_xform.inPivotMatrix"
+                },
+                {
+                    "source": ".shoulderRig",
+                    "target": "dl_xform.inLocalMatrix"
+                },
+                {
+                    "source": "dl_xform.deformMatrix",
+                    "target": "dl_xform1.inParentMatrix"
+                },
+                {
+                    "source": ".elbowPivot",
+                    "target": "dl_xform1.inPivotMatrix"
+                },
+                {
+                    "source": ".elbowRig",
+                    "target": "dl_xform1.inLocalMatrix"
+                },
+                {
+                    "source": "geom_selector.value",
+                    "target": "dl_magnet.dl_mesh_object"
+                },
+                {
+                    "source": "dl_magnet.output_dl_mesh_object",
+                    "target": "dl_magnet1.dl_mesh_object"
+                },
+                {
+                    "source": "dl_magnet1.output_dl_mesh_object",
+                    "target": ".value"
+                },
+                {
+                    "source": "dl_xform.deformMatrix",
+                    "target": "dl_magnet.magnet"
+                },
+                {
+                    "source": "dl_xform1.deformMatrix",
+                    "target": "dl_magnet1.magnet"
+                },
+                {
+                    "source": ".lShoulderVol1",
+                    "target": "dl_planar_weight_volume.input_matrix"
+                },
+                {
+                    "source": ".lShoulderVol2",
+                    "target": "dl_sphere_weight_volume.input_matrix"
+                },
+                {
+                    "source": ".lShoulderVol3",
+                    "target": "dl_sphere_weight_volume1.input_matrix"
+                },
+                {
+                    "source": ".lElbowVol1",
+                    "target": "dl_planar_weight_volume1.input_matrix"
+                },
+                {
+                    "source": "dl_planar_weight_volume1.weight_volume",
+                    "target": "build_array.first.weight_volume"
+                },
+                {
+                    "source": "dl_planar_weight_volume.weight_volume",
+                    "target": "build_array1.first.weight_volume"
+                },
+                {
+                    "source": "dl_sphere_weight_volume.weight_volume",
+                    "target": "build_array1.first.weight_volume1"
+                },
+                {
+                    "source": "dl_sphere_weight_volume1.weight_volume",
+                    "target": "build_array1.first.weight_volume2"
+                },
+                {
+                    "source": "build_array1.array",
+                    "target": "dl_magnet.weight_volumes"
+                },
+                {
+                    "source": "build_array.array",
+                    "target": "dl_magnet1.weight_volumes"
+                },
+                {
+                    "source": "dl_xform1.parentMatrix",
+                    "target": "dl_magnet1.falseParent"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "read_Bifrost_object.filename",
+                    "valueType": "string",
+                    "value": "multiRes.bob"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "uint",
+                    "value": "2U"
+                },
+                {
+                    "valueName": "geom_selector.out_objects",
+                    "valueType": "array<Amino::Object>",
+                    "value": []
+                },
+                {
+                    "valueName": "geom_selector.output",
+                    "valueType": "uint",
+                    "value": "0U"
+                },
+                {
+                    "valueName": "dl_xform.useSRT",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "dl_magnet.deform_mode",
+                    "valueType": "Geometry::Volume::AnalyzeOutputMode",
+                    "value": "ReplaceExisting"
+                },
+                {
+                    "valueName": "dl_magnet.deform_groups",
+                    "valueType": "string",
+                    "value": "*"
+                },
+                {
+                    "valueName": "dl_magnet.not_groups",
+                    "valueType": "string",
+                    "value": "rHalfDeform"
+                },
+                {
+                    "valueName": "dl_magnet1.deform_mode",
+                    "valueType": "Geometry::Volume::AnalyzeOutputMode",
+                    "value": "AppendOperator"
+                },
+                {
+                    "valueName": "dl_magnet1.deform_groups",
+                    "valueType": "string",
+                    "value": "lArmDeform"
+                },
+                {
+                    "valueName": "dl_magnet1.not_groups",
+                    "valueType": "string",
+                    "value": "rHalfDeform"
+                },
+                {
+                    "valueName": "dl_magnet1.weight_color",
+                    "valueType": "Math::float3",
+                    "value": {
+                        "x": "1f",
+                        "y": "1f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "valueName": "dl_planar_weight_volume.sizeA",
+                    "valueType": "float",
+                    "value": "15f"
+                },
+                {
+                    "valueName": "dl_planar_weight_volume1.max_falloff",
+                    "valueType": "float",
+                    "value": "3f"
+                },
+                {
+                    "valueName": "dl_planar_weight_volume1.sizeA",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume.min_falloff",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume.max_falloff",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume.sizeA",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume.sizeZ",
+                    "valueType": "float",
+                    "value": "2f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.input_matrix",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.min_falloff",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.max_falloff",
+                    "valueType": "float",
+                    "value": "0.400000006f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeA",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.apply_mode",
+                    "valueType": "Simulation::Influence::Operation_Type",
+                    "value": "Multiply"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.weight_falloff",
+                    "valueType": "Amino::FCurve",
+                    "value": {
+                        "version": "1",
+                        "preExtrapolation": "0",
+                        "postExtrapolation": "0",
+                        "points": [
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "1",
+                                    "pcn": {
+                                        "xp": "-0.33333299999999999",
+                                        "yp": "-0.33333299999999999",
+                                        "x": "0",
+                                        "y": "0",
+                                        "xn": "0.33333299999999999",
+                                        "yn": "0.33333299999999999"
+                                    }
+                                }
+                            },
+                            {
+                                "point": {
+                                    "locked": "1",
+                                    "interpolation": "2",
+                                    "pcn": {
+                                        "xp": "0.58999999999999997",
+                                        "yp": "1.0249999999999999",
+                                        "x": "1",
+                                        "y": "1",
+                                        "xn": "1.4099999999999999",
+                                        "yn": "0.97499999999999998"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.use_current_positions",
+                    "valueType": "bool",
+                    "value": "false"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeX",
+                    "valueType": "float",
+                    "value": "3f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeY",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeZ",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeXpos",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeXneg",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeYpos",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeYneg",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeZpos",
+                    "valueType": "float",
+                    "value": "1.5f"
+                },
+                {
+                    "valueName": "dl_sphere_weight_volume1.sizeZneg",
+                    "valueType": "float",
+                    "value": "2f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input"
+                }
+            ]
+        }
+    ]
+}
