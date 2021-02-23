@@ -532,31 +532,6 @@
                     ]
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,build_array"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_sphere_weight_volume"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_planar_weight_volume"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,DL_Core::deformers,dl_magnet"
-                },
-                {
                     "metaName": "backdrop1",
                     "metadata": [
                         {
@@ -647,9 +622,34 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::String,expand_env_vars"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,build_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_sphere_weight_volume"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::weighting,dl_planar_weight_volume"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-525.458 -181.938 2111.24 1824.75"
+                    "metaValue": "-1053.94 -485.849 3095.44 2381.99"
                 },
                 {
                     "metaName": "compoundIsGraph",
@@ -666,14 +666,14 @@
                     "metaValue": "DL_Core/geometry"
                 },
                 {
+                    "metaName": "description",
+                    "metaType": "string",
+                    "metaValue": "Example graph on how to read a multires .bob file and on demand be able to swap geometry within Bifrost while it's being deformed.  Must set ${DL_CORE_GRAPHS_DIR} to the DL_Core/Compounds/graphs directory"
+                },
+                {
                     "metaName": "thumbnail",
                     "metaType": "string",
                     "metaValue": "./multires_mesh_read.png"
-                },
-                {
-                    "metaName": "description",
-                    "metaType": "string",
-                    "metaValue": "Example graph on how to read a multires .bob file and on demand be able to swap geometry within Bifrost while it's being deformed."
                 }
             ],
             "ports": [
@@ -1208,7 +1208,7 @@
                         {
                             "metaName": "valuenode_defaultvalue",
                             "metaType": "string",
-                            "metaValue": "3"
+                            "metaValue": "2"
                         }
                     ]
                 },
@@ -1401,6 +1401,22 @@
                             "metaValue": "639.517 791.879"
                         }
                     ]
+                },
+                {
+                    "nodeName": "expand_env_vars",
+                    "nodeType": "Core::String::expand_env_vars",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-600.295 -204.434"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -1495,6 +1511,10 @@
                 {
                     "source": "dl_xform1.parentMatrix",
                     "target": "dl_magnet1.falseParent"
+                },
+                {
+                    "source": "expand_env_vars.expanded",
+                    "target": "read_Bifrost_object.directory"
                 }
             ],
             "values": [
@@ -1735,6 +1755,11 @@
                     "valueName": "dl_sphere_weight_volume1.sizeZneg",
                     "valueType": "float",
                     "value": "2f"
+                },
+                {
+                    "valueName": "expand_env_vars.string",
+                    "valueType": "string",
+                    "value": "${DL_CORE_GRAPHS_DIR}"
                 }
             ],
             "reservedNodeNames": [
