@@ -146,7 +146,7 @@
     "compounds": [
         {
             "name": "DL_Core::geometry::dl_mesh_object",
-            "uriImported": "file:///__duplicateCompoundURIHelper__",
+            "uriImported": "file:///dl_mesh_object.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -154,39 +154,9 @@
                     "metaValue": "../icons/geometry.svg"
                 },
                 {
-                            "metaName": "documentation",
-                            "metaType": "string",
-                            "metaValue": "../docs/dl_mesh_object.md"
-                },
-                {
-                    "metaName": "_recentNode_",
+                    "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Object,set_property"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Object,get_property"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Geometry::Properties,get_geo_property"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,DL_Core::transforms,dl_mult_vector_by_matrix"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-775.313 -394.584 2692.15 982.373"
+                    "metaValue": "../docs/dl_mesh_object.md"
                 },
                 {
                     "metaName": "io_nodes",
@@ -243,11 +213,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1386.51 -99.6022"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -260,6 +225,11 @@
                                                     "metaName": "face_count"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1306.29 80.018"
                                         }
                                     ]
                                 }
@@ -288,16 +258,6 @@
                     ]
                 },
                 {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "1608.86 -470.82"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
@@ -321,6 +281,46 @@
                             "metaValue": "1"
                         }
                     ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_geo_component_count"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,set_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,get_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_geo_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-353.795 -664.097 1909.55 1443.94"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "290.202 285.465"
                 }
             ],
             "ports": [
@@ -334,7 +334,7 @@
                     "portName": "convert_to_local_space",
                     "portDirection": "input",
                     "portType": "bool",
-                    "portDefault": "true"
+                    "portDefault": "false"
                 },
                 {
                     "portName": "parent_matrix",
@@ -384,11 +384,13 @@
                 },
                 {
                     "portName": "vertex_count",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "uint"
                 },
                 {
                     "portName": "face_count",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "uint"
                 }
             ],
             "compoundNodes": [
@@ -567,6 +569,38 @@
                             "metaValue": "236.588 -296.916"
                         }
                     ]
+                },
+                {
+                    "nodeName": "get_geo_component_count",
+                    "nodeType": "Geometry::Properties::get_geo_component_count",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "286.064 65.5415"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_geo_component_count1",
+                    "nodeType": "Geometry::Properties::get_geo_component_count",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "302.589 320.979"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -607,14 +641,6 @@
                     "target": "set_property.object"
                 },
                 {
-                    "source": "get_property.value",
-                    "target": ".face_count"
-                },
-                {
-                    "source": "get_property1.value",
-                    "target": ".vertex_count"
-                },
-                {
                     "source": "set_property2.out_object",
                     "target": "set_property1.object"
                 },
@@ -629,14 +655,6 @@
                 {
                     "source": ".original_object",
                     "target": "set_to_local_space.false_case"
-                },
-                {
-                    "source": ".original_object",
-                    "target": "get_property.object"
-                },
-                {
-                    "source": ".original_object",
-                    "target": "get_property1.object"
                 },
                 {
                     "source": ".convert_to_local_space",
@@ -657,6 +675,22 @@
                 {
                     "source": ".deform_groups_face_ids",
                     "target": "set_property.value"
+                },
+                {
+                    "source": ".original_object",
+                    "target": "get_geo_component_count.geometry"
+                },
+                {
+                    "source": ".original_object",
+                    "target": "get_geo_component_count1.geometry"
+                },
+                {
+                    "source": "get_geo_component_count1.count",
+                    "target": ".vertex_count"
+                },
+                {
+                    "source": "get_geo_component_count.count",
+                    "target": ".face_count"
                 }
             ],
             "values": [
@@ -692,8 +726,8 @@
                 },
                 {
                     "valueName": "get_property.default_and_type",
-                    "valueType": "long",
-                    "value": "0"
+                    "valueType": "uint",
+                    "value": "0U"
                 },
                 {
                     "valueName": "get_property.key",
@@ -702,13 +736,13 @@
                 },
                 {
                     "valueName": "get_property1.default_and_type",
-                    "valueType": "long",
-                    "value": "0"
+                    "valueType": "uint",
+                    "value": "0U"
                 },
                 {
                     "valueName": "get_property1.key",
                     "valueType": "string",
-                    "value": "vertex_component"
+                    "value": "point_component"
                 },
                 {
                     "valueName": "set_property2.key",
@@ -744,6 +778,16 @@
                             "w": "0f"
                         }
                     }
+                },
+                {
+                    "valueName": "get_geo_component_count.component",
+                    "valueType": "string",
+                    "value": "face_component"
+                },
+                {
+                    "valueName": "get_geo_component_count1.component",
+                    "valueType": "string",
+                    "value": "point_component"
                 }
             ],
             "reservedNodeNames": [
