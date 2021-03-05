@@ -16,6 +16,10 @@ The expected object to be passed in is the custom ***dl_mesh_object***.  There a
 
 Boolean that determines if the deformer is being calculated or not.  If disabled, the original dl_mesh_object shape is passed as the output.
 
+### `bind_frame`
+
+Currently, Bifrost does not track what ports are dirtied.  In the mean time, we have to cache what frame we want the bind, verts to deform, and weights computed on.  This is not optimal, nor is it the final intent for this compound.
+
 ### `weight_multiplier`
 
 Overall weight multiplier of the deformation.

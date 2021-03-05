@@ -37,3 +37,9 @@ The *baseshape* is a property accessible on a ***dl_mesh_object***
 ### `currentshape_point_positions`
 
 The current point_positions of the deformer's input mesh object
+
+## `Addition Inputs`
+
+### `bind_frame`
+
+Currently, Bifrost does not track what ports are dirtied.  In the mean time, we have to cache what frame we want weights computed on.  This is not optimal, nor is it the final intent for this compound, as you should be able to animated your input weight volumes, and only those should be updating the weight values. 
