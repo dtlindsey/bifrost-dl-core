@@ -35,13 +35,10 @@ This is where the Maya scripts and example files live.  These are Maya 2019 file
 
 Append your PYTHONPATH in maya to point to the python directory in here.
 
-## Todo
+## Development Board
 
-1. Optimizations: the speed of this system needs to be addressed, however it still serves the purpose to illustrate the rigging methods
-   
-2. Expand deformers.
-   
-3. Expand weight volumes.
+[dl-core-main project](https://github.com/dtlindsey/bifrost-dl-core/projects/1)
+
 
 ## License
 
