@@ -143,7 +143,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_to_uvs",
-            "uriImported": "file:///dl_to_uvs.json",
+            "uriImported": "stream:/stream",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -170,11 +170,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-2397.71 -477.697"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -190,6 +185,11 @@
                                                     "metaName": "uv_index"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2406.21 -525.291"
                                         }
                                     ]
                                 }
@@ -207,17 +207,17 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1543.44 -317.339"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "output_dl_mesh_object"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1611.54 -477.229"
                                         }
                                     ]
                                 }
@@ -251,9 +251,54 @@
                     "metaValue": "BifrostGraph,Core::Conversion,scalar_to_vector3"
                 },
                 {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-134.762 -243.451 1228.34 806.758"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Build out mesh\n"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#26651f"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1696.59 -701.734 1428.21 1119.96"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#6d1416"
+                        }
+                    ]
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-2652.56 -818.172 1806.85 1459.58"
+                    "metaValue": "-1816.63 -849.756 2604.94 610.743"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -263,13 +308,14 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-13.9484 51.5567"
+                    "metaValue": "906.82 -276.054"
                 }
             ],
             "ports": [
                 {
                     "portName": "output_dl_mesh_object",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
                 },
                 {
                     "portName": "dl_mesh_object",
@@ -299,7 +345,7 @@
             "compounds": [
                 {
                     "name": "dl_vector2_to_vector3",
-                    "uriImported": "file:///dl_to_uvs.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "ViewportRect",
@@ -525,7 +571,7 @@
                 },
                 {
                     "name": "for_each",
-                    "uriImported": "file:///dl_to_uvs.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "icon",
@@ -847,7 +893,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1076.61 -399.309"
+                            "metaValue": "-1217.69 -450.303"
                         }
                     ]
                 },
@@ -883,7 +929,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "186.009 74.5313"
+                            "metaValue": "261.138 112.096"
                         }
                     ]
                 },
@@ -899,7 +945,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "836.826 -163.052"
+                            "metaValue": "858.574 -143.281"
                         }
                     ]
                 },
@@ -915,7 +961,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-199.891 163.599"
+                            "metaValue": "-124.762 201.164"
                         }
                     ]
                 },
@@ -931,7 +977,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-261.49 -203.928"
+                            "metaValue": "-63.8665 -197.864"
                         }
                     ]
                 },
@@ -963,7 +1009,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1162.19 67.0697"
+                            "metaValue": "-1241.91 113.221"
                         }
                     ]
                 },
@@ -979,7 +1025,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "193.529 340.742"
+                            "metaValue": "268.658 378.307"
                         }
                     ]
                 },
@@ -995,7 +1041,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "530.261 266.606"
+                            "metaValue": "605.39 304.171"
                         }
                     ]
                 },
@@ -1009,14 +1055,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-124.282 -48.0101"
-                        },
-                        {
                             "metaName": "valuenode_defaultvalue",
                             "metaType": "string",
                             "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-49.1534 -10.4456"
                         }
                     ]
                 },
@@ -1032,7 +1078,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1070.16 -147.437"
+                            "metaValue": "-1211.24 -198.431"
                         }
                     ]
                 },
@@ -1052,7 +1098,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-729.722 -201.312"
+                            "metaValue": "-870.805 -252.306"
                         }
                     ]
                 },
@@ -1084,7 +1130,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-138.534 -626.491"
+                            "metaValue": "-1192.31 -691.734"
                         }
                     ]
                 }
@@ -1179,10 +1225,6 @@
                     "target": "if.true_case"
                 },
                 {
-                    "source": "if.output",
-                    "target": ".output_dl_mesh_object"
-                },
-                {
                     "source": ".dl_mesh_object",
                     "target": "get_property.object"
                 },
@@ -1197,6 +1239,10 @@
                 {
                     "source": ".uv_index",
                     "target": "get_mesh_UVs.uv_number"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".output_dl_mesh_object"
                 }
             ],
             "values": [

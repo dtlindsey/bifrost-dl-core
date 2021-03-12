@@ -386,7 +386,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_magnet",
-            "uriImported": "file:///dl_magnet.json",
+            "uriImported": "stream:/stream",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -397,11 +397,6 @@
                     "metaName": "documentation",
                     "metaType": "string",
                     "metaValue": "../docs/dl_magnet.md"
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::diagnostic"
                 },
                 {
                     "metaName": "io_nodes",
@@ -696,7 +691,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-500.536 324.871 1936.07 1532.57"
+                    "metaValue": "-231.054 -167.62 4803.54 1742.22"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -706,7 +701,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-121.298 -335.11"
+                    "metaValue": "-215.918 -307.358"
+                },
+                {
+                    "metaName": "terminal_node_disabled_flags",
+                    "metaType": "string",
+                    "metaValue": "Core::Graph::terminal::diagnostic"
                 }
             ],
             "ports": [
@@ -857,7 +857,7 @@
             "compounds": [
                 {
                     "name": "dl_mult_vector_by_matrix",
-                    "uriImported": "file:///dl_magnet.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -971,7 +971,7 @@
                     "compounds": [
                         {
                             "name": "dl_compose_matrix",
-                            "uriImported": "file:///dl_magnet.json",
+                            "uriImported": "stream:/stream",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -1955,7 +1955,7 @@
                 },
                 {
                     "name": "which_shape_to_use",
-                    "uriImported": "file:///dl_magnet.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2269,7 +2269,7 @@
                 },
                 {
                     "name": "cache_verts_to_use",
-                    "uriImported": "file:///dl_magnet.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2652,7 +2652,7 @@
                 },
                 {
                     "name": "cache_bind",
-                    "uriImported": "file:///dl_magnet.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -3137,7 +3137,7 @@
                 },
                 {
                     "name": "apply_postion_delta",
-                    "uriImported": "file:///dl_magnet.json",
+                    "uriImported": "stream:/stream",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -3515,9 +3515,6 @@
                 {
                     "nodeName": "dl_draw_vert_weights",
                     "nodeType": "DL_Core::weighting::dl_draw_vert_weights",
-                    "deactivatedTerminals": [
-                        "Core::Graph::terminal::diagnostic"
-                    ],
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
