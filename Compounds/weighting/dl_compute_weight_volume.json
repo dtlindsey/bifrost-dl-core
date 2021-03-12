@@ -78,6 +78,9 @@
             "uri": "file:///dl_mult_vector_by_matrix.json"
         },
         {
+            "uri": "file:///dl_weight_apply_mode.json"
+        },
+        {
             "uri": "file:///dl_build_array_with_default_value.json"
         },
         {
@@ -92,7 +95,7 @@
     "compounds": [
         {
             "name": "DL_Core::weighting::dl_compute_weight_volume",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///dl_compute_weight_volume.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -230,6 +233,11 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,get_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Logic,equal"
                 },
                 {
@@ -248,14 +256,9 @@
                     "metaValue": "BifrostGraph,Core::Math,divide"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Conversion,scalar_to_vector3"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-47.457 402.533 1794.8 1525.76"
+                    "metaValue": "495.651 -1647.54 3936.22 3139.87"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -265,39 +268,45 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "85.7137 -71.3234"
+                    "metaValue": "284.124 9.02473"
                 }
             ],
             "ports": [
                 {
                     "portName": "weight_volume",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "Amino::Object"
                 },
                 {
                     "portName": "baseshape_point_position",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>"
                 },
                 {
                     "portName": "current_point_position",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "array<Math::float3>"
                 },
                 {
                     "portName": "input_weight_array",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "array<float>"
                 },
                 {
                     "portName": "vertex_ids",
-                    "portDirection": "input"
+                    "portDirection": "input",
+                    "portType": "array<uint>"
                 },
                 {
                     "portName": "updated_weights",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "array<float>"
                 }
             ],
             "compounds": [
                 {
                     "name": "point_to_weight_volume_space",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_compute_weight_volume.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -422,7 +431,7 @@
                 },
                 {
                     "name": "compute_weight_volume",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_compute_weight_volume.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -528,7 +537,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-1332.94 -263.322 1891.81 1613.21"
+                            "metaValue": "-286.502 -264.273 1517.49 1210.49"
                         }
                     ],
                     "ports": [
@@ -801,13 +810,8 @@
                 },
                 {
                     "name": "compute_apply_mode",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_compute_weight_volume.json",
                     "metadata": [
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-610.996 -137.501 1223.45 277.146"
-                        },
                         {
                             "metaName": "io_nodes",
                             "metadata": [
@@ -823,11 +827,6 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-450 -60.6667"
-                                                },
-                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -840,6 +839,11 @@
                                                             "metaName": "weight_bin_weights"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-673.783 25.9193"
                                                 }
                                             ]
                                         }
@@ -857,29 +861,60 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "225 -60.6667"
-                                                },
-                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
                                                             "metaName": "updated_weights"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1613.3 -42.0853"
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Graph,pass"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Constants,float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,max"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "236.487 -363.209 1717.86 1370.31"
                         }
                     ],
                     "ports": [
                         {
                             "portName": "apply_mode",
-                            "portDirection": "input"
+                            "portDirection": "input",
+                            "portType": "DL_Core::weighting::dl_weight_apply_mode"
                         },
                         {
                             "portName": "input_weight_array",
@@ -891,7 +926,8 @@
                         },
                         {
                             "portName": "updated_weights",
-                            "portDirection": "output"
+                            "portDirection": "output",
+                            "portType": "array<float>"
                         }
                     ],
                     "compoundNodes": [
@@ -911,39 +947,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "2287.91 45.8806"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "equal1",
-                            "nodeType": "Core::Logic::equal",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "1789.44 -249.511"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "equal2",
-                            "nodeType": "Core::Logic::equal",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "1807.25 15.4037"
+                                    "metaValue": "478.226 438.103"
                                 }
                             ]
                         },
@@ -959,7 +963,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "3177.66 -291.097"
+                                    "metaValue": "1289.71 -44.2041"
                                 }
                             ]
                         },
@@ -975,7 +979,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "2815.17 -27.2131"
+                                    "metaValue": "910.546 392.283"
                                 }
                             ]
                         },
@@ -995,7 +999,200 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "2538.32 -197.974"
+                                    "metaValue": "919.996 4.94698"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "is_mult_mode",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "919.619 -251.849"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "is_add_mode",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "547.977 225.926"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "is_subtract_mode",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "190.166 642.678"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "is_max_mode",
+                            "nodeType": "Core::Logic::equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-131.639 886.548"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "688.456 772.212"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if4",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "419.958 1064.38"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "subtract",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "input_weight_array",
+                                "weight_bin_weights"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "380.737 819.099"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add1",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "input_weight_array",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-151.362 1092.7"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "max",
+                            "nodeType": "Core::Math::max",
+                            "multiInPortNames": [
+                                "output",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "144.878 1109.67"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "float",
+                            "metadata": [
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-141.928 1319.12"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "replace_mode",
+                            "nodeType": "Core::Graph::pass",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-312.558 1587.03"
                                 }
                             ]
                         }
@@ -1006,32 +1203,12 @@
                             "target": "if3.true_case"
                         },
                         {
-                            "source": "equal1.output",
-                            "target": "if2.condition"
-                        },
-                        {
-                            "source": "equal2.output",
-                            "target": "if3.condition"
-                        },
-                        {
-                            "source": "if2.output",
-                            "target": ".updated_weights"
-                        },
-                        {
                             "source": "if3.output",
                             "target": "if2.false_case"
                         },
                         {
                             "source": "multiply.output",
                             "target": "if2.true_case"
-                        },
-                        {
-                            "source": ".apply_mode",
-                            "target": "equal1.first"
-                        },
-                        {
-                            "source": ".apply_mode",
-                            "target": "equal2.first"
                         },
                         {
                             "source": ".input_weight_array",
@@ -1047,23 +1224,113 @@
                         },
                         {
                             "source": ".weight_bin_weights",
+                            "target": "multiply.first.output1"
+                        },
+                        {
+                            "source": "is_mult_mode.output",
+                            "target": "if2.condition"
+                        },
+                        {
+                            "source": ".apply_mode",
+                            "target": "is_mult_mode.first"
+                        },
+                        {
+                            "source": ".apply_mode",
+                            "target": "is_add_mode.first"
+                        },
+                        {
+                            "source": "is_add_mode.output",
+                            "target": "if3.condition"
+                        },
+                        {
+                            "source": ".apply_mode",
+                            "target": "is_subtract_mode.first"
+                        },
+                        {
+                            "source": ".apply_mode",
+                            "target": "is_max_mode.first"
+                        },
+                        {
+                            "source": "is_subtract_mode.output",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "is_max_mode.output",
+                            "target": "if4.condition"
+                        },
+                        {
+                            "source": "if.output",
                             "target": "if3.false_case"
                         },
                         {
+                            "source": ".input_weight_array",
+                            "target": "subtract.first.input_weight_array"
+                        },
+                        {
+                            "source": "subtract.output",
+                            "target": "if.true_case"
+                        },
+                        {
+                            "source": "if4.output",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": ".input_weight_array",
+                            "target": "add1.first.input_weight_array"
+                        },
+                        {
                             "source": ".weight_bin_weights",
-                            "target": "multiply.first.output1"
+                            "target": "add1.first.output1"
+                        },
+                        {
+                            "source": "add1.output",
+                            "target": "max.first.output"
+                        },
+                        {
+                            "source": "max.maximum",
+                            "target": "if4.true_case"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "max.first.output1"
+                        },
+                        {
+                            "source": ".weight_bin_weights",
+                            "target": "replace_mode.input"
+                        },
+                        {
+                            "source": "replace_mode.output",
+                            "target": "if4.false_case"
+                        },
+                        {
+                            "source": ".weight_bin_weights",
+                            "target": "subtract.first.weight_bin_weights"
+                        },
+                        {
+                            "source": "if2.output",
+                            "target": ".updated_weights"
                         }
                     ],
                     "values": [
                         {
-                            "valueName": "equal1.second",
-                            "valueType": "Simulation::Influence::Operation_Type",
-                            "value": "Multiply"
+                            "valueName": "is_add_mode.second",
+                            "valueType": "DL_Core::weighting::dl_weight_apply_mode",
+                            "value": "Add"
                         },
                         {
-                            "valueName": "equal2.second",
-                            "valueType": "Simulation::Influence::Operation_Type",
-                            "value": "Add"
+                            "valueName": "is_subtract_mode.second",
+                            "valueType": "DL_Core::weighting::dl_weight_apply_mode",
+                            "value": "Subtract"
+                        },
+                        {
+                            "valueName": "is_max_mode.second",
+                            "valueType": "DL_Core::weighting::dl_weight_apply_mode",
+                            "value": "Max"
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "float",
+                            "value": "1f"
                         }
                     ],
                     "reservedNodeNames": [
@@ -1077,7 +1344,7 @@
                 },
                 {
                     "name": "filter_type_computation",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_compute_weight_volume.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -1216,7 +1483,7 @@
                     "compounds": [
                         {
                             "name": "is_planar_filter",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///dl_compute_weight_volume.json",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -1418,7 +1685,7 @@
                         },
                         {
                             "name": "is_sphere_filter",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///dl_compute_weight_volume.json",
                             "metadata": [
                                 {
                                     "metaName": "io_nodes",
@@ -1554,7 +1821,7 @@
                             "compounds": [
                                 {
                                     "name": "spheroid_values",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///dl_compute_weight_volume.json",
                                     "metadata": [
                                         {
                                             "metaName": "io_nodes",
@@ -3009,22 +3276,6 @@
                     ]
                 },
                 {
-                    "nodeName": "get_property9",
-                    "nodeType": "Core::Object::get_property",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1740.44 39.65"
-                        }
-                    ]
-                },
-                {
                     "nodeName": "get_property5",
                     "nodeType": "Core::Object::get_property",
                     "metadata": [
@@ -3084,7 +3335,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2720.11 3.52947"
+                            "metaValue": "2707.87 109.582"
                         }
                     ]
                 },
@@ -3167,6 +3418,22 @@
                             "metaValue": "1303.64 1499.13"
                         }
                     ]
+                },
+                {
+                    "nodeName": "get_property",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1797.41 -215.98"
+                        }
+                    ]
                 }
             ],
             "connections": [
@@ -3203,20 +3470,12 @@
                     "target": "get_from_array.array"
                 },
                 {
-                    "source": "get_property9.value",
-                    "target": "compute_apply_mode.apply_mode"
-                },
-                {
                     "source": "get_property5.value",
                     "target": "compute_weight_volume.normalized_max"
                 },
                 {
                     "source": "compute_weight_volume.output_weight",
                     "target": "compute_apply_mode.weight_bin_weights"
-                },
-                {
-                    "source": "compute_apply_mode.updated_weights",
-                    "target": "set_in_array.value"
                 },
                 {
                     "source": "get_from_array.value",
@@ -3227,12 +3486,24 @@
                     "target": "compute_apply_mode.input_weight_array"
                 },
                 {
-                    "source": "set_in_array.out_array",
-                    "target": ".updated_weights"
-                },
-                {
                     "source": "get_property10.value",
                     "target": "compute_weight_volume.delta_offset"
+                },
+                {
+                    "source": "point_to_weight_volume_space.out_position",
+                    "target": "filter_type_computation.position_in_volume_space"
+                },
+                {
+                    "source": "filter_type_computation.filter_length",
+                    "target": "compute_weight_volume.normalized_lengths"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "compute_apply_mode.apply_mode"
+                },
+                {
+                    "source": "set_in_array.out_array",
+                    "target": ".updated_weights"
                 },
                 {
                     "source": ".weight_volume",
@@ -3260,15 +3531,19 @@
                 },
                 {
                     "source": ".weight_volume",
-                    "target": "get_property9.object"
-                },
-                {
-                    "source": ".weight_volume",
                     "target": "get_property5.object"
                 },
                 {
                     "source": ".weight_volume",
                     "target": "get_property10.object"
+                },
+                {
+                    "source": ".weight_volume",
+                    "target": "filter_type_computation.weight_volume"
+                },
+                {
+                    "source": ".weight_volume",
+                    "target": "get_property.object"
                 },
                 {
                     "source": ".baseshape_point_position",
@@ -3299,16 +3574,8 @@
                     "target": "get_from_array1.index"
                 },
                 {
-                    "source": "point_to_weight_volume_space.out_position",
-                    "target": "filter_type_computation.position_in_volume_space"
-                },
-                {
-                    "source": "filter_type_computation.filter_length",
-                    "target": "compute_weight_volume.normalized_lengths"
-                },
-                {
-                    "source": ".weight_volume",
-                    "target": "filter_type_computation.weight_volume"
+                    "source": "compute_apply_mode.updated_weights",
+                    "target": "set_in_array.value"
                 }
             ],
             "values": [
@@ -3432,16 +3699,6 @@
                     "value": "use_current_positions"
                 },
                 {
-                    "valueName": "get_property9.default_and_type",
-                    "valueType": "Simulation::Influence::Operation_Type",
-                    "value": "Multiply"
-                },
-                {
-                    "valueName": "get_property9.key",
-                    "valueType": "string",
-                    "value": "apply_mode"
-                },
-                {
                     "valueName": "get_property5.default_and_type",
                     "valueType": "float",
                     "value": "0f"
@@ -3536,11 +3793,6 @@
                     "value": "0f"
                 },
                 {
-                    "valueName": "compute_apply_mode.apply_mode",
-                    "valueType": "Simulation::Influence::Operation_Type",
-                    "value": "Replace"
-                },
-                {
                     "valueName": "compute_apply_mode.weight_bin_weights",
                     "valueType": "array<float>",
                     "value": []
@@ -3559,6 +3811,11 @@
                     "valueName": "filter_type_computation.position_in_volume_space",
                     "valueType": "array<Math::float3>",
                     "value": []
+                },
+                {
+                    "valueName": "get_property.default_and_type",
+                    "valueType": "DL_Core::weighting::dl_weight_apply_mode",
+                    "value": "Multiply"
                 }
             ],
             "reservedNodeNames": [

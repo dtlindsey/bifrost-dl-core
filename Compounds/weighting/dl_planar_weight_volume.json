@@ -235,10 +235,10 @@
                                                     "metaName": "max_falloff"
                                                 },
                                                 {
-                                                    "metaName": "sizeA"
+                                                    "metaName": "apply_mode"
                                                 },
                                                 {
-                                                    "metaName": "apply_mode"
+                                                    "metaName": "sizeA"
                                                 },
                                                 {
                                                     "metaName": "weight_falloff"
@@ -264,17 +264,17 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1360.29 -30.096"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "weight_volume"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1973.84 -61.7223"
                                         }
                                     ]
                                 }
@@ -395,6 +395,11 @@
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
                     "metaValue": "BifrostGraph,DL_Core::transforms,dl_mult_vector_by_matrix"
                 },
                 {
@@ -413,19 +418,9 @@
                     "metaValue": "BifrostGraph,Core::Logic,less_or_equal"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,less"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-770.423 -118.635 2016.84 518.254"
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::diagnostic"
+                    "metaValue": "-933.441 -117.911 1577.27 1258.17"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -433,14 +428,19 @@
                     "metaValue": "2"
                 },
                 {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-173.662 -389.202"
+                },
+                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"radius\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"ShereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizePosX\"\n                    },\n                    {\n                        \"port\": \"sizeNegX\"\n                    },\n                    {\n                        \"port\": \"sizePosY\"\n                    },\n                    {\n                        \"port\": \"sizeNegY\"\n                    },\n                    {\n                        \"port\": \"sizePosZ\"\n                    },\n                    {\n                        \"port\": \"sizeNegZ\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
-                    "metaName": "LayoutPos",
+                    "metaName": "terminal_node_disabled_flags",
                     "metaType": "string",
-                    "metaValue": "-110.167 -217"
+                    "metaValue": "Core::Graph::terminal::diagnostic"
                 }
             ],
             "ports": [
@@ -488,16 +488,16 @@
                     "portDefault": "1f"
                 },
                 {
+                    "portName": "apply_mode",
+                    "portDirection": "input",
+                    "portType": "DL_Core::weighting::dl_weight_apply_mode",
+                    "portDefault": "Multiply"
+                },
+                {
                     "portName": "sizeA",
                     "portDirection": "input",
                     "portType": "float",
                     "portDefault": "1f"
-                },
-                {
-                    "portName": "apply_mode",
-                    "portDirection": "input",
-                    "portType": "Simulation::Influence::Operation_Type",
-                    "portDefault": "Multiply"
                 },
                 {
                     "portName": "weight_falloff",
@@ -547,7 +547,8 @@
                 },
                 {
                     "portName": "weight_volume",
-                    "portDirection": "output"
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
                 }
             ],
             "compounds": [
@@ -2306,10 +2307,6 @@
                     "target": "set_property7.value"
                 },
                 {
-                    "source": ".apply_mode",
-                    "target": "set_property6.value"
-                },
-                {
                     "source": "set_property7.out_object",
                     "target": "set_property2.object"
                 },
@@ -2414,10 +2411,6 @@
                     "target": "set_property10.object"
                 },
                 {
-                    "source": "set_property10.out_object",
-                    "target": ".weight_volume"
-                },
-                {
                     "source": "set_property2.out_object",
                     "target": "set_property13.object"
                 },
@@ -2468,6 +2461,14 @@
                 {
                     "source": "get_max_falloff.maximum",
                     "target": "set_property15.value"
+                },
+                {
+                    "source": "set_property10.out_object",
+                    "target": ".weight_volume"
+                },
+                {
+                    "source": ".apply_mode",
+                    "target": "set_property6.value"
                 }
             ],
             "values": [
