@@ -392,7 +392,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_displace",
-            "uriImported": "file:///dl_displace.json",
+            "uriImported": "stream:/stream",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -500,6 +500,57 @@
                                                     "metaName": "display_current_positions"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2663.42 898.784"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "cache_input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bind_frame"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-818.599 236.377"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "cache_input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-818.599 236.377"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bind_frame"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
@@ -551,6 +602,11 @@
                                                     "metaName": "output_dl_mesh_object"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3201.92 -195.585"
                                         }
                                     ]
                                 }
