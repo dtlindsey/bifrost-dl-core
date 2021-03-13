@@ -553,6 +553,29 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "metaName": "cache_input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-818.599 236.377"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "bind_frame"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -725,46 +748,6 @@
                     "metaName": "LayoutPos",
                     "metaType": "string",
                     "metaValue": "1793.54 -551.285"
-                },
-                {
-                    "metaName": "backdrop3",
-                    "metadata": [
-                        {
-                            "metaName": "type",
-                            "metaType": "string",
-                            "metaValue": "backdrop"
-                        },
-                        {
-                            "metaName": "coords",
-                            "metaType": "string",
-                            "metaValue": "-197.932 717.526 919.696 435"
-                        },
-                        {
-                            "metaName": "color",
-                            "metaType": "string",
-                            "metaValue": "#201a6d"
-                        }
-                    ]
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-1157.6 -507.262 2706.54 981.648"
-                },
-                {
-                    "metaName": "DisplayMode",
-                    "metaType": "string",
-                    "metaValue": "2"
-                },
-                {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"port\": \"point_offset\"\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
-                },
-                {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "130.669 -303.751"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
