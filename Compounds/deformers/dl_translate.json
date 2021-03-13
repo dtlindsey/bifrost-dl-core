@@ -548,6 +548,11 @@
                                                     "metaName": "output_dl_mesh_object"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2121.76 -74.5676"
                                         }
                                     ]
                                 }
@@ -561,7 +566,7 @@
                     "metaValue": "BifrostGraph,DL_Core::weighting,dl_compute_deformer_weights"
                 },
                 {
-                    "metaName": "_recentNode_",
+                    "metaName": "ViewportRect",
                     "metaType": "string",
                     "metaValue": "input"
                 },
