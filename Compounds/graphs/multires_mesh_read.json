@@ -1663,11 +1663,6 @@
                     "value": "10f"
                 },
                 {
-                    "valueName": "dl_sphere_weight_volume1.apply_mode",
-                    "valueType": "Simulation::Influence::Operation_Type",
-                    "value": "Multiply"
-                },
-                {
                     "valueName": "dl_sphere_weight_volume1.weight_falloff",
                     "valueType": "Amino::FCurve",
                     "value": {

@@ -200,7 +200,7 @@
     "compounds": [
         {
             "name": "DL_Core::weighting::dl_sphere_weight_volume",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///dl_sphere_weight_volume.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -227,6 +227,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2890.8 526.44"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -239,10 +244,10 @@
                                                     "metaName": "max_falloff"
                                                 },
                                                 {
-                                                    "metaName": "sizeA"
+                                                    "metaName": "apply_mode"
                                                 },
                                                 {
-                                                    "metaName": "apply_mode"
+                                                    "metaName": "sizeA"
                                                 },
                                                 {
                                                     "metaName": "weight_falloff"
@@ -278,11 +283,6 @@
                                                     "metaName": "sizeZneg"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-2890.8 526.44"
                                         }
                                     ]
                                 }
@@ -300,17 +300,17 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "2683.12 40.5104"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "weight_volume"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "2683.12 40.5104"
                                         }
                                     ]
                                 }
@@ -419,11 +419,6 @@
                     ]
                 },
                 {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::diagnostic"
-                },
-                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Constants,float"
@@ -451,7 +446,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1137.91 -816.37 1186.85 1008.94"
+                    "metaValue": "-2856.22 -143.121 1512.7 1206.67"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -461,12 +456,17 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-273.758 -94.4352"
+                    "metaValue": "267.965 -405.442"
                 },
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"port\": \"use_current_positions\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"ShereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizeXpos\"\n                    },\n                    {\n                        \"port\": \"sizeXneg\"\n                    },\n                    {\n                        \"port\": \"sizeYpos\"\n                    },\n                    {\n                        \"port\": \"sizeYneg\"\n                    },\n                    {\n                        \"port\": \"sizeZpos\"\n                    },\n                    {\n                        \"port\": \"sizeZneg\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "terminal_node_disabled_flags",
+                    "metaType": "string",
+                    "metaValue": "Core::Graph::terminal::diagnostic"
                 },
                 {
                     "metaName": "PortExpandedState",
@@ -524,6 +524,12 @@
                     "portDefault": "1f"
                 },
                 {
+                    "portName": "apply_mode",
+                    "portDirection": "input",
+                    "portType": "DL_Core::weighting::dl_weight_apply_mode",
+                    "portDefault": "Multiply"
+                },
+                {
                     "portName": "sizeA",
                     "portDirection": "input",
                     "portType": "float",
@@ -531,13 +537,8 @@
                 },
                 {
                     "portName": "weight_volume",
-                    "portDirection": "output"
-                },
-                {
-                    "portName": "apply_mode",
-                    "portDirection": "input",
-                    "portType": "Simulation::Influence::Operation_Type",
-                    "portDefault": "Multiply"
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
                 },
                 {
                     "portName": "weight_falloff",
@@ -643,7 +644,7 @@
             "compounds": [
                 {
                     "name": "create_sphere_positions",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_sphere_weight_volume.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -862,8 +863,13 @@
                     "compounds": [
                         {
                             "name": "nonUniformSpherePoints",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///dl_sphere_weight_volume.json",
                             "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -1080,7 +1086,7 @@
                             "compounds": [
                                 {
                                     "name": "xMinMaxCalc",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///dl_sphere_weight_volume.json",
                                     "metadata": [
                                         {
                                             "metaName": "io_nodes",
@@ -1435,7 +1441,7 @@
                                 },
                                 {
                                     "name": "zMinMaxCalc",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///dl_sphere_weight_volume.json",
                                     "metadata": [
                                         {
                                             "metaName": "ViewportRect",
@@ -1790,7 +1796,7 @@
                                 },
                                 {
                                     "name": "yMinMaxCalc",
-                                    "uriImported": "stream:/bifrostGraphShape1",
+                                    "uriImported": "file:///dl_sphere_weight_volume.json",
                                     "metadata": [
                                         {
                                             "metaName": "io_nodes",
@@ -3524,7 +3530,7 @@
                 },
                 {
                     "name": "get_max_falloff",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_sphere_weight_volume.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -3931,14 +3937,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0.5"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-2506.26 1130.5"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0.5"
                         }
                     ]
                 },
@@ -4541,11 +4547,6 @@
                     "valueType": "float",
                     "metadata": [
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
                             "metaName": "DisplayMode",
                             "metaType": "string",
                             "metaValue": "2"
@@ -4554,6 +4555,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-896.66 -564.362"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0.0001"
                         }
                     ]
                 },
@@ -4684,10 +4690,6 @@
                     "target": "set_property7.value"
                 },
                 {
-                    "source": ".apply_mode",
-                    "target": "set_property6.value"
-                },
-                {
                     "source": "set_property7.out_object",
                     "target": "set_property2.object"
                 },
@@ -4786,10 +4788,6 @@
                 {
                     "source": "set_property12.out_object",
                     "target": "set_property10.object"
-                },
-                {
-                    "source": "set_property10.out_object",
-                    "target": ".weight_volume"
                 },
                 {
                     "source": "set_property2.out_object",
@@ -5074,6 +5072,14 @@
                 {
                     "source": "max4.maximum",
                     "target": "set_property21.value"
+                },
+                {
+                    "source": "set_property10.out_object",
+                    "target": ".weight_volume"
+                },
+                {
+                    "source": ".apply_mode",
+                    "target": "set_property6.value"
                 }
             ],
             "values": [

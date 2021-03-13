@@ -375,6 +375,9 @@
             "uri": "file:///Math_almost_equal.json"
         },
         {
+            "uri": "file:///dl_weight_apply_mode.json"
+        },
+        {
             "uri": "file:///dl_compute_weight_volume.json"
         },
         {
@@ -386,7 +389,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_magnet",
-            "uriImported": "stream:/stream",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -691,7 +694,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-231.054 -167.62 4803.54 1742.22"
+                    "metaValue": "-769.333 -947.885 4578.67 3037.77"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -701,7 +704,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-215.918 -307.358"
+                    "metaValue": "1370.89 -579.153"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -857,7 +860,7 @@
             "compounds": [
                 {
                     "name": "dl_mult_vector_by_matrix",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -971,7 +974,7 @@
                     "compounds": [
                         {
                             "name": "dl_compose_matrix",
-                            "uriImported": "stream:/stream",
+                            "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -1955,7 +1958,7 @@
                 },
                 {
                     "name": "which_shape_to_use",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2269,7 +2272,7 @@
                 },
                 {
                     "name": "cache_verts_to_use",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2295,11 +2298,6 @@
                             "metaName": "_recentNode_",
                             "metaType": "string",
                             "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-85.9957 -830.639 1916.75 1536.37"
                         },
                         {
                             "metaName": "io_nodes",
@@ -2382,6 +2380,11 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-409.7 -504.544 1594.78 1058.07"
                         }
                     ],
                     "ports": [
@@ -2539,14 +2542,6 @@
                             "target": "compute_on_frame5.value_to_pull"
                         },
                         {
-                            "source": "dl_get_vert_idx_to_deform.full_group_verts",
-                            "target": "compute_on_frame6.value_to_pull"
-                        },
-                        {
-                            "source": "dl_get_vert_idx_to_deform.not_group_verts",
-                            "target": "compute_on_frame7.value_to_pull"
-                        },
-                        {
                             "source": "compute_on_frame4.cached_value",
                             "target": ".verts_to_deform"
                         },
@@ -2597,6 +2592,14 @@
                         {
                             "source": ".bind_frame",
                             "target": "pass.input"
+                        },
+                        {
+                            "source": "dl_get_vert_idx_to_deform.full_group_verts",
+                            "target": "compute_on_frame7.value_to_pull"
+                        },
+                        {
+                            "source": "dl_get_vert_idx_to_deform.not_group_verts",
+                            "target": "compute_on_frame6.value_to_pull"
                         }
                     ],
                     "values": [
@@ -2652,7 +2655,7 @@
                 },
                 {
                     "name": "cache_bind",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -3137,7 +3140,7 @@
                 },
                 {
                     "name": "apply_postion_delta",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",

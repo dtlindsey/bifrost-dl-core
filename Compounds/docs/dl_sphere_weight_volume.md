@@ -22,7 +22,7 @@ The overall size of the plane in y/z (Mostly used for making the icon larger for
 
 ### `apply_mode`
 
-Weight application mode (Replace, Multiple, Add).  As these are used in arrays for deformers, this application mode becomes important when multiples are assigned to a given deformer, as they are computed in order in the array. 
+Weight application mode (Multiply, Add, Subtract, Replace, Max [max of 1.0]).  As these are used in arrays for deformers, this application mode becomes important when multiples are assigned to a given deformer, as they are computed in order in the array. 
 
 ### `weight_falloff`
 
