@@ -1,0 +1,26 @@
+{
+  "header" : {
+    "metadata": [
+      {
+        "metaName": "adskFileFormatVersion",
+        "metaValue": "100L"
+      }
+    ]
+  },
+  "namespaces": [],
+  "types": [
+    {
+      "enumName": "DL_Core::deformers::dl_magnet_mode",
+      "enumMembers": [
+        {
+          "enumKey": "Rigid",
+          "enumValue": "0"
+        },
+        {
+          "enumKey": "Additive",
+          "enumValue": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -129,7 +129,7 @@
             "uri": "file:///Math_quaternion_to_matrix.json"
         },
         {
-            "uri": "file:///volume_types.json"
+            "uri": "file:///dl_magnet_mode.json"
         },
         {
             "uri": "file:///increment_decrement.json"
@@ -220,6 +220,9 @@
         },
         {
             "uri": "file:///fluids_types.json"
+        },
+        {
+            "uri": "file:///volume_types.json"
         },
         {
             "uri": "file:///fluids_nodedefs.json"
@@ -389,7 +392,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_magnet",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///dl_magnet.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -662,9 +665,14 @@
                     ]
                 },
                 {
-                    "metaName": "UILayout",
+                    "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Magnet\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_mode\"\n                    },\n                    {\n                        \"port\": \"magnet\"\n                    },\n                    {\n                        \"port\": \"falseParent\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "-751.409 -835.572 1659.3 1360.7"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
                 },
                 {
                     "metaName": "_recentNode_",
@@ -687,24 +695,19 @@
                     "metaValue": "BifrostGraph,Core::Time,time"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-769.333 -947.885 4578.67 3037.77"
-                },
-                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Magnet\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_mode\"\n                    },\n                    {\n                        \"port\": \"magnet\"\n                    },\n                    {\n                        \"port\": \"falseParent\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "1370.89 -579.153"
+                    "metaValue": "-85.7058 -329.283"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -722,8 +725,8 @@
                 {
                     "portName": "deform_mode",
                     "portDirection": "input",
-                    "portType": "Geometry::Volume::AnalyzeOutputMode",
-                    "portDefault": "ReplaceExisting"
+                    "portType": "DL_Core::deformers::dl_magnet_mode",
+                    "portDefault": "Rigid"
                 },
                 {
                     "portName": "magnet",
@@ -860,7 +863,7 @@
             "compounds": [
                 {
                     "name": "dl_mult_vector_by_matrix",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -974,7 +977,7 @@
                     "compounds": [
                         {
                             "name": "dl_compose_matrix",
-                            "uriImported": "stream:/bifrostGraphShape1",
+                            "uriImported": "file:///dl_magnet.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -1958,38 +1961,8 @@
                 },
                 {
                     "name": "which_shape_to_use",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,if"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Object,get_property"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Array,set_in_array"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-400.473 -392.269 2049.93 1286.84"
-                        },
                         {
                             "metaName": "io_nodes",
                             "metadata": [
@@ -2085,13 +2058,43 @@
                                     "metaValue": "Rigid deform always uses baseshape\n"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Constants,float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Properties,get_point_position"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Object,get_property"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-283.88 -441.655 1882.25 1543.53"
                         }
                     ],
                     "ports": [
                         {
                             "portName": "deform_mode",
                             "portDirection": "input",
-                            "portType": "Geometry::Volume::AnalyzeOutputMode"
+                            "portType": "DL_Core::deformers::dl_magnet_mode"
                         },
                         {
                             "portName": "magnet",
@@ -2236,10 +2239,6 @@
                             "target": ".deform_matrix"
                         },
                         {
-                            "source": ".deform_mode",
-                            "target": "equal.first"
-                        },
-                        {
                             "source": ".magnet",
                             "target": "matrix_multiply.first.magnet"
                         },
@@ -2258,6 +2257,10 @@
                         {
                             "source": ".current_point_positions",
                             "target": "if.false_case"
+                        },
+                        {
+                            "source": ".deform_mode",
+                            "target": "equal.first"
                         }
                     ],
                     "values": [],
@@ -2272,7 +2275,7 @@
                 },
                 {
                     "name": "cache_verts_to_use",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -2655,7 +2658,7 @@
                 },
                 {
                     "name": "cache_bind",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -3140,7 +3143,7 @@
                 },
                 {
                     "name": "apply_postion_delta",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_magnet.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -3686,10 +3689,6 @@
                     "target": "cache_bind.dl_mesh_object"
                 },
                 {
-                    "source": ".deform_mode",
-                    "target": "which_shape_to_use.deform_mode"
-                },
-                {
                     "source": ".magnet",
                     "target": "which_shape_to_use.magnet"
                 },
@@ -3780,9 +3779,18 @@
                 {
                     "source": "dl_compute_deformer_weights1.weight_table",
                     "target": "dl_draw_vert_weights.weight_array"
+                },
+                {
+                    "source": ".deform_mode",
+                    "target": "which_shape_to_use.deform_mode"
                 }
             ],
             "values": [
+                {
+                    "valueName": "which_shape_to_use.deform_mode",
+                    "valueType": "DL_Core::deformers::dl_magnet_mode",
+                    "value": "Rigid"
+                },
                 {
                     "valueName": "cache_verts_to_use.dl_mesh_object",
                     "valueType": "Amino::Object",

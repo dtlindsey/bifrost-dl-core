@@ -75,13 +75,7 @@
             "uri": "file:///dl_build_array_with_default_value.json"
         },
         {
-            "uri": "file:///riv_types.json"
-        },
-        {
-            "uri": "file:///point_types.json"
-        },
-        {
-            "uri": "file:///riv_ops.json"
+            "uri": "file:///Math_char.json"
         },
         {
             "uri": "file:///Math_float.json"
@@ -90,28 +84,34 @@
             "uri": "file:///Math_double.json"
         },
         {
-            "uri": "file:///Math_long.json"
-        },
-        {
-            "uri": "file:///Math_char.json"
-        },
-        {
-            "uri": "file:///Math_int.json"
+            "uri": "file:///Math_uint.json"
         },
         {
             "uri": "file:///Math_short.json"
         },
         {
-            "uri": "file:///Math_uchar.json"
-        },
-        {
-            "uri": "file:///Math_uint.json"
-        },
-        {
             "uri": "file:///Math_ulong.json"
         },
         {
+            "uri": "file:///Math_int.json"
+        },
+        {
+            "uri": "file:///Math_uchar.json"
+        },
+        {
             "uri": "file:///Math_ushort.json"
+        },
+        {
+            "uri": "file:///Math_long.json"
+        },
+        {
+            "uri": "file:///riv_types.json"
+        },
+        {
+            "uri": "file:///point_types.json"
+        },
+        {
+            "uri": "file:///riv_ops.json"
         },
         {
             "uri": "file:///increment_decrement.json"
@@ -382,6 +382,21 @@
         },
         {
             "uri": "file:///dl_draw_vert_weights.json"
+        },
+        {
+            "uri": "file:///Core_Array_sum_array_impl.json"
+        },
+        {
+            "uri": "file:///Core_Array_sum_array.json"
+        },
+        {
+            "uri": "file:///array_average.json"
+        },
+        {
+            "uri": "file:///Math_lerp_with_clamp.json"
+        },
+        {
+            "uri": "file:///distance_between_vectors.json"
         }
     ],
     "namespaces": [],
@@ -431,6 +446,9 @@
                                                 },
                                                 {
                                                     "metaName": "weight_multiplier"
+                                                },
+                                                {
+                                                    "metaName": "mush_mode"
                                                 }
                                             ]
                                         }
@@ -500,6 +518,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1696.02 874.935"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -512,11 +535,6 @@
                                                     "metaName": "display_current_positions"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1696.02 874.935"
                                         }
                                     ]
                                 },
@@ -529,6 +547,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "102.751 56.4489"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -538,11 +561,6 @@
                                                     "metaName": "mush_iters"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "102.751 56.4489"
                                         }
                                     ]
                                 }
@@ -634,6 +652,26 @@
                     ]
                 },
                 {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "Mush",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1485.06 -659.794 1909.78 1606.87"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Iterators,iterate"
@@ -654,44 +692,24 @@
                     "metaValue": "BifrostGraph,Core::Type_Conversion,to_unsigned_int"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,array_size"
-                },
-                {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "407.732 -715.701 1167.65 1225.37"
-                },
-                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "397.178 4.1059"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"Mush\",\n                \"items\": [\n                    {\n                        \"port\": \"mush_iters\"\n                    },\n                    {\n                        \"port\": \"weight_by_distance\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"Mush\",\n                \"items\": [\n                    {\n                        \"port\": \"mush_mode\"\n                    },\n                    {\n                        \"port\": \"mush_iters\"\n                    },\n                    {\n                        \"port\": \"weight_by_distance\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-144.267 -580.476"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
                     "metaType": "string",
                     "metaValue": "Core::Graph::terminal::diagnostic"
-                },
-                {
-                    "metaName": "PortExpandedState",
-                    "metadata": [
-                        {
-                            "metaName": "Mush",
-                            "metaType": "string",
-                            "metaValue": "1"
-                        }
-                    ]
                 }
             ],
             "ports": [
@@ -780,7 +798,13 @@
                     "portName": "mush_iters",
                     "portDirection": "input",
                     "portType": "long",
-                    "portDefault": "0"
+                    "portDefault": "5"
+                },
+                {
+                    "portName": "mush_mode",
+                    "portDirection": "input",
+                    "portType": "DL_Core::deformers::dl_mush_mode",
+                    "portDefault": "Positional"
                 }
             ],
             "compounds": [
@@ -1087,6 +1111,11 @@
                                     "metaValue": "<NATIVE>../icons/LoopForEach.svg"
                                 },
                                 {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
+                                {
                                     "metaName": "io_nodes",
                                     "metadata": [
                                         {
@@ -1219,6 +1248,11 @@
                                     "name": "get_distances",
                                     "uriImported": "stream:/mushDeformerShape",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -1632,6 +1666,11 @@
                                     "name": "normalize_weights",
                                     "uriImported": "stream:/mushDeformerShape",
                                     "metadata": [
+                                        {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -3138,6 +3177,11 @@
                             "metaValue": "<NATIVE>../icons/LoopIterate.svg"
                         },
                         {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                        },
+                        {
                             "metaName": "io_nodes",
                             "metadata": [
                                 {
@@ -3292,6 +3336,11 @@
                                     "metaValue": "<NATIVE>../icons/LoopForEach.svg"
                                 },
                                 {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
+                                },
+                                {
                                     "metaName": "io_nodes",
                                     "metadata": [
                                         {
@@ -3355,17 +3404,17 @@
                                                             "metaValue": "2"
                                                         },
                                                         {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "2146.36 -325.936"
+                                                        },
+                                                        {
                                                             "metaName": "io_ports",
                                                             "metadata": [
                                                                 {
                                                                     "metaName": "output"
                                                                 }
                                                             ]
-                                                        },
-                                                        {
-                                                            "metaName": "LayoutPos",
-                                                            "metaType": "string",
-                                                            "metaValue": "2146.36 -325.936"
                                                         }
                                                     ]
                                                 }
@@ -3464,6 +3513,11 @@
                                             "metaValue": "<NATIVE>../icons/LoopIterate.svg"
                                         },
                                         {
+                                            "metaName": "icon",
+                                            "metaType": "string",
+                                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                        },
+                                        {
                                             "metaName": "_recentNode_",
                                             "metaType": "string",
                                             "metaValue": "BifrostGraph,Core::Math,add"
@@ -3543,17 +3597,17 @@
                                                                     "metaValue": "2"
                                                                 },
                                                                 {
+                                                                    "metaName": "LayoutPos",
+                                                                    "metaType": "string",
+                                                                    "metaValue": "886.622 -32.3338"
+                                                                },
+                                                                {
                                                                     "metaName": "io_ports",
                                                                     "metadata": [
                                                                         {
                                                                             "metaName": "sum"
                                                                         }
                                                                     ]
-                                                                },
-                                                                {
-                                                                    "metaName": "LayoutPos",
-                                                                    "metaType": "string",
-                                                                    "metaValue": "886.622 -32.3338"
                                                                 }
                                                             ]
                                                         }
@@ -3638,11 +3692,6 @@
                                             "valueType": "float",
                                             "metadata": [
                                                 {
-                                                    "metaName": "valuenode_defaultvalue",
-                                                    "metaType": "string",
-                                                    "metaValue": "0"
-                                                },
-                                                {
                                                     "metaName": "DisplayMode",
                                                     "metaType": "string",
                                                     "metaValue": "2"
@@ -3651,6 +3700,11 @@
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
                                                     "metaValue": "-597.528 290.355"
+                                                },
+                                                {
+                                                    "metaName": "valuenode_defaultvalue",
+                                                    "metaType": "string",
+                                                    "metaValue": "1"
                                                 }
                                             ]
                                         },
@@ -3843,17 +3897,17 @@
                                                                     "metaValue": "2"
                                                                 },
                                                                 {
+                                                                    "metaName": "LayoutPos",
+                                                                    "metaType": "string",
+                                                                    "metaValue": "1242.12 140.789"
+                                                                },
+                                                                {
                                                                     "metaName": "io_ports",
                                                                     "metadata": [
                                                                         {
                                                                             "metaName": "out_array"
                                                                         }
                                                                     ]
-                                                                },
-                                                                {
-                                                                    "metaName": "LayoutPos",
-                                                                    "metaType": "string",
-                                                                    "metaValue": "1242.12 140.789"
                                                                 }
                                                             ]
                                                         }
