@@ -725,7 +725,7 @@
                 {
                     "portName": "deform_mode",
                     "portDirection": "input",
-                    "portType": "DL_Core::deformers::dl_magnet_mode",
+                    "portType": "DL_Core::Deformers::dl_magnet_mode",
                     "portDefault": "Rigid"
                 },
                 {
@@ -2094,7 +2094,7 @@
                         {
                             "portName": "deform_mode",
                             "portDirection": "input",
-                            "portType": "DL_Core::deformers::dl_magnet_mode"
+                            "portType": "DL_Core::Deformers::dl_magnet_mode"
                         },
                         {
                             "portName": "magnet",
@@ -3788,7 +3788,7 @@
             "values": [
                 {
                     "valueName": "which_shape_to_use.deform_mode",
-                    "valueType": "DL_Core::deformers::dl_magnet_mode",
+                    "valueType": "DL_Core::Deformers::dl_magnet_mode",
                     "value": "Rigid"
                 },
                 {

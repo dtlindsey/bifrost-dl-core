@@ -10,7 +10,7 @@
   "namespaces": [],
   "types": [
     {
-      "enumName": "DL_Core::deformers::dl_magnet_mode",
+      "enumName": "DL_Core::Deformers::dl_magnet_mode",
       "enumMembers": [
         {
           "enumKey": "Rigid",

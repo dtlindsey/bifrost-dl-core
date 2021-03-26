@@ -10,7 +10,7 @@
   "namespaces": [],
   "types": [
     {
-      "enumName": "DL_Core::deformers::dl_mush_mode",
+      "enumName": "DL_Core::Deformers::dl_mush_mode",
       "enumMembers": [
         {
           "enumKey": "Positional",

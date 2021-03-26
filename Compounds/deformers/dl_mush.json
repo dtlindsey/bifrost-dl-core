@@ -204,6 +204,9 @@
             "uri": "file:///dl_compute_deformer_weights.json"
         },
         {
+            "uri": "file:///dl_mush_mode.json"
+        },
+        {
             "uri": "file:///has_property.json"
         },
         {
@@ -394,7 +397,7 @@
     "types": [],
     "compounds": [
         {
-            "name": "DL_Core::deformers::dl_mush_v2",
+            "name": "DL_Core::deformers::dl_mush",
             "uriImported": "stream:/mushDeformerShape",
             "metadata": [
                 {
@@ -794,7 +797,7 @@
                 {
                     "portName": "mush_mode",
                     "portDirection": "input",
-                    "portType": "DL_Core::deformers::dl_mush_mode",
+                    "portType": "DL_Core::Deformers::dl_mush_mode",
                     "portDefault": "Positional"
                 }
             ],
@@ -7587,7 +7590,7 @@
                 },
                 {
                     "valueName": "equal.second",
-                    "valueType": "DL_Core::deformers::dl_mush_mode",
+                    "valueType": "DL_Core::Deformers::dl_mush_mode",
                     "value": "Positional"
                 }
             ],

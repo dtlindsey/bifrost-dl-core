@@ -27,14 +27,6 @@
         {
           "path": "geometry",
           "files": [ ]
-        },
-        {
-          "path": "geo_groups",
-          "files": [ ]
-        },
-        {
-          "path": "beta",
-          "files": [ ]
         }
       ]
     }
