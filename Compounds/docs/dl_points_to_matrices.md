@@ -6,19 +6,19 @@ Returns a matrix for every point position passed in
 
 ### `point_position`
 
-point_positions to create matrices from
+all point_positions used to create the matrices
 
 ### `point_normals`
 
-point_normals used to create the rotation portion of the matrices
+all point_normals used to create the rotation portion of the matrices
 
 ### `position_indices`
 
-array[uint] for each position we're going to create a matrix for
+array[uint] matrices will only be created for positions at these indices
 
 ### `neighbor_array`
 
-array[array[uint]] connected/neighboring points for each point
+array[array[uint]] connected/neighboring points for each point, this is why we need all the point_positions
 
 ### `transpose_matrix`
 
@@ -28,4 +28,4 @@ bool that will transpose the matrices created
 
 ### `out_matrices`
 
-Matrix for each position passed in.  This is a full rotation and translation matrix.
+Matrix for each position index passed in.  This is a full rotation and translation matrix.
