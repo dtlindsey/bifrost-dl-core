@@ -22,6 +22,12 @@ Overall weight multiplier of the deformation.
 
 ## `Mush`
 
+### `mush_mode`
+
+***Positional:*** Positional average based on connected verts
+
+***Delta:*** Custom smooth operation that only smooths out the deformations happening on the mesh
+
 ### `mush_iters`
 
 Number of point averaging iterations
