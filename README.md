@@ -7,9 +7,9 @@ This is built around using Autodesk Bifrost and contains a number of compounds t
 
 ## Baseline and Requirements
 
-Tested in Maya 2019 and using Bifrost 2.2.0
+Tested in Maya 2019 and using Bifrost 2.2.1
 
-Rebel Pack needed, currently using 0.4.0
+Rebel Pack needed, currently using 0.4.1
 
 https://area.autodesk.com/downloads/rebel-pack-040/
 
