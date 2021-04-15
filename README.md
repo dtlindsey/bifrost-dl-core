@@ -11,7 +11,7 @@ Tested in Maya 2019 and using Bifrost 2.2.1
 
 Rebel Pack needed, currently using 0.4.1
 
-https://area.autodesk.com/downloads/rebel-pack-040/
+https://area.autodesk.com/downloads/rebel-pack-041/
 
 ## Repo Structure
 
