@@ -2,7 +2,7 @@
   "AminoConfigurations": [
     {
       "libraryName": "DL_Core",
-      "libraryVersion": "0.2.3",
+      "libraryVersion": "0.2.4",
       "jsonLibs": [
         {
           "path": "graphs",
@@ -26,6 +26,10 @@
         },
         {
           "path": "geometry",
+          "files": [ ]
+        },
+        {
+          "path": "dataStructures",
           "files": [ ]
         }
       ]
