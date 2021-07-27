@@ -30,12 +30,27 @@ class GroupManager(QtWidgets.QDialog):
         self._create_layouts()
 
     def _create_widgets(self):
+        # first groups
         self._first_group_list = QtWidgets.QListWidget()
+
+        # second groups
         self._second_group_list = QtWidgets.QListWidget()
+
+        # new group button
         self._new_group_button = QtWidgets.QPushButton(text="New Group")
+        self._new_group_button.clicked.connect(self._create_group_push)
+
+        # delete group button
         self._del_group_button = QtWidgets.QPushButton(text="Del Group")
+        self._del_group_button.clicked.connect(self._del_group_push)
+
+        # add to button
         self._add_to_button = QtWidgets.QPushButton(text="+")
+        self._add_to_button.clicked.connect(self._add_to_group_push)
+
+        # remove from button
         self._remove_from_button = QtWidgets.QPushButton(text="-")
+        self._remove_from_button.clicked.connect(self._remove_from_group_push)
 
     def _create_layouts(self):
         self._main_layout = QtWidgets.QHBoxLayout(self)
@@ -56,3 +71,18 @@ class GroupManager(QtWidgets.QDialog):
         # main layout
         self._main_layout.addLayout(self._left_group_layout)
         self._main_layout.addLayout(self._right_group_layout)
+
+    def _create_group_push(self):
+        print("create new selection set.")
+
+    def _del_group_push(self):
+        print("delete selection set.")
+
+    def _add_to_group_push(self):
+        print("add elements to selected group.")
+
+    def _remove_from_group_push(self):
+        print("remove elements from selected group.")
+
+    def _list_all_selection_sets(self):
+        print("Get selection sets")
