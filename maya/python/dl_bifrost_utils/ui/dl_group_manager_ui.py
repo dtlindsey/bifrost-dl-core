@@ -91,6 +91,8 @@ class GroupManager(QtWidgets.QDialog):
 
     def _del_group_push(self):
         print("delete selection set.")
+        if self._first_group_name:
+            cmds.delete(self._first_group_name)
 
     def _add_to_group_push(self):
         print("add elements to selected group.")
