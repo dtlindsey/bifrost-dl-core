@@ -5,11 +5,14 @@ from . import maya_main_window
 
 from maya import cmds
 
+
 class GroupManager(QtWidgets.QDialog):
     def __init__(self, parent=maya_main_window.get_maya_instance()):
         super(GroupManager, self).__init__(parent)
         # data
-        self._first_set_items = [] # stores the set info of the selected group in first_list
+        self._first_group_name = ""  # this is the group we'll be adding/removing items to/from later
+        self._first_set_items = []  # stores the set info of the selected group in first_list
+        self._second_set_items = []  # stores the set info of the selected group in second_list
         #
         self.setWindowTitle("DL Group Manager")
         self.setMinimumWidth(300)
@@ -41,6 +44,7 @@ class GroupManager(QtWidgets.QDialog):
         # second groups
         self._second_group_list = QtWidgets.QListWidget()
         self._second_group_list.setSortingEnabled(True)
+        self._second_group_list.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self._second_group_list.clicked.connect(self._second_group_select)
 
         # build the list
@@ -90,9 +94,13 @@ class GroupManager(QtWidgets.QDialog):
 
     def _add_to_group_push(self):
         print("add elements to selected group.")
+        if self._second_set_items:
+            cmds.sets(self._second_set_items, edit=True, addElement=self._first_group_name)
 
     def _remove_from_group_push(self):
         print("remove elements from selected group.")
+        if self._second_set_items:
+            cmds.sets(self._second_set_items, remove=self._first_group_name)
 
     def _list_all_selection_sets(self):
         """
@@ -110,8 +118,9 @@ class GroupManager(QtWidgets.QDialog):
     def _first_group_select(self):
         #
         q_sel_group_items = self._first_group_list.selectedItems()
-        sel_group_items = [q_sel_group_items[0].text()]
-        self._first_set_items = cmds.sets(sel_group_items, query=True)
+        # get the set name
+        self._first_group_name = q_sel_group_items[0].text()
+        self._first_set_items = cmds.sets(self._first_group_name, query=True)
         self.select_set_items(self._first_set_items)
 
     def _second_group_select(self):
@@ -124,6 +133,7 @@ class GroupManager(QtWidgets.QDialog):
                 sel_group_items.append(q_item.text())
             #
             set_items = cmds.sets(sel_group_items, query=True)
+            self._second_set_items = set_items
             if self._first_set_items:
                 set_items += self._first_set_items
             self.select_set_items(set_items)
