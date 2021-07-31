@@ -13,11 +13,13 @@ class GroupManager(QtWidgets.QDialog):
         self._first_group_name = ""  # this is the group we'll be adding/removing items to/from later
         self._first_set_items = []  # stores the set info of the selected group in first_list
         self._second_set_items = []  # stores the set info of the selected group in second_list
+        self._new_group_name = None  # this is used for the new group we may want to create
         #
         self.setWindowTitle("DL Group Manager")
         self.setMinimumWidth(300)
         self.setMinimumHeight(500)
         self.setWindowFlags(self.windowFlags() ^ QtCore.Qt.WindowContextHelpButtonHint)
+        self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
         # layouts
         self._main_layout = None
         self._left_group_layout = None
@@ -40,6 +42,7 @@ class GroupManager(QtWidgets.QDialog):
         self._first_group_list = QtWidgets.QListWidget()
         self._first_group_list.setSortingEnabled(True)
         self._first_group_list.clicked.connect(self._first_group_select)
+        self._first_group_list.doubleClicked.connect(self._rename_selected_item)
 
         # second groups
         self._second_group_list = QtWidgets.QListWidget()
@@ -88,11 +91,16 @@ class GroupManager(QtWidgets.QDialog):
 
     def _create_group_push(self):
         print("create new selection set.")
+        text, ok = QtWidgets.QInputDialog.getText(self, "DL Group Manager: New", "New Selection Set Name")
+        # build the new selection set
+        if ok:
+            self.create_set_and_select(text)
 
     def _del_group_push(self):
         print("delete selection set.")
         if self._first_group_name:
             cmds.delete(self._first_group_name)
+            self._list_all_selection_sets()
 
     def _add_to_group_push(self):
         print("add elements to selected group.")
@@ -108,12 +116,18 @@ class GroupManager(QtWidgets.QDialog):
         """
         This creates the list data in of teh groups
         """
-        default_sets = ['defaultLightSet', 'defaultObjectSet', 'initialParticleSE', 'initialShadingGroup']
+        default_sets = cmds.ls(['defaultLightSet*', 'defaultObjectSet*', 'initialParticleSE*', 'initialShadingGroup*'])
         selection_sets = cmds.ls(type="objectSet")
         # remove the defaults
         for default_set in default_sets:
-            selection_sets.remove(default_set)
-        #
+            try:
+                selection_sets.remove(default_set)
+            except:
+                continue
+        # remove the data first
+        self._first_group_list.clear()
+        self._second_group_list.clear()
+        # add the data
         self._first_group_list.addItems(selection_sets)
         self._second_group_list.addItems(selection_sets)
 
@@ -124,6 +138,10 @@ class GroupManager(QtWidgets.QDialog):
         self._first_group_name = q_sel_group_items[0].text()
         self._first_set_items = cmds.sets(self._first_group_name, query=True)
         self.select_set_items(self._first_set_items)
+
+    def _rename_selected_item(self):
+        # launch a ui to rename
+        pass
 
     def _second_group_select(self):
         #
@@ -141,6 +159,15 @@ class GroupManager(QtWidgets.QDialog):
             self.select_set_items(set_items)
         else:
             self.select_set_items(self._first_set_items)
+
+    def create_set_and_select(self, new_group):
+        # create the new selection set
+        self._new_group_name = cmds.sets(name=new_group, empty=True)
+        # select in the UI
+        self._list_all_selection_sets()
+        #
+        item_to_sel = self._first_group_list.findItems(self._new_group_name, QtCore.Qt.MatchExactly)
+        self._first_group_list.setCurrentItem(item_to_sel[0])
 
     @staticmethod
     def select_set_items(set_items):
