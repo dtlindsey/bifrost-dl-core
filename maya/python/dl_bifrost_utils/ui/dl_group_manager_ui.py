@@ -101,29 +101,35 @@ class GroupManager(QtWidgets.QDialog):
         if self._first_group_name:
             cmds.delete(self._first_group_name)
             self._list_all_selection_sets()
+        self._first_group_select()
+        self._second_group_select()
 
     def _add_to_group_push(self):
         print("add elements to selected group.")
         if self._second_set_items:
             cmds.sets(self._second_set_items, edit=True, addElement=self._first_group_name)
+        # update the selection
+        self._first_group_select()
+        self._second_group_select()
 
     def _remove_from_group_push(self):
         print("remove elements from selected group.")
+        print(self._second_set_items)
         if self._second_set_items:
             cmds.sets(self._second_set_items, remove=self._first_group_name)
+        self._first_group_select()
+        self._second_group_select()
 
     def _list_all_selection_sets(self):
         """
         This creates the list data in of teh groups
         """
-        default_sets = cmds.ls(['defaultLightSet*', 'defaultObjectSet*', 'initialParticleSE*', 'initialShadingGroup*'])
+        default_sets = cmds.ls(['defaultLightSet*', 'defaultObjectSet*', 'initialParticleSE*', 'initialShadingGroup*'],
+                               type="objectSet")
         selection_sets = cmds.ls(type="objectSet")
         # remove the defaults
         for default_set in default_sets:
-            try:
-                selection_sets.remove(default_set)
-            except:
-                continue
+            selection_sets.remove(default_set)
         # remove the data first
         self._first_group_list.clear()
         self._second_group_list.clear()
@@ -141,7 +147,7 @@ class GroupManager(QtWidgets.QDialog):
 
     def _rename_selected_item(self):
         # launch a ui to rename
-        pass
+        print("Double clicked")
 
     def _second_group_select(self):
         #
@@ -168,6 +174,9 @@ class GroupManager(QtWidgets.QDialog):
         #
         item_to_sel = self._first_group_list.findItems(self._new_group_name, QtCore.Qt.MatchExactly)
         self._first_group_list.setCurrentItem(item_to_sel[0])
+        #
+        self._first_group_select()
+        self._second_group_select()
 
     @staticmethod
     def select_set_items(set_items):
