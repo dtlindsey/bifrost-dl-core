@@ -40,6 +40,8 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._first_group_list = None
         self._new_group_button = None
         self._del_group_button = None
+        self._grow_selection = None
+        self._shrink_selection = None
         self._second_group_list = None
         self._add_to_button = None
         self._remove_from_button = None
@@ -119,32 +121,32 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._main_layout.addLayout(self._right_group_layout)
 
     def _create_group_push(self):
-        print("create new selection set.")
         text, ok = QtWidgets.QInputDialog.getText(self, "DL Group Manager: New", "New Selection Set Name")
         # build the new selection set
         if ok:
             self._create_set_and_select(text)
+            print("create {}".format(text))
 
     def _del_group_push(self):
-        print("delete selection set.")
         self._update_selection_data()
         if self._first_group_name:
             cmds.delete(self._first_group_name)
+            print("deleted {}".format(self._first_group_name))
             self._list_all_selection_sets()
             self._update_selection_data()
 
     def _add_to_group_push(self):
-        print("add elements to selected group.")
         self._update_selection_data()
         if self._second_set_items:
             cmds.sets(self._second_set_items, edit=True, addElement=self._first_group_name)
+            print("add elements from {} to {}".format(self._second_group_names, self._first_group_name))
             self._update_selection_data()
 
     def _remove_from_group_push(self):
-        print("remove elements from selected group.")
         self._update_selection_data()
         if self._second_set_items:
             cmds.sets(self._second_set_items, remove=self._first_group_name)
+            print("removed elements from {} to {}".format(self._second_group_names, self._first_group_name))
             self._update_selection_data()
 
     def _list_all_selection_sets(self):
@@ -176,7 +178,6 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         if self._first_group_name:
             self._first_set_items = cmds.sets(self._first_group_name, query=True)
             self._update_selection()
-        print("first sel:", time.time() - start)
 
     def _rename_selected_item(self):
         # launch a ui to rename
@@ -191,14 +192,12 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
             for q_item in q_sel_group_items:
                 sel_group_items.append(q_item.text())
             #
-            print("selected: {}".format(str(sel_group_items)))
             self._second_group_names = sel_group_items
             # get second group info
             start = time.time()
             if self._second_group_names:
                 self._second_set_items = cmds.sets(self._second_group_names, query=True)
                 self._update_selection()
-            print("select_second:", time.time() - start)
 
     def _update_selection_data(self):
         self._first_group_select()
@@ -220,7 +219,6 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         start = time.time()
         set_items = self._first_set_items + self._second_set_items
         self.select_set_items(set_items)
-        print("time to select:", time.time() - start)
 
     @staticmethod
     def select_set_items(set_items):
