@@ -11,6 +11,7 @@ class GroupManager(QtWidgets.QDialog):
         super(GroupManager, self).__init__(parent)
         # data
         self._first_group_name = ""  # this is the group we'll be adding/removing items to/from later
+        self._second_group_names = []  # this is the groups we'll be using to add to/from later
         self._first_set_items = []  # stores the set info of the selected group in first_list
         self._second_set_items = []  # stores the set info of the selected group in second_list
         self._new_group_name = None  # this is used for the new group we may want to create
@@ -49,6 +50,7 @@ class GroupManager(QtWidgets.QDialog):
         self._second_group_list.setSortingEnabled(True)
         self._second_group_list.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self._second_group_list.clicked.connect(self._second_group_select)
+        self._second_group_list.itemSelectionChanged.connect(self._second_group_select)
 
         # build the list
         self._list_all_selection_sets()
@@ -94,31 +96,29 @@ class GroupManager(QtWidgets.QDialog):
         text, ok = QtWidgets.QInputDialog.getText(self, "DL Group Manager: New", "New Selection Set Name")
         # build the new selection set
         if ok:
-            self.create_set_and_select(text)
+            self._create_set_and_select(text)
 
     def _del_group_push(self):
         print("delete selection set.")
+        self._update_selection_data()
         if self._first_group_name:
             cmds.delete(self._first_group_name)
             self._list_all_selection_sets()
-        self._first_group_select()
-        self._second_group_select()
+            self._update_selection_data()
 
     def _add_to_group_push(self):
         print("add elements to selected group.")
+        self._update_selection_data()
         if self._second_set_items:
             cmds.sets(self._second_set_items, edit=True, addElement=self._first_group_name)
-        # update the selection
-        self._first_group_select()
-        self._second_group_select()
+            self._update_selection_data()
 
     def _remove_from_group_push(self):
         print("remove elements from selected group.")
-        print(self._second_set_items)
+        self._update_selection_data()
         if self._second_set_items:
             cmds.sets(self._second_set_items, remove=self._first_group_name)
-        self._first_group_select()
-        self._second_group_select()
+            self._update_selection_data()
 
     def _list_all_selection_sets(self):
         """
@@ -141,13 +141,17 @@ class GroupManager(QtWidgets.QDialog):
         #
         q_sel_group_items = self._first_group_list.selectedItems()
         # get the set name
-        self._first_group_name = q_sel_group_items[0].text()
-        self._first_set_items = cmds.sets(self._first_group_name, query=True)
-        self.select_set_items(self._first_set_items)
+        for q_sel_item in q_sel_group_items:
+            self._first_group_name = q_sel_item.text()
+        #
+        # get first group info
+        if self._first_group_name:
+            self._first_set_items = cmds.sets(self._first_group_name, query=True)
+        self._update_selection()
 
     def _rename_selected_item(self):
         # launch a ui to rename
-        print("Double clicked")
+        print("Double clicked {}".format(self._first_group_name))
 
     def _second_group_select(self):
         #
@@ -158,15 +162,18 @@ class GroupManager(QtWidgets.QDialog):
             for q_item in q_sel_group_items:
                 sel_group_items.append(q_item.text())
             #
-            set_items = cmds.sets(sel_group_items, query=True)
-            self._second_set_items = set_items
-            if self._first_set_items:
-                set_items += self._first_set_items
-            self.select_set_items(set_items)
-        else:
-            self.select_set_items(self._first_set_items)
+            print("selected: {}".format(str(sel_group_items)))
+            self._second_group_names = sel_group_items
+            # get second group info
+            if self._second_group_names:
+                self._second_set_items = cmds.sets(self._second_group_names, query=True)
+                self._update_selection()
 
-    def create_set_and_select(self, new_group):
+    def _update_selection_data(self):
+        self._first_group_select()
+        self._second_group_select()
+
+    def _create_set_and_select(self, new_group):
         # create the new selection set
         self._new_group_name = cmds.sets(name=new_group, empty=True)
         # select in the UI
@@ -175,10 +182,13 @@ class GroupManager(QtWidgets.QDialog):
         item_to_sel = self._first_group_list.findItems(self._new_group_name, QtCore.Qt.MatchExactly)
         self._first_group_list.setCurrentItem(item_to_sel[0])
         #
-        self._first_group_select()
-        self._second_group_select()
+        self._update_selection_data()
+
+    def _update_selection(self):
+        # select the data
+        set_items = self._first_set_items + self._second_set_items
+        self.select_set_items(set_items)
 
     @staticmethod
     def select_set_items(set_items):
-        cmds.select(clear=True)
-        cmds.select(set_items)
+        cmds.select(set_items, replace=True)
