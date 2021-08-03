@@ -1,13 +1,21 @@
 from PySide2 import QtCore
 from PySide2 import QtWidgets
+import time
+import os
 
 from . import maya_main_window
 
 from maya import cmds
+from maya.app.general import mayaMixin
 
 
-class GroupManager(QtWidgets.QDialog):
+class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
+    instances = list()
+
     def __init__(self, parent=maya_main_window.get_maya_instance()):
+        # delete before building
+        self.delete_instances()
+        #
         super(GroupManager, self).__init__(parent)
         # data
         self._first_group_name = ""  # this is the group we'll be adding/removing items to/from later
@@ -16,6 +24,7 @@ class GroupManager(QtWidgets.QDialog):
         self._second_set_items = []  # stores the set info of the selected group in second_list
         self._new_group_name = None  # this is used for the new group we may want to create
         #
+        self.setObjectName("DL_Group_Manager")
         self.setWindowTitle("DL Group Manager")
         self.setMinimumWidth(300)
         self.setMinimumHeight(500)
@@ -37,6 +46,24 @@ class GroupManager(QtWidgets.QDialog):
 
         self._create_widgets()
         self._create_layouts()
+        self.show(dockable=True)
+
+    @staticmethod
+    def delete_instances():
+        maya_window = maya_main_window.get_maya_instance().children()
+        for obj in maya_window:
+            if type(obj) == mayaMixin.MayaQDockWidget:
+                if obj.objectName() == "DL_Group_Manager":
+                    maya_window.removeDockWidget(obj)
+                    obj.setParent(None)
+                    obj.deleteLater()
+        try:
+            cmds.deleteUI("DL_Group_ManagerWorkspaceControl")
+        except:
+            pass
+
+    def dockCloseEventTriggered(self):
+        self.delete_instances()
 
     def _create_widgets(self):
         # first groups
@@ -145,9 +172,11 @@ class GroupManager(QtWidgets.QDialog):
             self._first_group_name = q_sel_item.text()
         #
         # get first group info
+        start = time.time()
         if self._first_group_name:
             self._first_set_items = cmds.sets(self._first_group_name, query=True)
-        self._update_selection()
+            self._update_selection()
+        print("first sel:", time.time() - start)
 
     def _rename_selected_item(self):
         # launch a ui to rename
@@ -165,9 +194,11 @@ class GroupManager(QtWidgets.QDialog):
             print("selected: {}".format(str(sel_group_items)))
             self._second_group_names = sel_group_items
             # get second group info
+            start = time.time()
             if self._second_group_names:
                 self._second_set_items = cmds.sets(self._second_group_names, query=True)
                 self._update_selection()
+            print("select_second:", time.time() - start)
 
     def _update_selection_data(self):
         self._first_group_select()
@@ -186,8 +217,10 @@ class GroupManager(QtWidgets.QDialog):
 
     def _update_selection(self):
         # select the data
+        start = time.time()
         set_items = self._first_set_items + self._second_set_items
         self.select_set_items(set_items)
+        print("time to select:", time.time() - start)
 
     @staticmethod
     def select_set_items(set_items):
