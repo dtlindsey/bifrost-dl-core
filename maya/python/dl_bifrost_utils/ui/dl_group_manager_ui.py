@@ -15,6 +15,8 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
     def __init__(self, parent=maya_main_window.get_maya_instance()):
         # delete before building
         self.delete_instances()
+        # go to proper select mode
+        self.poly_select_mode()
         #
         super(GroupManager, self).__init__(parent)
         # data
@@ -63,6 +65,9 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
             cmds.deleteUI("DL_Group_ManagerWorkspaceControl")
         except:
             pass
+        # reset selection mode to object mode and clear selection
+        cmds.selectMode(object=True)
+        cmds.select(clear=True)
 
     def dockCloseEventTriggered(self):
         self.delete_instances()
@@ -96,6 +101,10 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._add_to_button = QtWidgets.QPushButton(text="+")
         self._add_to_button.clicked.connect(self._add_to_group_push)
 
+        # add to button
+        self._add_selection_to_button = QtWidgets.QPushButton(text="+ selection")
+        self._add_selection_to_button.clicked.connect(self._add_selection_to_group_push)
+
         # remove from button
         self._remove_from_button = QtWidgets.QPushButton(text="-")
         self._remove_from_button.clicked.connect(self._remove_from_group_push)
@@ -114,6 +123,7 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         # right layout
         self._right_group_layout.addWidget(self._second_group_list)
         self._right_button_layout.addWidget(self._add_to_button)
+        self._right_button_layout.addWidget(self._add_selection_to_button)
         self._right_button_layout.addWidget(self._remove_from_button)
         self._right_group_layout.addLayout(self._right_button_layout)
         # main layout
@@ -140,6 +150,14 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         if self._second_set_items:
             cmds.sets(self._second_set_items, edit=True, addElement=self._first_group_name)
             print("add elements from {} to {}".format(self._second_group_names, self._first_group_name))
+            self._update_selection_data()
+
+    def _add_selection_to_group_push(self):
+        all_selected_data = cmds.ls(selection=True)
+        print("my selection:", all_selected_data)
+        if all_selected_data:
+            cmds.sets(all_selected_data, edit=True, addElement=self._first_group_name)
+            print("adding all selected elements to {}".format(self._first_group_name))
             self._update_selection_data()
 
     def _remove_from_group_push(self):
@@ -174,7 +192,6 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
             self._first_group_name = q_sel_item.text()
         #
         # get first group info
-        start = time.time()
         if self._first_group_name:
             self._first_set_items = cmds.sets(self._first_group_name, query=True)
             self._update_selection()
@@ -216,9 +233,19 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
 
     def _update_selection(self):
         # select the data
-        start = time.time()
         set_items = self._first_set_items + self._second_set_items
         self.select_set_items(set_items)
+        # hilite the object we're working on
+        cmds.hilite(cmds.ls(self._first_set_items, objectsOnly=True), replace=True)
+
+    @staticmethod
+    def poly_select_mode():
+        # check if in component select mode
+        if not cmds.selectMode(q=True, component=True):
+            # change selection mode
+            cmds.selectMode(component=True)
+            cmds.selectType(allComponents=False)
+            cmds.selectType(polymeshFace=True)
 
     @staticmethod
     def select_set_items(set_items):
