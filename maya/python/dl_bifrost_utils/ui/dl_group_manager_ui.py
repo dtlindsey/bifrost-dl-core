@@ -34,18 +34,25 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
         # layouts
         self._main_layout = None
+        self._tool_group_column_layout = None
         self._left_group_layout = None
         self._left_buttons_layout = None
         self._right_button_layout = None
         self._right_group_layout = None
         # widgets
+        # new group left half
         self._first_group_list = None
         self._new_group_button = None
+        self._new_empty_group_button = None
         self._del_group_button = None
-        self._grow_selection = None
-        self._shrink_selection = None
+        # center column
+        self._grow_selection_button = None
+        self._shrink_selection_button = None
+        self._mirror_group_button = None
+        # secondary group right half
         self._second_group_list = None
         self._add_to_button = None
+        self._add_selection_to_button = None
         self._remove_from_button = None
 
         self._create_widgets()
@@ -76,12 +83,14 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         # first groups
         self._first_group_list = QtWidgets.QListWidget()
         self._first_group_list.setSortingEnabled(True)
+        self._first_group_list.setMinimumWidth(125)
         self._first_group_list.clicked.connect(self._first_group_select)
         self._first_group_list.doubleClicked.connect(self._rename_selected_item)
 
         # second groups
         self._second_group_list = QtWidgets.QListWidget()
         self._second_group_list.setSortingEnabled(True)
+        self._second_group_list.setMinimumWidth(125)
         self._second_group_list.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self._second_group_list.clicked.connect(self._second_group_select)
         self._second_group_list.itemSelectionChanged.connect(self._second_group_select)
@@ -90,34 +99,60 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._list_all_selection_sets()
 
         # new group button
-        self._new_group_button = QtWidgets.QPushButton(text="New Group")
+        self._new_group_button = QtWidgets.QPushButton(text="New Grp")
         self._new_group_button.clicked.connect(self._create_group_push)
 
+        # new group button
+        self._new_empty_group_button = QtWidgets.QPushButton(text="New Empty Grp")
+        self._new_empty_group_button.clicked.connect(self._create_empty_group_push)
+
         # delete group button
-        self._del_group_button = QtWidgets.QPushButton(text="Del Group")
+        self._del_group_button = QtWidgets.QPushButton(text="Del Grp")
         self._del_group_button.clicked.connect(self._del_group_push)
 
+        # grow button
+        self._grow_selection_button = QtWidgets.QPushButton(text="Grow Sel")
+        self._grow_selection_button.setFixedWidth(50)
+        self._grow_selection_button.clicked.connect(self._grow_selection_push)
+
+        # shrink button
+        self._shrink_selection_button = QtWidgets.QPushButton(text="Shrink Sel")
+        self._shrink_selection_button.setFixedWidth(50)
+        self._shrink_selection_button.clicked.connect(self._shrink_selection_push)
+
+        # mirror button
+        self._mirror_group_button = QtWidgets.QPushButton(text="<-> Mirror")
+        self._mirror_group_button.setFixedWidth(50)
+        self._mirror_group_button.clicked.connect(self._mirror_groups_push)
+
         # add to button
-        self._add_to_button = QtWidgets.QPushButton(text="+")
+        self._add_to_button = QtWidgets.QPushButton(text="Add Sel Grp")
         self._add_to_button.clicked.connect(self._add_to_group_push)
 
         # add to button
-        self._add_selection_to_button = QtWidgets.QPushButton(text="+ selection")
+        self._add_selection_to_button = QtWidgets.QPushButton(text="Add View Sel")
         self._add_selection_to_button.clicked.connect(self._add_selection_to_group_push)
 
         # remove from button
-        self._remove_from_button = QtWidgets.QPushButton(text="-")
+        self._remove_from_button = QtWidgets.QPushButton(text="Remove Sel Grp")
         self._remove_from_button.clicked.connect(self._remove_from_group_push)
 
     def _create_layouts(self):
         self._main_layout = QtWidgets.QHBoxLayout(self)
         self._left_group_layout = QtWidgets.QVBoxLayout()
+        self._tool_group_column_layout = QtWidgets.QVBoxLayout()
         self._right_group_layout = QtWidgets.QVBoxLayout()
         self._left_buttons_layout = QtWidgets.QHBoxLayout()
         self._right_button_layout = QtWidgets.QHBoxLayout()
+        # tools column
+        self._tool_group_column_layout.setMargin(5)
+        self._tool_group_column_layout.addWidget(self._grow_selection_button)
+        self._tool_group_column_layout.addWidget(self._shrink_selection_button)
+        self._tool_group_column_layout.addWidget(self._mirror_group_button)
         # left layout
         self._left_group_layout.addWidget(self._first_group_list)
         self._left_buttons_layout.addWidget(self._new_group_button)
+        self._left_buttons_layout.addWidget(self._new_empty_group_button)
         self._left_buttons_layout.addWidget(self._del_group_button)
         self._left_group_layout.addLayout(self._left_buttons_layout)
         # right layout
@@ -127,6 +162,7 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._right_button_layout.addWidget(self._remove_from_button)
         self._right_group_layout.addLayout(self._right_button_layout)
         # main layout
+        self._main_layout.addLayout(self._tool_group_column_layout)
         self._main_layout.addLayout(self._left_group_layout)
         self._main_layout.addLayout(self._right_group_layout)
 
@@ -134,7 +170,14 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         text, ok = QtWidgets.QInputDialog.getText(self, "DL Group Manager: New", "New Selection Set Name")
         # build the new selection set
         if ok:
-            self._create_set_and_select(text)
+            self._create_set_and_select(text, empty=False)
+            print("create {}".format(text))
+
+    def _create_empty_group_push(self):
+        text, ok = QtWidgets.QInputDialog.getText(self, "DL Group Manager: New", "New Selection Set Name")
+        # build the new selection set
+        if ok:
+            self._create_set_and_select(text, empty=True)
             print("create {}".format(text))
 
     def _del_group_push(self):
@@ -144,6 +187,15 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
             print("deleted {}".format(self._first_group_name))
             self._list_all_selection_sets()
             self._update_selection_data()
+
+    def _grow_selection_push(self):
+        print("grow selection")
+
+    def _shrink_selection_push(self):
+        print("shrink selection")
+
+    def _mirror_groups_push(self):
+        print("mirror groups")
 
     def _add_to_group_push(self):
         self._update_selection_data()
@@ -220,9 +272,13 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._first_group_select()
         self._second_group_select()
 
-    def _create_set_and_select(self, new_group):
+    def _create_set_and_select(self, new_group, empty=True):
         # create the new selection set
-        self._new_group_name = cmds.sets(name=new_group, empty=True)
+        if empty:
+            self._new_group_name = cmds.sets(name=new_group, empty=True)
+        else:
+            data = cmds.ls(selection=True)
+            self._new_group_name = cmds.sets(data, name=new_group)
         # select in the UI
         self._list_all_selection_sets()
         #
