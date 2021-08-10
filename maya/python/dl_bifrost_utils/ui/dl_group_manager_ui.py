@@ -5,7 +5,7 @@ import os
 
 from . import maya_main_window
 
-from maya import cmds
+from maya import cmds, mel
 from maya.app.general import mayaMixin
 
 
@@ -48,7 +48,7 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         # center column
         self._grow_selection_button = None
         self._shrink_selection_button = None
-        self._mirror_group_button = None
+        # self._mirror_group_button = None
         # secondary group right half
         self._second_group_list = None
         self._add_to_button = None
@@ -120,10 +120,10 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._shrink_selection_button.setFixedWidth(50)
         self._shrink_selection_button.clicked.connect(self._shrink_selection_push)
 
-        # mirror button
-        self._mirror_group_button = QtWidgets.QPushButton(text="<-> Mirror")
-        self._mirror_group_button.setFixedWidth(50)
-        self._mirror_group_button.clicked.connect(self._mirror_groups_push)
+        # # mirror button
+        # self._mirror_group_button = QtWidgets.QPushButton(text="<-> Mirror")
+        # self._mirror_group_button.setFixedWidth(50)
+        # self._mirror_group_button.clicked.connect(self._mirror_groups_push)
 
         # add to button
         self._add_to_button = QtWidgets.QPushButton(text="Add Sel Grp")
@@ -148,7 +148,7 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self._tool_group_column_layout.setMargin(5)
         self._tool_group_column_layout.addWidget(self._grow_selection_button)
         self._tool_group_column_layout.addWidget(self._shrink_selection_button)
-        self._tool_group_column_layout.addWidget(self._mirror_group_button)
+        # self._tool_group_column_layout.addWidget(self._mirror_group_button)
         # left layout
         self._left_group_layout.addWidget(self._first_group_list)
         self._left_buttons_layout.addWidget(self._new_group_button)
@@ -190,9 +190,33 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
 
     def _grow_selection_push(self):
         print("grow selection")
+        try:
+            mel.eval("select `ls -sl`;PolySelectTraverse 1;select `ls -sl`")
+            all_selected_data = cmds.ls(selection=True)
+            if all_selected_data:
+                cmds.sets(all_selected_data, edit=True, addElement=self._first_group_name)
+                self._update_selection_data()
+        except Exception as exc:
+            print("failed to execute")
+            raise AttributeError(exc)
 
     def _shrink_selection_push(self):
         print("shrink selection")
+        try:
+            orig_selected_data = cmds.ls(selection=True, flatten=True)
+            mel.eval("select `ls -sl`;PolySelectTraverse 2;select `ls -sl`")
+            new_selected_data = cmds.ls(selection=True, flatten=True)
+            if new_selected_data:
+                delta_data = [i for i in orig_selected_data + new_selected_data
+                              if i not in orig_selected_data or i not in new_selected_data]
+                cmds.sets(delta_data, edit=True, remove=self._first_group_name)
+                self._update_selection_data()
+            else:
+                cmds.sets(edit=True, clear=self._first_group_name)
+                self._update_selection()
+        except Exception as exc:
+            print("failed to execute")
+            raise AttributeError(exc)
 
     def _mirror_groups_push(self):
         print("mirror groups")
@@ -221,7 +245,7 @@ class GroupManager(mayaMixin.MayaQWidgetDockableMixin, QtWidgets.QDialog):
 
     def _list_all_selection_sets(self):
         """
-        This creates the list data in of teh groups
+        This creates the list data in of the groups
         """
         default_sets = cmds.ls(['defaultLightSet*', 'defaultObjectSet*', 'initialParticleSE*', 'initialShadingGroup*'],
                                type="objectSet")
