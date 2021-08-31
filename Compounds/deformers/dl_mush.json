@@ -423,7 +423,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_mush.md"
+                    "metaValue": "../docs/${language}/dl_mush.md"
                 },
                 {
                     "metaName": "io_nodes",

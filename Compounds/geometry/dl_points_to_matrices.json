@@ -81,7 +81,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_points_to_matrices.md"
+                    "metaValue": "../docs/${language}/dl_points_to_matrices.md"
                 },
                 {
                     "metaName": "io_nodes",

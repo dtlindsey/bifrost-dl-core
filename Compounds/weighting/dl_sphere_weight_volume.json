@@ -210,7 +210,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_sphere_weight_volume.md"
+                    "metaValue": "../docs/${language}/dl_sphere_weight_volume.md"
                 },
                 {
                     "metaName": "io_nodes",

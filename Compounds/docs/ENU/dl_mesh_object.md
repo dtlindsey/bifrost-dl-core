@@ -6,7 +6,7 @@ Custom polygon mesh object that stores a few additional properties.
 
 ## `Inputs`
 
-###`original_object`
+### `original_object`
 
 polygon mesh object
 

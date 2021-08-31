@@ -168,7 +168,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_get_vert_idx_to_deform.md"
+                    "metaValue": "../docs/${language}/dl_get_vert_idx_to_deform.md"
                 },
                 {
                     "metaName": "io_nodes",

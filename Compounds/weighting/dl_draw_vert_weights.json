@@ -330,7 +330,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_draw_vert_weights.md"
+                    "metaValue": "../docs/${language}/dl_draw_vert_weights.md"
                 },
                 {
                     "metaName": "ViewportRect",

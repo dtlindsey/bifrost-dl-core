@@ -153,7 +153,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_to_uvs.md"
+                    "metaValue": "../docs/${language}/dl_to_uvs.md"
                 },
                 {
                     "metaName": "io_nodes",

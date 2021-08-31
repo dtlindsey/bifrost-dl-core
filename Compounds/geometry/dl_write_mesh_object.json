@@ -182,6 +182,16 @@
             "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/geometry.svg"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/${language}/dl_write_mesh_object.md"
+                },
+                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
