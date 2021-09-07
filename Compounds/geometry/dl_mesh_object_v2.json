@@ -175,11 +175,6 @@
                     ]
                 },
                 {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
-                },
-                {
                     "metaName": "PortExpandedState",
                     "metadata": [
                         {
@@ -333,6 +328,11 @@
                     "metaName": "LayoutPos",
                     "metaType": "string",
                     "metaValue": "204.608 -736.314"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"blendshapes\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_names\"\n                    },\n                    {\n                        \"port\": \"blendshapes\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 }
             ],
             "ports": [
