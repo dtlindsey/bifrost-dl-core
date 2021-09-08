@@ -325,14 +325,14 @@
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "LayoutPos",
-                    "metaType": "string",
-                    "metaValue": "204.608 -736.314"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"blendshapes\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_names\"\n                    },\n                    {\n                        \"port\": \"blendshapes\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "191.336 -793.433"
                 }
             ],
             "ports": [
@@ -382,12 +382,14 @@
                 {
                     "portName": "deform_groups_names",
                     "portDirection": "input",
-                    "portType": "array<string>"
+                    "portType": "array<string>",
+                    "isDefaultFanIn": "true"
                 },
                 {
                     "portName": "deform_groups_face_ids",
                     "portDirection": "input",
-                    "portType": "array<array<uint>>"
+                    "portType": "array<array<uint>>",
+                    "isDefaultFanIn": "true"
                 },
                 {
                     "portName": "object",
@@ -408,13 +410,15 @@
                     "portName": "blend_names",
                     "portDirection": "input",
                     "portType": "array<string>",
-                    "portDefault": []
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
                 },
                 {
                     "portName": "blendshapes",
                     "portDirection": "input",
                     "portType": "array<Amino::Object>",
-                    "portDefault": []
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
                 }
             ],
             "compounds": [
@@ -506,11 +510,6 @@
                             "name": "for_each",
                             "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
-                                {
-                                    "metaName": "icon",
-                                    "metaType": "string",
-                                    "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                },
                                 {
                                     "metaName": "icon",
                                     "metaType": "string",
@@ -794,11 +793,6 @@
                                             "name": "iterate_adjacent_face_points",
                                             "uriImported": "stream:/bifrostGraphShape1",
                                             "metadata": [
-                                                {
-                                                    "metaName": "icon",
-                                                    "metaType": "string",
-                                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
-                                                },
                                                 {
                                                     "metaName": "icon",
                                                     "metaType": "string",
