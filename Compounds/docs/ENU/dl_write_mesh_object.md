@@ -19,6 +19,11 @@ Polygon mesh object that will create a dl_mesh_object and write it to disk.
 
 This will localize the mesh to the provided matrix.
 
+### `deform_group_attr_array`
+
+This is an array of string that list the deform groups and face assignments.\
+It is assumed the `dl_bifrost_utils.group_utils.build_group_attrs()` script was used.
+
 ## `FilepathData`
 
 ### `directory_path`
