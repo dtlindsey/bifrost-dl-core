@@ -11,8 +11,8 @@
     "types": [],
     "compounds": [
         {
-            "name": "DL_Core::geometry::dl_read_bob_mesh",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "name": "DL_Core::geometry::dl_read_abc_mesh",
+            "uriImported": "file:///dl_read_abc_mesh.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -22,7 +22,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/${language}/dl_read_bob_mesh.md"
+                    "metaValue": "../docs/${language}/dl_read_abc_mesh.md"
                 },
                 {
                     "metaName": "io_nodes",
@@ -127,31 +127,6 @@
                     ]
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::String,build_string"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::String,string_join"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,DL_Core::geometry,dl_write_mesh"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,resize_array"
-                },
-                {
                     "metaName": "backdrop1",
                     "metadata": [
                         {
@@ -177,9 +152,39 @@
                     ]
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"group\": \"FilepathData\",\n                \"items\": [\n                    {\n                        \"port\": \"directory_path\"\n                    },\n                    {\n                        \"port\": \"asset_name\"\n                    },\n                    {\n                        \"port\": \"asset_flavor\"\n                    },\n                    {\n                        \"port\": \"asset_resolution\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"VersionData\",\n                \"items\": [\n                    {\n                        \"port\": \"version_number\"\n                    },\n                    {\n                        \"port\": \"version_padding\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"extension\"\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Internal,is_a_mesh"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,empty_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,File::Geometry,read_Alembic"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,File::Geometry::Internal,read_Alembic"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1982.41 -1115.19 1358.3 1169.93"
+                    "metaValue": "-1210.78 -1389.45 1837.03 1650.9"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -187,14 +192,9 @@
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"group\": \"FilepathData\",\n                \"items\": [\n                    {\n                        \"port\": \"directory_path\"\n                    },\n                    {\n                        \"port\": \"asset_name\"\n                    },\n                    {\n                        \"port\": \"asset_flavor\"\n                    },\n                    {\n                        \"port\": \"asset_resolution\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"VersionData\",\n                \"items\": [\n                    {\n                        \"port\": \"version_number\"\n                    },\n                    {\n                        \"port\": \"version_padding\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"extension\"\n            }\n        ]\n    }\n}\n"
-                },
-                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-253.68 -271.433"
+                    "metaValue": "-521.449 0.0139225"
                 }
             ],
             "ports": [
@@ -253,7 +253,7 @@
             "compounds": [
                 {
                     "name": "build_padded_number",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_read_abc_mesh.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -529,23 +529,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "269.993 -893.886"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "read_Bifrost_object",
-                    "nodeType": "File::Geometry::read_Bifrost_object",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "-255.623 -844.845"
+                            "metaValue": "34.7519 -1103.41"
                         }
                     ]
                 },
@@ -595,14 +579,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "_"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-1466.43 153.823"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "_"
                         }
                     ]
                 },
@@ -634,7 +618,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-254.617 -521.139"
+                            "metaValue": "-286.067 -421.548"
                         }
                     ]
                 },
@@ -648,14 +632,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": ".bob"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-1253.63 249.604"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": ".bob"
                         }
                     ]
                 },
@@ -726,14 +710,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-1510.55 -895.972"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "/"
                         }
                     ]
                 },
@@ -747,23 +731,61 @@
                             "metaValue": "2"
                         },
                         {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1476.47 -380.022"
+                        },
+                        {
                             "metaName": "valuenode_defaultvalue",
                             "metaType": "string",
-                            "metaValue": "0"
+                            "metaValue": "bob"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "read_Alembic",
+                    "nodeType": "File::Geometry::read_Alembic",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Alembic Properties",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
                         },
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-1476.47 -380.022"
+                            "metaValue": "-371.076 -1078.15"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "is_a_mesh",
+                    "nodeType": "Geometry::Internal::is_a_mesh",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-14.9444 -644.381"
                         }
                     ]
                 }
             ],
             "connections": [
-                {
-                    "source": "read_Bifrost_object.out_objects",
-                    "target": "get_from_array.array"
-                },
                 {
                     "source": ".directory_path",
                     "target": "expand_env_vars.string"
@@ -777,16 +799,8 @@
                     "target": "file_name_str.strings.output"
                 },
                 {
-                    "source": "file_name_str.joined",
-                    "target": "read_Bifrost_object.filename"
-                },
-                {
                     "source": "get_from_array.value",
                     "target": ".out_dl_mesh"
-                },
-                {
-                    "source": "read_Bifrost_object.success",
-                    "target": ".success"
                 },
                 {
                     "source": "string_join.joined",
@@ -834,10 +848,6 @@
                 },
                 {
                     "source": "build_string.joined",
-                    "target": "read_Bifrost_object.directory"
-                },
-                {
-                    "source": "build_string.joined",
                     "target": "string_join.strings.joined"
                 },
                 {
@@ -871,18 +881,33 @@
                 {
                     "source": "value6.output",
                     "target": "build_string.strings.output5"
+                },
+                {
+                    "source": "file_name_str.joined",
+                    "target": "read_Alembic.filename"
+                },
+                {
+                    "source": "build_string.joined",
+                    "target": "read_Alembic.directory"
+                },
+                {
+                    "source": "read_Alembic.meshes",
+                    "target": "get_from_array.array"
+                },
+                {
+                    "source": "get_from_array.value",
+                    "target": "is_a_mesh.geometry"
+                },
+                {
+                    "source": "is_a_mesh.matches_mesh",
+                    "target": ".success"
                 }
             ],
             "values": [
                 {
                     "valueName": "expand_env_vars.string",
                     "valueType": "string",
-                    "value": "${PROJ}/models/bob"
-                },
-                {
-                    "valueName": "read_Bifrost_object.filename",
-                    "valueType": "string",
-                    "value": "genericman_lo_0002.bob"
+                    "value": "${PROJ}/models/abc"
                 },
                 {
                     "valueName": "value.value",
@@ -897,7 +922,7 @@
                 {
                     "valueName": "value4.value",
                     "valueType": "string",
-                    "value": ".bob"
+                    "value": ".abc"
                 },
                 {
                     "valueName": "build_padded_number.version_number",
@@ -917,7 +942,12 @@
                 {
                     "valueName": "value6.value",
                     "valueType": "string",
-                    "value": "bob"
+                    "value": "abc"
+                },
+                {
+                    "valueName": "read_Alembic.frame",
+                    "valueType": "float",
+                    "value": "0f"
                 }
             ],
             "reservedNodeNames": [

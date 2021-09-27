@@ -42,7 +42,7 @@ Matrix the geometry is parented to
 
 ### `blend_names`
 
-*array*<*string*> The user readable names of your blendshapes.  The order is expected to match the order of the blendshape objects.
+*array*<*string*> The user readable names of your blendshapes.  The order and array size is expected to match the order of the blendshape objects.
 
 ### `blendshapes`
 
