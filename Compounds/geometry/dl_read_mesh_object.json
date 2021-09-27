@@ -157,7 +157,7 @@
                     "portName": "directory_path",
                     "portDirection": "input",
                     "portType": "string",
-                    "portDefault": "${PROJ}/bifrost/bif"
+                    "portDefault": "${PROJ}/models"
                 },
                 {
                     "portName": "asset_name",
@@ -589,7 +589,7 @@
                 {
                     "valueName": "expand_env_vars.string",
                     "valueType": "string",
-                    "value": "${PROJ}/bifrost/bif"
+                    "value": "${PROJ}/models"
                 },
                 {
                     "valueName": "read_Bifrost_object.filename",

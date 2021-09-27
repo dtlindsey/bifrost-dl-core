@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::geometry::dl_write_bob_mesh",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///dl_write_bob_mesh.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -47,15 +47,6 @@
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
-                                                    "metaName": "input_mesh"
-                                                },
-                                                {
-                                                    "metaName": "deform_group_attr_array"
-                                                },
-                                                {
-                                                    "metaName": "world_offset_matrix"
-                                                },
-                                                {
                                                     "metaName": "directory_path"
                                                 },
                                                 {
@@ -77,6 +68,64 @@
                                                     "metaName": "write_data"
                                                 }
                                             ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "object_inputs",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-17.8246 -686.472"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input_mesh"
+                                                },
+                                                {
+                                                    "metaName": "deform_group_attr_array"
+                                                },
+                                                {
+                                                    "metaName": "world_offset_matrix"
+                                                },
+                                                {
+                                                    "metaName": "blend_names"
+                                                },
+                                                {
+                                                    "metaName": "blendshapes"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "frame"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "810.68 521.601"
                                         }
                                     ]
                                 }
@@ -164,31 +213,6 @@
                     ]
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::String,build_string"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::String,string_join"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,subtract"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::String,string_length"
-                },
-                {
                     "metaName": "backdrop2",
                     "metadata": [
                         {
@@ -214,9 +238,34 @@
                     ]
                 },
                 {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "input"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::String,build_string"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::String,string_join"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,subtract"
+                },
+                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "0 0 786 677"
+                    "metaValue": "-525.121 -951.272 2194.2 1787.6"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -226,12 +275,12 @@
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"group\": \"MeshData\",\n                \"items\": [\n                    {\n                        \"port\": \"input_mesh\"\n                    },\n                    {\n                        \"port\": \"world_offset_matrix\"\n                    },\n                    {\n                        \"port\": \"deform_group_attr_array\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"FilepathData\",\n                \"items\": [\n                    {\n                        \"port\": \"directory_path\"\n                    },\n                    {\n                        \"port\": \"asset_name\"\n                    },\n                    {\n                        \"port\": \"asset_flavor\"\n                    },\n                    {\n                        \"port\": \"asset_resolution\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"VersionData\",\n                \"items\": [\n                    {\n                        \"port\": \"version_number\"\n                    },\n                    {\n                        \"port\": \"version_padding\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"write_data\"\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"frame\"\n            },\n            {\n                \"port\": \"write_data\"\n            },\n            {\n                \"group\": \"MeshData\",\n                \"items\": [\n                    {\n                        \"port\": \"input_mesh\"\n                    },\n                    {\n                        \"port\": \"world_offset_matrix\"\n                    },\n                    {\n                        \"port\": \"deform_group_attr_array\"\n                    },\n                    {\n                        \"port\": \"blend_names\"\n                    },\n                    {\n                        \"port\": \"blendshapes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"FilepathData\",\n                \"items\": [\n                    {\n                        \"port\": \"directory_path\"\n                    },\n                    {\n                        \"port\": \"asset_name\"\n                    },\n                    {\n                        \"port\": \"asset_flavor\"\n                    },\n                    {\n                        \"port\": \"asset_resolution\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"VersionData\",\n                \"items\": [\n                    {\n                        \"port\": \"version_number\"\n                    },\n                    {\n                        \"port\": \"version_padding\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-651.23 -284.927"
+                    "metaValue": "-133.115 -274.068"
                 }
             ],
             "ports": [
@@ -288,7 +337,7 @@
                     "portName": "directory_path",
                     "portDirection": "input",
                     "portType": "string",
-                    "portDefault": "${PROJ}/bifrost/models"
+                    "portDefault": "${PROJ}/models"
                 },
                 {
                     "portName": "asset_name",
@@ -335,12 +384,32 @@
                     "portName": "success",
                     "portDirection": "output",
                     "portType": "bool"
+                },
+                {
+                    "portName": "blend_names",
+                    "portDirection": "input",
+                    "portType": "array<string>",
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
+                },
+                {
+                    "portName": "blendshapes",
+                    "portDirection": "input",
+                    "portType": "array<Amino::Object>",
+                    "portDefault": [],
+                    "isDefaultFanIn": "true"
+                },
+                {
+                    "portName": "frame",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0"
                 }
             ],
             "compounds": [
                 {
                     "name": "build_padded_number",
-                    "uriImported": "stream:/bifrostGraphShape1",
+                    "uriImported": "file:///dl_write_bob_mesh.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -600,7 +669,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "18.5926 -641.947"
+                            "metaValue": "109.105 -410.638"
                         }
                     ]
                 },
@@ -616,13 +685,27 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "370.19 -595.468"
+                            "metaValue": "364.443 -510.702"
                         }
                     ]
                 },
                 {
                     "nodeName": "dl_mesh_object",
                     "nodeType": "DL_Core::geometry::dl_mesh_object",
+                    "fanInPortNames": {
+                        "deform_groups_names": [
+                            "deform_groups"
+                        ],
+                        "deform_groups_face_ids": [
+                            "face_idx"
+                        ],
+                        "blend_names": [
+                            "blend_names"
+                        ],
+                        "blendshapes": [
+                            "blendshapes"
+                        ]
+                    },
                     "metadata": [
                         {
                             "metaName": "DisplayMode",
@@ -632,7 +715,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "767.075 -538.351"
+                            "metaValue": "754.318 -699.008"
                         }
                     ]
                 },
@@ -718,14 +801,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "_"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "150.365 -72.707"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "_"
                         }
                     ]
                 },
@@ -796,14 +879,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-120.216 660.251"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "/"
                         }
                     ]
                 },
@@ -817,14 +900,14 @@
                             "metaValue": "2"
                         },
                         {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        },
-                        {
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-126.43 859.415"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "bob"
                         }
                     ]
                 }
@@ -841,14 +924,6 @@
                 {
                     "source": ".deform_group_attr_array",
                     "target": "dl_build_deform_groups_from_string_array.string_array"
-                },
-                {
-                    "source": "dl_build_deform_groups_from_string_array.deform_groups",
-                    "target": "dl_mesh_object.deform_groups_names"
-                },
-                {
-                    "source": "dl_build_deform_groups_from_string_array.face_idx",
-                    "target": "dl_mesh_object.deform_groups_face_ids"
                 },
                 {
                     "source": ".input_mesh",
@@ -961,6 +1036,26 @@
                 {
                     "source": "value6.output",
                     "target": "build_string.strings.output5"
+                },
+                {
+                    "source": "dl_build_deform_groups_from_string_array.deform_groups",
+                    "target": "dl_mesh_object.deform_groups_names.deform_groups"
+                },
+                {
+                    "source": "dl_build_deform_groups_from_string_array.face_idx",
+                    "target": "dl_mesh_object.deform_groups_face_ids.face_idx"
+                },
+                {
+                    "source": ".blend_names",
+                    "target": "dl_mesh_object.blend_names.blend_names"
+                },
+                {
+                    "source": ".blendshapes",
+                    "target": "dl_mesh_object.blendshapes.blendshapes"
+                },
+                {
+                    "source": ".frame",
+                    "target": "write_Bifrost_object.frame"
                 }
             ],
             "values": [
@@ -1017,7 +1112,7 @@
                 {
                     "valueName": "write_Bifrost_object.directory",
                     "valueType": "string",
-                    "value": "../../bifrost/bif/"
+                    "value": "../../models/bob"
                 },
                 {
                     "valueName": "write_Bifrost_object.overwrite",
@@ -1061,6 +1156,12 @@
                 },
                 {
                     "name": "output"
+                },
+                {
+                    "name": "object_inputs"
+                },
+                {
+                    "name": "input1"
                 }
             ]
         }

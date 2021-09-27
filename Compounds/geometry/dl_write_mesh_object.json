@@ -376,7 +376,7 @@
                     "portName": "parent_directory",
                     "portDirection": "input",
                     "portType": "string",
-                    "portDefault": "${PROJ}/bifrost/bif"
+                    "portDefault": "${PROJ}/models"
                 },
                 {
                     "portName": "model_name",
