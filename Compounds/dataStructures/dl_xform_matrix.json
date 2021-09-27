@@ -1,0 +1,38 @@
+{
+  "header": {
+    "metadata": [
+      {
+        "metaName": "adskFileFormatVersion",
+        "metaValue": "100L"
+      }
+    ]
+  },
+  "namespaces": [],
+  "types": [
+    {
+      "structName": "DL_Core::Xform",
+      "structMembers": [
+        {
+          "memberName": "deform_matrix",
+          "memberType": "Math::float4x4"
+        },
+        {
+          "memberName": "parent_matrix",
+          "memberType": "Math::float4x4"
+        },
+        {
+          "memberName": "pivot_matrix",
+          "memberType": "Math::float4x4"
+        },
+        {
+          "memberName": "local_matrix",
+          "memberType": "Math::float4x4"
+        },
+        {
+          "memberName": "world_matrix",
+          "memberType": "Math::float4x4"
+        }
+      ]
+    }
+  ]
+}

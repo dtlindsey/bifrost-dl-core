@@ -138,7 +138,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_get_face_idx_from_group_name.md"
+                    "metaValue": "../docs/${language}/dl_get_face_idx_from_group_name.md"
                 },
                 {
                     "metaName": "io_nodes",

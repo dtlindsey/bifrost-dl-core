@@ -1,0 +1,963 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "DL_Core::geometry::dl_read_abc_mesh",
+            "uriImported": "file:///dl_read_abc_mesh.json",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/geometry.svg"
+                },
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/${language}/dl_read_abc_mesh.md"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2006.49 -483.631"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "directory_path"
+                                                },
+                                                {
+                                                    "metaName": "asset_name"
+                                                },
+                                                {
+                                                    "metaName": "asset_flavor"
+                                                },
+                                                {
+                                                    "metaName": "asset_resolution"
+                                                },
+                                                {
+                                                    "metaName": "version_padding"
+                                                },
+                                                {
+                                                    "metaName": "version_number"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "528.812 -539.168"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_dl_mesh"
+                                                },
+                                                {
+                                                    "metaName": "file_path"
+                                                },
+                                                {
+                                                    "metaName": "success"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1476.43 -134.286 798.416 568.89"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Filename info"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "backdrop1",
+                    "metadata": [
+                        {
+                            "metaName": "type",
+                            "metaType": "string",
+                            "metaValue": "backdrop"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-1520.55 -1156.64 842.695 961.618"
+                        },
+                        {
+                            "metaName": "text",
+                            "metaType": "string",
+                            "metaValue": "Directory data\n"
+                        },
+                        {
+                            "metaName": "color",
+                            "metaType": "string",
+                            "metaValue": "#216d30"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"group\": \"FilepathData\",\n                \"items\": [\n                    {\n                        \"port\": \"directory_path\"\n                    },\n                    {\n                        \"port\": \"asset_name\"\n                    },\n                    {\n                        \"port\": \"asset_flavor\"\n                    },\n                    {\n                        \"port\": \"asset_resolution\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"VersionData\",\n                \"items\": [\n                    {\n                        \"port\": \"version_number\"\n                    },\n                    {\n                        \"port\": \"version_padding\"\n                    }\n                ]\n            },\n            {\n                \"port\": \"extension\"\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Internal,is_a_mesh"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Array,empty_array"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,File::Geometry,read_Alembic"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,File::Geometry::Internal,read_Alembic"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1210.78 -1389.45 1837.03 1650.9"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-521.449 0.0139225"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "out_dl_mesh",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                },
+                {
+                    "portName": "directory_path",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "${PROJ}/models"
+                },
+                {
+                    "portName": "asset_name",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "asset"
+                },
+                {
+                    "portName": "asset_flavor",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "base"
+                },
+                {
+                    "portName": "asset_resolution",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portDefault": "lo"
+                },
+                {
+                    "portName": "version_padding",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "4L"
+                },
+                {
+                    "portName": "version_number",
+                    "portDirection": "input",
+                    "portType": "int",
+                    "portDefault": "1L"
+                },
+                {
+                    "portName": "file_path",
+                    "portDirection": "output",
+                    "portType": "string"
+                },
+                {
+                    "portName": "success",
+                    "portDirection": "output",
+                    "portType": "bool"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "build_padded_number",
+                    "uriImported": "file:///dl_read_abc_mesh.json",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "version_number"
+                                                        },
+                                                        {
+                                                            "metaName": "version_padding"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "padded_number"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "padded_number",
+                            "portDirection": "output",
+                            "portType": "string"
+                        },
+                        {
+                            "portName": "version_number",
+                            "portDirection": "input",
+                            "portType": "int"
+                        },
+                        {
+                            "portName": "version_padding",
+                            "portDirection": "input",
+                            "portType": "int"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "build_string",
+                            "nodeType": "Core::String::build_string",
+                            "fanInPortNames": {
+                                "strings": [
+                                    "resized_array",
+                                    "string"
+                                ]
+                            },
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-857.824 684.398"
+                                },
+                                {
+                                    "metaName": "PortExpandedState",
+                                    "metadata": [
+                                        {
+                                            "metaName": "strings",
+                                            "metaType": "string",
+                                            "metaValue": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_build_array_with_default_value",
+                            "nodeType": "DL_Core::array::dl_build_array_with_default_value",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1224.95 645.581"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "number_to_string",
+                            "nodeType": "Core::String::number_to_string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1862.48 571.027"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "string_length",
+                            "nodeType": "Core::String::string_length",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1498.28 496.79"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "subtract",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "version_padding",
+                                "length"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1498.28 221.844"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value2",
+                            "valueType": "string",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1589.4 817.432"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "dl_build_array_with_default_value.resized_array",
+                            "target": "build_string.strings.resized_array"
+                        },
+                        {
+                            "source": "number_to_string.string",
+                            "target": "build_string.strings.string"
+                        },
+                        {
+                            "source": "build_string.joined",
+                            "target": ".padded_number"
+                        },
+                        {
+                            "source": "subtract.output",
+                            "target": "dl_build_array_with_default_value.array_size"
+                        },
+                        {
+                            "source": "value2.output",
+                            "target": "dl_build_array_with_default_value.default_value"
+                        },
+                        {
+                            "source": ".version_number",
+                            "target": "number_to_string.number"
+                        },
+                        {
+                            "source": "number_to_string.string",
+                            "target": "string_length.string"
+                        },
+                        {
+                            "source": "string_length.length",
+                            "target": "subtract.first.length"
+                        },
+                        {
+                            "source": ".version_padding",
+                            "target": "subtract.first.version_padding"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "dl_build_array_with_default_value.input_empty_array",
+                            "valueType": "array<string>",
+                            "value": []
+                        },
+                        {
+                            "valueName": "value2.value",
+                            "valueType": "string",
+                            "value": "0"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "expand_env_vars",
+                    "nodeType": "Core::String::expand_env_vars",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1502.73 -1146.64"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_from_array",
+                    "nodeType": "Core::Array::get_from_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "34.7519 -1103.41"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "file_name_str",
+                    "nodeType": "Core::String::build_string",
+                    "fanInPortNames": {
+                        "strings": [
+                            "asset_name",
+                            "output",
+                            "asset_flavor",
+                            "output1",
+                            "asset_resolution",
+                            "output2"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-913.014 -124.286"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1466.43 153.823"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "_"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "string_join",
+                    "nodeType": "Core::String::string_join",
+                    "fanInPortNames": {
+                        "strings": [
+                            "joined",
+                            "joined1"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-286.067 -421.548"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value4",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1253.63 249.604"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": ".bob"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_padded_number",
+                    "nodeType": "build_padded_number",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1508.74 -646.537"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_string",
+                    "nodeType": "Core::String::build_string",
+                    "fanInPortNames": {
+                        "strings": [
+                            "expanded",
+                            "output",
+                            "asset_name",
+                            "output1",
+                            "asset_flavor",
+                            "output2",
+                            "asset_resolution",
+                            "output3",
+                            "padded_number",
+                            "output4",
+                            "output5"
+                        ]
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "strings",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-912.855 -994.572"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value5",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1510.55 -895.972"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "/"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value6",
+                    "valueType": "string",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1476.47 -380.022"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "bob"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "read_Alembic",
+                    "nodeType": "File::Geometry::read_Alembic",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Alembic Properties",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-371.076 -1078.15"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "is_a_mesh",
+                    "nodeType": "Geometry::Internal::is_a_mesh",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-14.9444 -644.381"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".directory_path",
+                    "target": "expand_env_vars.string"
+                },
+                {
+                    "source": ".asset_name",
+                    "target": "file_name_str.strings.asset_name"
+                },
+                {
+                    "source": "value.output",
+                    "target": "file_name_str.strings.output"
+                },
+                {
+                    "source": "get_from_array.value",
+                    "target": ".out_dl_mesh"
+                },
+                {
+                    "source": "string_join.joined",
+                    "target": ".file_path"
+                },
+                {
+                    "source": ".version_number",
+                    "target": "build_padded_number.version_number"
+                },
+                {
+                    "source": ".version_padding",
+                    "target": "build_padded_number.version_padding"
+                },
+                {
+                    "source": ".asset_flavor",
+                    "target": "file_name_str.strings.asset_flavor"
+                },
+                {
+                    "source": "value.output",
+                    "target": "file_name_str.strings.output1"
+                },
+                {
+                    "source": ".asset_resolution",
+                    "target": "file_name_str.strings.asset_resolution"
+                },
+                {
+                    "source": "value4.output",
+                    "target": "file_name_str.strings.output2"
+                },
+                {
+                    "source": "expand_env_vars.expanded",
+                    "target": "build_string.strings.expanded"
+                },
+                {
+                    "source": "value5.output",
+                    "target": "build_string.strings.output"
+                },
+                {
+                    "source": ".asset_name",
+                    "target": "build_string.strings.asset_name"
+                },
+                {
+                    "source": "value5.output",
+                    "target": "build_string.strings.output1"
+                },
+                {
+                    "source": "build_string.joined",
+                    "target": "string_join.strings.joined"
+                },
+                {
+                    "source": "file_name_str.joined",
+                    "target": "string_join.strings.joined1"
+                },
+                {
+                    "source": ".asset_flavor",
+                    "target": "build_string.strings.asset_flavor"
+                },
+                {
+                    "source": "value5.output",
+                    "target": "build_string.strings.output2"
+                },
+                {
+                    "source": ".asset_resolution",
+                    "target": "build_string.strings.asset_resolution"
+                },
+                {
+                    "source": "value5.output",
+                    "target": "build_string.strings.output3"
+                },
+                {
+                    "source": "build_padded_number.padded_number",
+                    "target": "build_string.strings.padded_number"
+                },
+                {
+                    "source": "value5.output",
+                    "target": "build_string.strings.output4"
+                },
+                {
+                    "source": "value6.output",
+                    "target": "build_string.strings.output5"
+                },
+                {
+                    "source": "file_name_str.joined",
+                    "target": "read_Alembic.filename"
+                },
+                {
+                    "source": "build_string.joined",
+                    "target": "read_Alembic.directory"
+                },
+                {
+                    "source": "read_Alembic.meshes",
+                    "target": "get_from_array.array"
+                },
+                {
+                    "source": "get_from_array.value",
+                    "target": "is_a_mesh.geometry"
+                },
+                {
+                    "source": "is_a_mesh.matches_mesh",
+                    "target": ".success"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "expand_env_vars.string",
+                    "valueType": "string",
+                    "value": "${PROJ}/models/abc"
+                },
+                {
+                    "valueName": "value.value",
+                    "valueType": "string",
+                    "value": "_"
+                },
+                {
+                    "valueName": "string_join.separator",
+                    "valueType": "string",
+                    "value": "/"
+                },
+                {
+                    "valueName": "value4.value",
+                    "valueType": "string",
+                    "value": ".abc"
+                },
+                {
+                    "valueName": "build_padded_number.version_number",
+                    "valueType": "int",
+                    "value": "0L"
+                },
+                {
+                    "valueName": "build_padded_number.version_padding",
+                    "valueType": "int",
+                    "value": "0L"
+                },
+                {
+                    "valueName": "value5.value",
+                    "valueType": "string",
+                    "value": "/"
+                },
+                {
+                    "valueName": "value6.value",
+                    "valueType": "string",
+                    "value": "abc"
+                },
+                {
+                    "valueName": "read_Alembic.frame",
+                    "valueType": "float",
+                    "value": "0f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}

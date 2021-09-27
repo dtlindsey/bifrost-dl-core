@@ -210,7 +210,7 @@
                 {
                     "metaName": "documentation",
                     "metaType": "string",
-                    "metaValue": "../docs/dl_sphere_weight_volume.md"
+                    "metaValue": "../docs/${language}/dl_sphere_weight_volume.md"
                 },
                 {
                     "metaName": "io_nodes",
@@ -461,7 +461,7 @@
                 {
                     "metaName": "UILayout",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"port\": \"use_current_positions\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"ShereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizeXpos\"\n                    },\n                    {\n                        \"port\": \"sizeXneg\"\n                    },\n                    {\n                        \"port\": \"sizeYpos\"\n                    },\n                    {\n                        \"port\": \"sizeYneg\"\n                    },\n                    {\n                        \"port\": \"sizeZpos\"\n                    },\n                    {\n                        \"port\": \"sizeZneg\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"port\": \"use_current_positions\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"SphereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizeXpos\"\n                    },\n                    {\n                        \"port\": \"sizeXneg\"\n                    },\n                    {\n                        \"port\": \"sizeYpos\"\n                    },\n                    {\n                        \"port\": \"sizeYneg\"\n                    },\n                    {\n                        \"port\": \"sizeZpos\"\n                    },\n                    {\n                        \"port\": \"sizeZneg\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -472,7 +472,7 @@
                     "metaName": "PortExpandedState",
                     "metadata": [
                         {
-                            "metaName": "ShereShape",
+                            "metaName": "SphereShape",
                             "metaType": "string",
                             "metaValue": "1"
                         }

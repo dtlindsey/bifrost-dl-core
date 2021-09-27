@@ -20,15 +20,19 @@ Currently, Bifrost does not track what ports are dirtied.  In the mean time, we 
 
 Overall weight multiplier of the deformation.
 
-## `Mush`
+## `Morph`
 
-### `mush_iters`
+### `target_dl_mesh_object`
 
-Number of point averaging iterations
+Target dl_mesh_object to morph the mesh object to
 
-### `weight_by_distance`
+### `target_groups`
 
-Weight the average computation by the connected points, closer will have higher weight influence
+Deform group that mesh will morph to, this will potentially give odd results if point counts don't match between deform groups and target group
+
+### `maintain_base_delta`
+
+This will maintain the differences between the baseshape of the input and target meshes
 
 ## `Deform Groups`
 
