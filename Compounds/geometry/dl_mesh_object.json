@@ -87,7 +87,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "1284.72 418.244"
+                                            "metaValue": "1365.32 443.552"
                                         }
                                     ]
                                 }
@@ -105,17 +105,20 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3264.08 232.971"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "object"
+                                                },
+                                                {
+                                                    "metaName": "blends_added"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3264.08 232.971"
                                         }
                                     ]
                                 },
@@ -171,26 +174,6 @@
                             "metaName": "coords",
                             "metaType": "string",
                             "metaValue": "-1869.24 -937.729 804.678 491.844"
-                        }
-                    ]
-                },
-                {
-                    "metaName": "PortExpandedState",
-                    "metadata": [
-                        {
-                            "metaName": "deform_groups_names",
-                            "metaType": "string",
-                            "metaValue": "1"
-                        },
-                        {
-                            "metaName": "face_groups",
-                            "metaType": "string",
-                            "metaValue": "1"
-                        },
-                        {
-                            "metaName": "local_space",
-                            "metaType": "string",
-                            "metaValue": "1"
                         }
                     ]
                 },
@@ -290,39 +273,34 @@
                     ]
                 },
                 {
-                    "metaName": "UILayout",
+                    "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"blendshapes\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_names\"\n                    },\n                    {\n                        \"port\": \"blendshapes\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "BifrostGraph,Core::Object,set_property"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,if"
+                    "metaValue": "BifrostGraph,Core::Type_Conversion,to_long"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,and"
+                    "metaValue": "BifrostGraph,Core::Time,time"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,equal"
+                    "metaValue": "BifrostGraph,Core::Array,array_size"
                 },
                 {
                     "metaName": "_recentNode_",
                     "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Logic,greater"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Graph,pass"
+                    "metaValue": "BifrostGraph,Geometry::Mesh,compute_mesh_surface_area"
                 },
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "516.598 -194.073 1731.09 2041.73"
+                    "metaValue": "-1079.73 -714.966 3337.95 2229.67"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -332,7 +310,22 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-130.566 -346.559"
+                    "metaValue": "737.212 -132.452"
+                },
+                {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"original_object\"\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"local_space\",\n                \"items\": [\n                    {\n                        \"port\": \"convert_to_local_space\"\n                    },\n                    {\n                        \"port\": \"parent_matrix\"\n                    }\n                ]\n            },\n            {\n                \"expanded\": true,\n                \"group\": \"face_groups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups_names\"\n                    },\n                    {\n                        \"port\": \"deform_groups_face_ids\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"blendshapes\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_names\"\n                    },\n                    {\n                        \"port\": \"blendshapes\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "face_groups",
+                            "metaType": "string",
+                            "metaValue": "1"
+                        }
+                    ]
                 }
             ],
             "ports": [
@@ -419,6 +412,11 @@
                     "portType": "array<Amino::Object>",
                     "portDefault": [],
                     "isDefaultFanIn": "true"
+                },
+                {
+                    "portName": "blends_added",
+                    "portDirection": "output",
+                    "portType": "bool"
                 }
             ],
             "compounds": [
@@ -2610,6 +2608,7 @@
                 },
                 {
                     "name": "array_size_match",
+                    "uriImported": "file:///dl_mesh_object.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -2621,6 +2620,16 @@
                                             "metaName": "input",
                                             "metadata": [
                                                 {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-297.376 192.54"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -2630,16 +2639,6 @@
                                                             "metaName": "array2"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "-297.376 192.54"
                                                 }
                                             ]
                                         }
@@ -2841,7 +2840,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "813.517 263.728"
+                            "metaValue": "962.661 451.067"
                         }
                     ]
                 },
@@ -3017,7 +3016,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "466.727 145.878"
+                            "metaValue": "406.706 67.6687"
                         }
                     ]
                 },
@@ -3033,7 +3032,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2204.64 302.207"
+                            "metaValue": "2268.34 331.475"
                         }
                     ]
                 },
@@ -3049,7 +3048,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2474.38 460.381"
+                            "metaValue": "2495.04 465.546"
                         }
                     ]
                 },
@@ -3065,7 +3064,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1568.07 544.232"
+                            "metaValue": "1763.91 544.147"
                         }
                     ]
                 },
@@ -3081,7 +3080,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2065.8 622.152"
+                            "metaValue": "2220.96 607.391"
                         }
                     ]
                 },
@@ -3097,7 +3096,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1293.23 698.102"
+                            "metaValue": "1384.95 720.948"
                         }
                     ]
                 },
@@ -3113,7 +3112,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1555.56 341.807"
+                            "metaValue": "1634.62 166.428"
                         }
                     ]
                 },
@@ -3129,7 +3128,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1867.19 416.601"
+                            "metaValue": "1905.68 188.788"
                         }
                     ]
                 },
@@ -3146,6 +3145,109 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "2733.91 177.77"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "build_simple_mesh_hash",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "count",
+                        "count1",
+                        "size",
+                        "size1",
+                        "long"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "82.4155 817.334"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "compute_mesh_surface_area",
+                    "nodeType": "Geometry::Mesh::compute_mesh_surface_area",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1207.73 676.292"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_size2",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1574.88 566.699"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "array_size3",
+                    "nodeType": "Core::Array::array_size",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-1546.93 848.638"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "to_long",
+                    "nodeType": "Core::Type_Conversion::to_long",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-835.242 704.87"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property5",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "644.611 379.079"
                         }
                     ]
                 }
@@ -3228,16 +3330,8 @@
                     "target": "set_property2.object"
                 },
                 {
-                    "source": "point_neighbors_property.out_object",
-                    "target": "set_baseshape_property.object"
-                },
-                {
                     "source": "set_property2.out_object",
                     "target": "set_property1.object"
-                },
-                {
-                    "source": "point_neighbors_property.out_object",
-                    "target": "set_baseshape_property.value"
                 },
                 {
                     "source": "set_baseshape_property.out_object",
@@ -3302,6 +3396,62 @@
                 {
                     "source": "if.output",
                     "target": ".object"
+                },
+                {
+                    "source": "array_size_match.size_matches",
+                    "target": ".blends_added"
+                },
+                {
+                    "source": "get_geo_component_count1.count",
+                    "target": "build_simple_mesh_hash.first.count"
+                },
+                {
+                    "source": "get_geo_component_count.count",
+                    "target": "build_simple_mesh_hash.first.count1"
+                },
+                {
+                    "source": ".deform_groups_face_ids",
+                    "target": "array_size2.array"
+                },
+                {
+                    "source": ".deform_groups_names",
+                    "target": "array_size3.array"
+                },
+                {
+                    "source": ".original_object",
+                    "target": "compute_mesh_surface_area.mesh"
+                },
+                {
+                    "source": "array_size2.size",
+                    "target": "build_simple_mesh_hash.first.size"
+                },
+                {
+                    "source": "array_size3.size",
+                    "target": "build_simple_mesh_hash.first.size1"
+                },
+                {
+                    "source": "compute_mesh_surface_area.total_surface_area",
+                    "target": "to_long.from"
+                },
+                {
+                    "source": "to_long.long",
+                    "target": "build_simple_mesh_hash.first.long"
+                },
+                {
+                    "source": "point_neighbors_property.out_object",
+                    "target": "set_property5.object"
+                },
+                {
+                    "source": "build_simple_mesh_hash.output",
+                    "target": "set_property5.value"
+                },
+                {
+                    "source": "set_property5.out_object",
+                    "target": "set_baseshape_property.value"
+                },
+                {
+                    "source": "set_property5.out_object",
+                    "target": "set_baseshape_property.object"
                 }
             ],
             "values": [
@@ -3409,6 +3559,11 @@
                     "valueName": "array_size_match.array2",
                     "valueType": "long",
                     "value": "0"
+                },
+                {
+                    "valueName": "set_property5.key",
+                    "valueType": "string",
+                    "value": "mesh_hash"
                 }
             ],
             "reservedNodeNames": [

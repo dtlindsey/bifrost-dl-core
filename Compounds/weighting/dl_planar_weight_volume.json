@@ -7,185 +7,6 @@
             }
         ]
     },
-    "dependencies": [
-        {
-            "uri": "file:///bifrost_object_i.json"
-        },
-        {
-            "uri": "file:///Math_types.json"
-        },
-        {
-            "uri": "file:///bifrost_geometry_query_types.json"
-        },
-        {
-            "uri": "file:///geometry_types.json"
-        },
-        {
-            "uri": "file:///set_property_any.json"
-        },
-        {
-            "uri": "file:///set_property.json"
-        },
-        {
-            "uri": "file:///create_object_from_schema.json"
-        },
-        {
-            "uri": "file:///Math_conversion.json"
-        },
-        {
-            "uri": "file:///Math_float.json"
-        },
-        {
-            "uri": "file:///Math_double.json"
-        },
-        {
-            "uri": "file:///Math_ulong.json"
-        },
-        {
-            "uri": "file:///Math_char.json"
-        },
-        {
-            "uri": "file:///Math_int.json"
-        },
-        {
-            "uri": "file:///Math_long.json"
-        },
-        {
-            "uri": "file:///Math_short.json"
-        },
-        {
-            "uri": "file:///Math_uchar.json"
-        },
-        {
-            "uri": "file:///Math_uint.json"
-        },
-        {
-            "uri": "file:///Math_ushort.json"
-        },
-        {
-            "uri": "file:///get_property_any.json"
-        },
-        {
-            "uri": "file:///get_property.json"
-        },
-        {
-            "uri": "file:///set_sub_object_property.json"
-        },
-        {
-            "uri": "file:///validate_strands.json"
-        },
-        {
-            "uri": "file:///riv_types.json"
-        },
-        {
-            "uri": "file:///point_types.json"
-        },
-        {
-            "uri": "file:///FCurve.json"
-        },
-        {
-            "uri": "file:///riv_ops.json"
-        },
-        {
-            "uri": "file:///construct_strands.json"
-        },
-        {
-            "uri": "file:///object_terminal.json"
-        },
-        {
-            "uri": "file:///Core_Array_array_is_empty.json"
-        },
-        {
-            "uri": "file:///get_geo_component_count.json"
-        },
-        {
-            "uri": "file:///get_geo_target_count.json"
-        },
-        {
-            "uri": "file:///Math_bool.json"
-        },
-        {
-            "uri": "file:///Math_vector4_to_vector3.json"
-        },
-        {
-            "uri": "file:///get_geo_property_check.json"
-        },
-        {
-            "uri": "file:///get_geo_schema_type.json"
-        },
-        {
-            "uri": "file:///volume_types.json"
-        },
-        {
-            "uri": "file:///volume_nodedefs.json"
-        },
-        {
-            "uri": "file:///interpret_auto_port_as_vector.json"
-        },
-        {
-            "uri": "file:///has_property.json"
-        },
-        {
-            "uri": "file:///create_volume_geo_prop.json"
-        },
-        {
-            "uri": "file:///is_a.json"
-        },
-        {
-            "uri": "file:///is_a_mesh.json"
-        },
-        {
-            "uri": "file:///is_a_strands.json"
-        },
-        {
-            "uri": "file:///is_a_points.json"
-        },
-        {
-            "uri": "file:///is_a_volume.json"
-        },
-        {
-            "uri": "file:///switch_is_a.json"
-        },
-        {
-            "uri": "file:///get_target_component.json"
-        },
-        {
-            "uri": "file:///create_data_geo_prop.json"
-        },
-        {
-            "uri": "file:///set_geo_property.array.json"
-        },
-        {
-            "uri": "file:///set_geo_property.scalar.json"
-        },
-        {
-            "uri": "file:///get_property_keys.json"
-        },
-        {
-            "uri": "file:///is_empty.json"
-        },
-        {
-            "uri": "file:///materials.json"
-        },
-        {
-            "uri": "file:///standard_surface_mat.json"
-        },
-        {
-            "uri": "file:///assign_diagnostic_material.json"
-        },
-        {
-            "uri": "file:///Math_length_squared.json"
-        },
-        {
-            "uri": "file:///Math_almost_equal.json"
-        },
-        {
-            "uri": "file:///Math_quaternion_to_matrix.json"
-        },
-        {
-            "uri": "file:///dl_mult_vector_by_matrix.json"
-        }
-    ],
     "namespaces": [],
     "types": [],
     "compounds": [
@@ -264,17 +85,17 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1973.84 -61.7223"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "weight_volume"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1973.84 -61.7223"
                                         }
                                     ]
                                 }
@@ -423,6 +244,11 @@
                     "metaValue": "-933.441 -117.911 1577.27 1258.17"
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"radius\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"ShereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizePosX\"\n                    },\n                    {\n                        \"port\": \"sizeNegX\"\n                    },\n                    {\n                        \"port\": \"sizePosY\"\n                    },\n                    {\n                        \"port\": \"sizeNegY\"\n                    },\n                    {\n                        \"port\": \"sizePosZ\"\n                    },\n                    {\n                        \"port\": \"sizeNegZ\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
@@ -430,17 +256,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-173.662 -389.202"
-                },
-                {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"input_matrix\"\n            },\n            {\n                \"port\": \"radius\"\n            },\n            {\n                \"port\": \"min_falloff\"\n            },\n            {\n                \"port\": \"max_falloff\"\n            },\n            {\n                \"port\": \"sizeA\"\n            },\n            {\n                \"port\": \"apply_mode\"\n            },\n            {\n                \"port\": \"weight_falloff\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"ShereShape\",\n                \"items\": [\n                    {\n                        \"port\": \"sizeX\"\n                    },\n                    {\n                        \"port\": \"sizeY\"\n                    },\n                    {\n                        \"port\": \"sizeZ\"\n                    },\n                    {\n                        \"port\": \"sizePosX\"\n                    },\n                    {\n                        \"port\": \"sizeNegX\"\n                    },\n                    {\n                        \"port\": \"sizePosY\"\n                    },\n                    {\n                        \"port\": \"sizeNegY\"\n                    },\n                    {\n                        \"port\": \"sizePosZ\"\n                    },\n                    {\n                        \"port\": \"sizeNegZ\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
-                },
-                {
-                    "metaName": "terminal_node_disabled_flags",
-                    "metaType": "string",
-                    "metaValue": "Core::Graph::terminal::diagnostic"
+                    "metaValue": "-496.712 93.7373"
                 }
             ],
             "ports": [
