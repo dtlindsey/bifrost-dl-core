@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_blend_deform",
-            "uriImported": "file:///dl_blend_deform.json",
+            "uriImported": "stream:/bifrostGraphShape1",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -39,11 +39,6 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-820.554 -436.524"
-                                        },
-                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -56,6 +51,11 @@
                                                     "metaName": "weight_multiplier"
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-925.863 -433.071"
                                         }
                                     ]
                                 },
@@ -134,6 +134,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-156.687 -1143.04"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -144,16 +149,8 @@
                                                 },
                                                 {
                                                     "metaName": "blend_interp_mode"
-                                                },
-                                                {
-                                                    "metaName": "bind_frame"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-156.687 -1143.04"
                                         }
                                     ]
                                 }
@@ -248,11 +245,6 @@
                             "metaValue": "backdrop"
                         },
                         {
-                            "metaName": "coords",
-                            "metaType": "string",
-                            "metaValue": "-276.356 -210.282 655.57 674.106"
-                        },
-                        {
                             "metaName": "text",
                             "metaType": "string",
                             "metaValue": "Bind  data computation\n"
@@ -261,6 +253,11 @@
                             "metaName": "color",
                             "metaType": "string",
                             "metaValue": "#6d1416"
+                        },
+                        {
+                            "metaName": "coords",
+                            "metaType": "string",
+                            "metaValue": "-276.356 -210.282 721.566 715.712"
                         }
                     ]
                 },
@@ -310,6 +307,26 @@
                     ]
                 },
                 {
+                    "metaName": "UILayout",
+                    "metaType": "string",
+                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Blends\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_controls\"\n                    },\n                    {\n                        \"port\": \"blend_apply_mode\"\n                    },\n                    {\n                        \"port\": \"blend_interp_mode\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                },
+                {
+                    "metaName": "PortExpandedState",
+                    "metadata": [
+                        {
+                            "metaName": "blend_controls",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,get_property"
+                },
+                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Logic,equal"
@@ -330,14 +347,9 @@
                     "metaValue": "BifrostGraph,Core::Math,add"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "input"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-587.137 -1851.56 1914.61 1751.48"
+                    "metaValue": "-659.166 -1972.11 2756.22 1893.16"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -347,27 +359,12 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "1522.19 759.247"
-                },
-                {
-                    "metaName": "UILayout",
-                    "metaType": "string",
-                    "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"dl_mesh_object\"\n            },\n            {\n                \"port\": \"active\"\n            },\n            {\n                \"port\": \"bind_frame\"\n            },\n            {\n                \"port\": \"weight_multiplier\"\n            },\n            {\n                \"group\": \"Blends\",\n                \"items\": [\n                    {\n                        \"port\": \"blend_controls\"\n                    },\n                    {\n                        \"port\": \"blend_apply_mode\"\n                    },\n                    {\n                        \"port\": \"blend_interp_mode\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"DeformGroups\",\n                \"items\": [\n                    {\n                        \"port\": \"deform_groups\"\n                    },\n                    {\n                        \"port\": \"full_groups\"\n                    },\n                    {\n                        \"port\": \"not_groups\"\n                    },\n                    {\n                        \"port\": \"weight_volumes\"\n                    }\n                ]\n            },\n            {\n                \"group\": \"WeightDisplay\",\n                \"items\": [\n                    {\n                        \"port\": \"weight_color\"\n                    },\n                    {\n                        \"port\": \"point_size\"\n                    },\n                    {\n                        \"port\": \"display_current_positions\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
+                    "metaValue": "-465.109 -956.356"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
                     "metaType": "string",
                     "metaValue": "Core::Graph::terminal::diagnostic"
-                },
-                {
-                    "metaName": "PortExpandedState",
-                    "metadata": [
-                        {
-                            "metaName": "blend_controls",
-                            "metaType": "string",
-                            "metaValue": "0"
-                        }
-                    ]
                 }
             ],
             "ports": [
@@ -458,18 +455,12 @@
                     "portDirection": "input",
                     "portType": "DL_Core::Deformers::dl_blend_interp_mode",
                     "portDefault": "Linear"
-                },
-                {
-                    "portName": "bind_frame",
-                    "portDirection": "input",
-                    "portType": "int",
-                    "portDefault": "0L"
                 }
             ],
             "compounds": [
                 {
                     "name": "cache_bind",
-                    "uriImported": "file:///dl_blend_deform.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -497,7 +488,7 @@
                                                             "metaName": "dl_mesh_object"
                                                         },
                                                         {
-                                                            "metaName": "bind_frame"
+                                                            "metaName": "mesh_hash"
                                                         }
                                                     ]
                                                 }
@@ -600,6 +591,16 @@
                         {
                             "metaName": "_recentNode_",
                             "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Graph,pass"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,DL_Core::utilities,dl_cache_by_hash"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
                             "metaValue": "BifrostGraph,Simulation::Common,compute_on_frame"
                         },
                         {
@@ -610,22 +611,12 @@
                         {
                             "metaName": "_recentNode_",
                             "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Graph,pass"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
                             "metaValue": "BifrostGraph,Simulation::Common,memory_cache"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Time,time"
                         },
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-68.2284 -615.023 1837.71 1681.14"
+                            "metaValue": "-264.114 -394.733 2459.75 1689.53"
                         }
                     ],
                     "ports": [
@@ -633,11 +624,6 @@
                             "portName": "dl_mesh_object",
                             "portDirection": "input",
                             "portType": "Amino::Object"
-                        },
-                        {
-                            "portName": "bind_frame",
-                            "portDirection": "input",
-                            "portType": "int"
                         },
                         {
                             "portName": "baseshape",
@@ -663,6 +649,11 @@
                             "portName": "weight_array",
                             "portDirection": "output",
                             "portType": "array<float>"
+                        },
+                        {
+                            "portName": "mesh_hash",
+                            "portDirection": "input",
+                            "portType": "long"
                         }
                     ],
                     "compoundNodes": [
@@ -731,54 +722,6 @@
                             ]
                         },
                         {
-                            "nodeName": "compute_on_frame",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "912.199 -308.215"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "compute_on_frame1",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "893.07 142.827"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "compute_on_frame2",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "881.579 998.795"
-                                }
-                            ]
-                        },
-                        {
                             "nodeName": "dl_build_array_with_default_value",
                             "nodeType": "DL_Core::array::dl_build_array_with_default_value",
                             "metadata": [
@@ -795,8 +738,8 @@
                             ]
                         },
                         {
-                            "nodeName": "pass",
-                            "nodeType": "Core::Graph::pass",
+                            "nodeName": "dl_cache_by_hash",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
                             "metadata": [
                                 {
                                     "metaName": "DisplayMode",
@@ -806,7 +749,23 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "430.246 -186.491"
+                                    "metaValue": "849.844 673.55"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash1",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "858.723 -303.055"
                                 }
                             ]
                         },
@@ -822,16 +781,28 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "130.024 1037.09"
+                                    "metaValue": "294.954 -36.7094"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash2",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "824.689 118.66"
                                 }
                             ]
                         }
                     ],
                     "connections": [
-                        {
-                            "source": "get_point_position.point_position",
-                            "target": "compute_on_frame1.value_to_pull"
-                        },
                         {
                             "source": "get_point_position1.point_position",
                             "target": ".currentshape_positions"
@@ -841,40 +812,8 @@
                             "target": "get_point_position.geometry"
                         },
                         {
-                            "source": "get_property.value",
-                            "target": "compute_on_frame.value_to_pull"
-                        },
-                        {
                             "source": "get_geo_component_count.count",
                             "target": "dl_build_array_with_default_value.array_size"
-                        },
-                        {
-                            "source": "compute_on_frame.cached_value",
-                            "target": ".baseshape"
-                        },
-                        {
-                            "source": "compute_on_frame1.cached_value",
-                            "target": ".baseshape_positions"
-                        },
-                        {
-                            "source": "compute_on_frame2.cached_value",
-                            "target": ".weight_array"
-                        },
-                        {
-                            "source": "dl_build_array_with_default_value.resized_array",
-                            "target": "compute_on_frame2.value_to_pull"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame.frame_to_pull_on"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame1.frame_to_pull_on"
-                        },
-                        {
-                            "source": "pass1.output",
-                            "target": "compute_on_frame2.frame_to_pull_on"
                         },
                         {
                             "source": ".dl_mesh_object",
@@ -893,12 +832,44 @@
                             "target": ".current_object"
                         },
                         {
-                            "source": ".bind_frame",
-                            "target": "pass.input"
+                            "source": ".mesh_hash",
+                            "target": "dl_cache_by_hash.input_hash"
                         },
                         {
-                            "source": ".bind_frame",
+                            "source": "dl_build_array_with_default_value.resized_array",
+                            "target": "dl_cache_by_hash.live_data"
+                        },
+                        {
+                            "source": "dl_cache_by_hash.cache_output",
+                            "target": ".weight_array"
+                        },
+                        {
+                            "source": ".mesh_hash",
                             "target": "pass1.input"
+                        },
+                        {
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash1.input_hash"
+                        },
+                        {
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash2.input_hash"
+                        },
+                        {
+                            "source": "get_property.value",
+                            "target": "dl_cache_by_hash1.live_data"
+                        },
+                        {
+                            "source": "dl_cache_by_hash1.cache_output",
+                            "target": ".baseshape"
+                        },
+                        {
+                            "source": "get_point_position.point_position",
+                            "target": "dl_cache_by_hash2.live_data"
+                        },
+                        {
+                            "source": "dl_cache_by_hash2.cache_output",
+                            "target": ".baseshape_positions"
                         }
                     ],
                     "values": [
@@ -916,21 +887,6 @@
                             "valueName": "get_geo_component_count.component",
                             "valueType": "string",
                             "value": "point_component"
-                        },
-                        {
-                            "valueName": "compute_on_frame.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
-                        },
-                        {
-                            "valueName": "compute_on_frame1.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
-                        },
-                        {
-                            "valueName": "compute_on_frame2.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
                         },
                         {
                             "valueName": "dl_build_array_with_default_value.input_empty_array",
@@ -954,33 +910,8 @@
                 },
                 {
                     "name": "cache_verts_to_use",
-                    "uriImported": "file:///dl_blend_deform.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Graph,pass"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Simulation::Common,compute_on_frame"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,if"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Constants,float"
-                        },
-                        {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,Core::Logic,equal"
-                        },
                         {
                             "metaName": "io_nodes",
                             "metadata": [
@@ -1016,7 +947,7 @@
                                                             "metaName": "not_groups"
                                                         },
                                                         {
-                                                            "metaName": "bind_frame"
+                                                            "metaName": "mesh_hash"
                                                         }
                                                     ]
                                                 }
@@ -1066,7 +997,32 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-68.5296 -215.462 975.039 646.901"
+                            "metaValue": "-977.065 -879.741 2355.7 1618.06"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,DL_Core::utilities,dl_cache_by_hash"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Graph,pass"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Simulation::Common,compute_on_frame"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,if"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Constants,float"
                         }
                     ],
                     "ports": [
@@ -1091,11 +1047,6 @@
                             "portType": "string"
                         },
                         {
-                            "portName": "bind_frame",
-                            "portDirection": "input",
-                            "portType": "int"
-                        },
-                        {
                             "portName": "verts_to_deform",
                             "portDirection": "output",
                             "portType": "array<uint>"
@@ -1114,6 +1065,11 @@
                             "portName": "not_group_verts",
                             "portDirection": "output",
                             "portType": "array<uint>"
+                        },
+                        {
+                            "portName": "mesh_hash",
+                            "portDirection": "input",
+                            "portType": "long"
                         }
                     ],
                     "compoundNodes": [
@@ -1134,71 +1090,7 @@
                             ]
                         },
                         {
-                            "nodeName": "compute_on_frame4",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "604.066 -420.379"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "compute_on_frame5",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "604.066 -201.379"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "compute_on_frame6",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "604.066 235.621"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "compute_on_frame7",
-                            "nodeType": "Simulation::Common::compute_on_frame",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "604.066 16.6205"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "pass",
+                            "nodeName": "pass1",
                             "nodeType": "Core::Graph::pass",
                             "metadata": [
                                 {
@@ -1209,52 +1101,76 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "-125.275 327.047"
+                                    "metaValue": "-603.561 415.569"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "259.403 -540.99"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash1",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "281.611 -234.827"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash2",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "302.234 15.8131"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_cache_by_hash3",
+                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "330.788 241.072"
                                 }
                             ]
                         }
                     ],
                     "connections": [
-                        {
-                            "source": "dl_get_vert_idx_to_deform.verts_to_deform",
-                            "target": "compute_on_frame4.value_to_pull"
-                        },
-                        {
-                            "source": "dl_get_vert_idx_to_deform.deform_group_verts",
-                            "target": "compute_on_frame5.value_to_pull"
-                        },
-                        {
-                            "source": "compute_on_frame4.cached_value",
-                            "target": ".verts_to_deform"
-                        },
-                        {
-                            "source": "compute_on_frame5.cached_value",
-                            "target": ".deform_group_verts"
-                        },
-                        {
-                            "source": "compute_on_frame6.cached_value",
-                            "target": ".not_group_verts"
-                        },
-                        {
-                            "source": "compute_on_frame7.cached_value",
-                            "target": ".full_group_verts"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame4.frame_to_pull_on"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame5.frame_to_pull_on"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame7.frame_to_pull_on"
-                        },
-                        {
-                            "source": "pass.output",
-                            "target": "compute_on_frame6.frame_to_pull_on"
-                        },
                         {
                             "source": ".dl_mesh_object",
                             "target": "dl_get_vert_idx_to_deform.dl_mesh_object"
@@ -1272,16 +1188,56 @@
                             "target": "dl_get_vert_idx_to_deform.not_groups"
                         },
                         {
-                            "source": ".bind_frame",
-                            "target": "pass.input"
+                            "source": ".mesh_hash",
+                            "target": "pass1.input"
                         },
                         {
-                            "source": "dl_get_vert_idx_to_deform.full_group_verts",
-                            "target": "compute_on_frame7.value_to_pull"
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash.input_hash"
+                        },
+                        {
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash1.input_hash"
+                        },
+                        {
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash2.input_hash"
+                        },
+                        {
+                            "source": "pass1.output",
+                            "target": "dl_cache_by_hash3.input_hash"
                         },
                         {
                             "source": "dl_get_vert_idx_to_deform.not_group_verts",
-                            "target": "compute_on_frame6.value_to_pull"
+                            "target": "dl_cache_by_hash3.live_data"
+                        },
+                        {
+                            "source": "dl_get_vert_idx_to_deform.full_group_verts",
+                            "target": "dl_cache_by_hash2.live_data"
+                        },
+                        {
+                            "source": "dl_get_vert_idx_to_deform.deform_group_verts",
+                            "target": "dl_cache_by_hash1.live_data"
+                        },
+                        {
+                            "source": "dl_get_vert_idx_to_deform.verts_to_deform",
+                            "target": "dl_cache_by_hash.live_data"
+                        },
+                        {
+                            "source": "dl_cache_by_hash.cache_output",
+                            "target": ".verts_to_deform"
+                        },
+                        {
+                            "source": "dl_cache_by_hash1.cache_output",
+                            "target": ".deform_group_verts"
+                        },
+                        {
+                            "source": "dl_cache_by_hash2.cache_output",
+                            "target": ".full_group_verts"
+                        },
+                        {
+                            "source": "dl_cache_by_hash3.cache_output",
+                            "target": ".not_group_verts"
                         }
                     ],
                     "values": [
@@ -1304,26 +1260,6 @@
                             "valueName": "dl_get_vert_idx_to_deform.not_groups",
                             "valueType": "string",
                             "value": "*"
-                        },
-                        {
-                            "valueName": "compute_on_frame4.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
-                        },
-                        {
-                            "valueName": "compute_on_frame5.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
-                        },
-                        {
-                            "valueName": "compute_on_frame6.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
-                        },
-                        {
-                            "valueName": "compute_on_frame7.frame_to_pull_on",
-                            "valueType": "int",
-                            "value": "0L"
                         }
                     ],
                     "reservedNodeNames": [
@@ -1337,13 +1273,8 @@
                 },
                 {
                     "name": "iterate_through_blends",
-                    "uriImported": "file:///dl_blend_deform.json",
+                    "uriImported": "stream:/bifrostGraphShape1",
                     "metadata": [
-                        {
-                            "metaName": "icon",
-                            "metaType": "string",
-                            "metaValue": "<NATIVE>../icons/LoopIterate.svg"
-                        },
                         {
                             "metaName": "icon",
                             "metaType": "string",
@@ -1404,23 +1335,28 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "489.299 -293.043"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
                                                             "metaName": "subtract_mode"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "489.299 -293.043"
                                                 }
                                             ]
                                         },
                                         {
                                             "metaName": "input2",
                                             "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
                                                 {
                                                     "metaName": "io_ports",
                                                     "metadata": [
@@ -1430,14 +1366,9 @@
                                                     ]
                                                 },
                                                 {
-                                                    "metaName": "DisplayMode",
-                                                    "metaType": "string",
-                                                    "metaValue": "2"
-                                                },
-                                                {
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
-                                                    "metaValue": "884.2 712.412"
+                                                    "metaValue": "912.583 666.289"
                                                 }
                                             ]
                                         }
@@ -1455,17 +1386,17 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1792.54 440.316"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
                                                             "metaName": "total_deltas"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1792.54 440.316"
                                                 }
                                             ]
                                         }
@@ -1501,7 +1432,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-191.851 -610.916 2036.31 1862.82"
+                            "metaValue": "-495.292 -711.769 2634.32 1809.43"
                         }
                     ],
                     "ports": [
@@ -1548,7 +1479,7 @@
                     "compounds": [
                         {
                             "name": "dl_get_blend_offsets_by_name",
-                            "uriImported": "file:///dl_blend_deform.json",
+                            "uriImported": "stream:/bifrostGraphShape1",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -1664,13 +1595,8 @@
                             "compounds": [
                                 {
                                     "name": "for_each",
-                                    "uriImported": "file:///dl_blend_deform.json",
+                                    "uriImported": "stream:/bifrostGraphShape1",
                                     "metadata": [
-                                        {
-                                            "metaName": "icon",
-                                            "metaType": "string",
-                                            "metaValue": "<NATIVE>../icons/LoopForEach.svg"
-                                        },
                                         {
                                             "metaName": "icon",
                                             "metaType": "string",
@@ -2258,19 +2184,19 @@
                                     ]
                                 },
                                 {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
-                                    "metaName": "valuenode_defaultvalue",
-                                    "metaType": "string",
-                                    "metaValue": "0"
-                                },
-                                {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "-7.97895 270.534"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
+                                },
+                                {
+                                    "metaName": "valuenode_defaultvalue",
+                                    "metaType": "string",
+                                    "metaValue": "0"
                                 }
                             ]
                         },
@@ -2405,14 +2331,6 @@
                             "target": "add.first.accumulated_point_delta"
                         },
                         {
-                            "source": "value.output.blend_name",
-                            "target": "dl_get_blend_offsets_by_name.blend_name"
-                        },
-                        {
-                            "source": "value.output.blend_value",
-                            "target": "multiply.first.blend_value"
-                        },
-                        {
                             "source": "dl_get_blend_offsets_by_name.blend_offsets",
                             "target": "negate.value"
                         },
@@ -2447,6 +2365,14 @@
                         {
                             "source": "if_spline.output",
                             "target": ".total_deltas"
+                        },
+                        {
+                            "source": "value.output.blend_name",
+                            "target": "dl_get_blend_offsets_by_name.blend_name"
+                        },
+                        {
+                            "source": "value.output.blend_value",
+                            "target": "multiply.first.blend_value"
                         }
                     ],
                     "values": [
@@ -2683,7 +2609,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "144.214 62.8244"
+                            "metaValue": "165.734 59.955"
                         }
                     ]
                 },
@@ -2715,7 +2641,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "-68.491 -783.682"
+                            "metaValue": "-94.8056 -790.261"
                         }
                     ]
                 },
@@ -2763,7 +2689,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "193.641 -962.421"
+                            "metaValue": "138.261 -926.175"
                         }
                     ]
                 },
@@ -2867,7 +2793,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "154.243 -1281.22"
+                            "metaValue": "148.675 -1346.84"
                         }
                     ]
                 },
@@ -2883,7 +2809,23 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "166.444 -1116.4"
+                            "metaValue": "148.956 -1132.43"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_property",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-573.852 -492.912"
                         }
                     ]
                 }
@@ -3022,18 +2964,6 @@
                     "target": "dl_compute_deformer_weights.current_point_position"
                 },
                 {
-                    "source": ".bind_frame",
-                    "target": "cache_verts_to_use.bind_frame"
-                },
-                {
-                    "source": ".bind_frame",
-                    "target": "cache_bind.bind_frame"
-                },
-                {
-                    "source": ".bind_frame",
-                    "target": "dl_compute_deformer_weights.bind_frame"
-                },
-                {
                     "source": "array_size.size",
                     "target": "iterate_through_blends.max_iterations"
                 },
@@ -3128,6 +3058,22 @@
                 {
                     "source": "equal.output",
                     "target": "iterate_through_blends.linear_mode"
+                },
+                {
+                    "source": ".dl_mesh_object",
+                    "target": "get_property.object"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "cache_bind.mesh_hash"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "cache_verts_to_use.mesh_hash"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "dl_compute_deformer_weights.input_hash"
                 }
             ],
             "values": [
@@ -3137,9 +3083,9 @@
                     "value": {}
                 },
                 {
-                    "valueName": "cache_bind.bind_frame",
-                    "valueType": "int",
-                    "value": "0L"
+                    "valueName": "cache_bind.mesh_hash",
+                    "valueType": "long",
+                    "value": "0"
                 },
                 {
                     "valueName": "cache_verts_to_use.dl_mesh_object",
@@ -3162,9 +3108,9 @@
                     "value": ""
                 },
                 {
-                    "valueName": "cache_verts_to_use.bind_frame",
-                    "valueType": "int",
-                    "value": "0L"
+                    "valueName": "cache_verts_to_use.mesh_hash",
+                    "valueType": "long",
+                    "value": "0"
                 },
                 {
                     "valueName": "iterate_through_blends.max_iterations",
@@ -3194,6 +3140,16 @@
                     "valueName": "is_subtract_mode.second",
                     "valueType": "DL_Core::Deformers::dl_blend_apply_mode",
                     "value": "Subtract"
+                },
+                {
+                    "valueName": "get_property.default_and_type",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "get_property.key",
+                    "valueType": "string",
+                    "value": "mesh_hash"
                 }
             ],
             "reservedNodeNames": [

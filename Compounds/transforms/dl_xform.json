@@ -461,7 +461,7 @@
                     "portName": "icon_size",
                     "portDirection": "input",
                     "portType": "float",
-                    "portDefault": "1.71399999f"
+                    "portDefault": "1.0f"
                 },
                 {
                     "portName": "icon_color",
