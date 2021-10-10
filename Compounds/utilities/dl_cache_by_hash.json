@@ -12,6 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::utilities::dl_cache_by_hash",
+            "uriImported": "file:///dl_cache_by_hash.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -38,20 +39,20 @@
                                             "metaValue": "2"
                                         },
                                         {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "input_hash"
-                                                },
-                                                {
-                                                    "metaName": "live_data"
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "10 172"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "live_data"
+                                                },
+                                                {
+                                                    "metaName": "input_hash"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -69,6 +70,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "925 187"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -78,11 +84,6 @@
                                                     "metaName": "out_hash"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "925 187"
                                         }
                                     ]
                                 }
@@ -93,7 +94,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-74.2494 -319.383 1380 1284.31"
+                    "metaValue": "-164 -338 1282 1020"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -103,14 +104,10 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "1001.31 987.914"
+                    "metaValue": "-151.5 4"
                 }
             ],
             "ports": [
-                {
-                    "portName": "input_hash",
-                    "portDirection": "input"
-                },
                 {
                     "portName": "live_data",
                     "portDirection": "input"
@@ -122,11 +119,16 @@
                 {
                     "portName": "out_hash",
                     "portDirection": "output"
+                },
+                {
+                    "portName": "input_hash",
+                    "portDirection": "input"
                 }
             ],
             "compounds": [
                 {
                     "name": "cache_hasher",
+                    "uriImported": "file:///dl_cache_by_hash.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -152,11 +154,6 @@
                             "metaName": "_recentNode_",
                             "metaType": "string",
                             "metaValue": "BifrostGraph,Core::Object,get_property"
-                        },
-                        {
-                            "metaName": "ViewportRect",
-                            "metaType": "string",
-                            "metaValue": "-548 -510 1096 1020"
                         },
                         {
                             "metaName": "io_nodes",
@@ -221,6 +218,11 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-641 -510 1282 1020"
                         }
                     ],
                     "ports": [
@@ -240,6 +242,7 @@
                     "compounds": [
                         {
                             "name": "cache_hash",
+                            "uriImported": "file:///dl_cache_by_hash.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -267,11 +270,6 @@
                                     "metaValue": "BifrostGraph,Core::Object,get_property"
                                 },
                                 {
-                                    "metaName": "ViewportRect",
-                                    "metaType": "string",
-                                    "metaValue": "-548 -510 1096 1020"
-                                },
-                                {
                                     "metaName": "io_nodes",
                                     "metadata": [
                                         {
@@ -286,11 +284,6 @@
                                                             "metaValue": "2"
                                                         },
                                                         {
-                                                            "metaName": "LayoutPos",
-                                                            "metaType": "string",
-                                                            "metaValue": "-566 -73"
-                                                        },
-                                                        {
                                                             "metaName": "io_ports",
                                                             "metadata": [
                                                                 {
@@ -300,6 +293,11 @@
                                                                     "metaName": "cache_input"
                                                                 }
                                                             ]
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-588 -78"
                                                         }
                                                     ]
                                                 }
@@ -337,6 +335,11 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-641 -510 1282 1020"
                                 }
                             ],
                             "ports": [
@@ -371,7 +374,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "-214 -315"
+                                            "metaValue": "-270 -332"
                                         }
                                     ]
                                 },
@@ -387,7 +390,7 @@
                                         {
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
-                                            "metaValue": "-14 -15"
+                                            "metaValue": "9 -164"
                                         }
                                     ]
                                 }
@@ -469,6 +472,10 @@
                         {
                             "source": ".input_hash",
                             "target": "cache_hash.mesh_hash"
+                        },
+                        {
+                            "source": ".input_hash",
+                            "target": "cache_hash.cache_input"
                         }
                     ],
                     "values": [
@@ -489,6 +496,7 @@
                 },
                 {
                     "name": "compute_as_needed",
+                    "uriImported": "file:///dl_cache_by_hash.json",
                     "metadata": [
                         {
                             "metaName": "_recentNode_",
@@ -597,6 +605,7 @@
                     "compounds": [
                         {
                             "name": "cache_data",
+                            "uriImported": "file:///dl_cache_by_hash.json",
                             "metadata": [
                                 {
                                     "metaName": "ViewportRect",

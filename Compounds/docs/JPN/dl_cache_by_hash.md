@@ -4,13 +4,13 @@ Simple compound that will cache your *live_data* if your *out_hash* and *input_h
 
 ## `Inputs`
 
-### `input_hash`
-
-Value you'd like to use as a simple hash identifier. (default is long)
-
 ### `live_data`
 
 Data you want cached, and only updated if the hash changes (default is float)
+
+### `input_hash`
+
+Value you'd like to use as a simple hash identifier. (default is float)
 
 ## `Outputs`
 
