@@ -299,7 +299,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1507.26 -1495.26 4776.28 2235.8"
+                    "metaValue": "-819.893 -788.062 1619.58 1539.97"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -309,7 +309,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "256.114 -207.643"
+                    "metaValue": "-137.688 -308.317"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -6858,6 +6858,11 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "2134.22 -412.704"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -6870,11 +6875,6 @@
                                                             "metaName": "cache_base_normals"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "2134.22 -412.704"
                                                 }
                                             ]
                                         },
@@ -6887,17 +6887,17 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1757.94 934.04"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
                                                             "metaName": "weight_array"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1757.94 934.04"
                                                 }
                                             ]
                                         },
@@ -6908,6 +6908,11 @@
                                                     "metaName": "DisplayMode",
                                                     "metaType": "string",
                                                     "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1618.72 2757.45"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
@@ -6928,11 +6933,6 @@
                                                             "metaName": "deform_point_count"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1618.72 2757.45"
                                                 }
                                             ]
                                         },
@@ -6994,6 +6994,11 @@
                                                     "metaValue": "2"
                                                 },
                                                 {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1713.1 1767.76"
+                                                },
+                                                {
                                                     "metaName": "io_ports",
                                                     "metadata": [
                                                         {
@@ -7003,11 +7008,6 @@
                                                             "metaName": "connect_points"
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "metaName": "LayoutPos",
-                                                    "metaType": "string",
-                                                    "metaValue": "1713.1 1767.76"
                                                 }
                                             ]
                                         }
@@ -7128,7 +7128,7 @@
                         {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-1311.29 -566.421 4834.78 2263.18"
+                            "metaValue": "896.934 241.28 1485.86 1412.82"
                         }
                     ],
                     "ports": [
@@ -10626,6 +10626,7 @@
                         },
                         {
                             "name": "check_for_baseshape",
+                            "uriImported": "file:///dl_mush.json",
                             "metadata": [
                                 {
                                     "metaName": "icon",
@@ -11189,23 +11190,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "727.47 472.226"
-                                }
-                            ]
-                        },
-                        {
-                            "nodeName": "dl_cache_by_hash9",
-                            "nodeType": "DL_Core::utilities::dl_cache_by_hash",
-                            "metadata": [
-                                {
-                                    "metaName": "DisplayMode",
-                                    "metaType": "string",
-                                    "metaValue": "2"
-                                },
-                                {
-                                    "metaName": "LayoutPos",
-                                    "metaType": "string",
-                                    "metaValue": "1352.5 475.476"
+                                    "metaValue": "1000.87 535.54"
                                 }
                             ]
                         },
@@ -11528,18 +11513,6 @@
                             "target": "mush_swap_array.first.point_position"
                         },
                         {
-                            "source": "mush_swap_array.array",
-                            "target": "dl_cache_by_hash9.live_data"
-                        },
-                        {
-                            "source": "dl_cache_by_hash9.cache_output",
-                            "target": ".mush_swap_array"
-                        },
-                        {
-                            "source": ".input_hash",
-                            "target": "dl_cache_by_hash9.input_hash"
-                        },
-                        {
                             "source": "get_property1.value",
                             "target": "if1.true_case"
                         },
@@ -11630,6 +11603,10 @@
                         {
                             "source": "get_geo_component_count.count",
                             "target": "get_distance_weights.max_iterations"
+                        },
+                        {
+                            "source": "mush_swap_array.array",
+                            "target": ".mush_swap_array"
                         }
                     ],
                     "values": [
