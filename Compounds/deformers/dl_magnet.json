@@ -11,7 +11,7 @@
     "types": [],
     "compounds": [
         {
-            "name": "User::Compounds::dl_magnet",
+            "name": "DL_Core::deformers::dl_magnet",
             "uriImported": "file:///dl_magnet.json",
             "metadata": [
                 {
