@@ -1,0 +1,668 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "DL_Core::geometry::dl_simple_mesh_hash",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/geometry.svg"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh_object"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "10 232"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "input1",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "cache_hash"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "705.765 707.998"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "out_mesh"
+                                                },
+                                                {
+                                                    "metaName": "out_hash"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1637.03 154.852"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Object,set_property"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,if"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,add"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,get_geo_component_count"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "133.334 -290.526 1911.96 1508.27"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-878.571 -394.357"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh_object",
+                    "portDirection": "input",
+                    "portType": "Amino::Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "cache_hash",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "0",
+                    "linkedFeedbackPort": "out_hash"
+                },
+                {
+                    "portName": "out_mesh",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                },
+                {
+                    "portName": "out_hash",
+                    "portDirection": "output",
+                    "portType": "long"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "make_simple_hash",
+                    "metadata": [
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "mesh_object"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "10 143"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "965.331 83"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "out_hash"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-323.417 -664.875 1862.43 1469.2"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Type_Conversion,to_long"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Mesh,compute_mesh_surface_area"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Geometry::Properties,get_geo_component_count"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "out_hash",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "mesh_object",
+                            "portDirection": "input",
+                            "portType": "Amino::Object"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "add",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "count",
+                                "count1",
+                                "long"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "679.056 81.5596"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_geo_component_count",
+                            "nodeType": "Geometry::Properties::get_geo_component_count",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 229"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_geo_component_count1",
+                            "nodeType": "Geometry::Properties::get_geo_component_count",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315 10"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "compute_mesh_surface_area",
+                            "nodeType": "Geometry::Mesh::compute_mesh_surface_area",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "309.207 462.359"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "to_long",
+                            "nodeType": "Core::Type_Conversion::to_long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "582.883 410.505"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "get_geo_component_count1.count",
+                            "target": "add.first.count"
+                        },
+                        {
+                            "source": "get_geo_component_count.count",
+                            "target": "add.first.count1"
+                        },
+                        {
+                            "source": "add.output",
+                            "target": ".out_hash"
+                        },
+                        {
+                            "source": ".mesh_object",
+                            "target": "get_geo_component_count.geometry"
+                        },
+                        {
+                            "source": ".mesh_object",
+                            "target": "get_geo_component_count1.geometry"
+                        },
+                        {
+                            "source": ".mesh_object",
+                            "target": "compute_mesh_surface_area.mesh"
+                        },
+                        {
+                            "source": "compute_mesh_surface_area.total_surface_area",
+                            "target": "to_long.from"
+                        },
+                        {
+                            "source": "to_long.long",
+                            "target": "add.first.long"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "get_geo_component_count.component",
+                            "valueType": "string",
+                            "value": "face_component"
+                        },
+                        {
+                            "valueName": "get_geo_component_count1.component",
+                            "valueType": "string",
+                            "value": "point_component"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ]
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "get_property",
+                    "nodeType": "Core::Object::get_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "285.426 263.578"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "has_property",
+                    "nodeType": "Core::Object::has_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "307.606 -183.71"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if_has_mesh_hash_prop",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "648.095 326"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "not_equal",
+                    "nodeType": "Core::Logic::not_equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1061.04 315.777"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "make_simple_hash",
+                    "nodeType": "make_simple_hash",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "304.649 529.251"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if_cache_not_match",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1374.91 449.509"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if2",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1234.44 -49.3062"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_property",
+                    "nodeType": "Core::Object::set_property",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "972.319 74.2556"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".mesh_object",
+                    "target": "get_property.object"
+                },
+                {
+                    "source": "get_property.value",
+                    "target": "if_has_mesh_hash_prop.true_case"
+                },
+                {
+                    "source": ".mesh_object",
+                    "target": "has_property.object"
+                },
+                {
+                    "source": "has_property.found",
+                    "target": "if_has_mesh_hash_prop.condition"
+                },
+                {
+                    "source": "if_has_mesh_hash_prop.output",
+                    "target": "not_equal.first"
+                },
+                {
+                    "source": "make_simple_hash.out_hash",
+                    "target": "if_has_mesh_hash_prop.false_case"
+                },
+                {
+                    "source": ".mesh_object",
+                    "target": "make_simple_hash.mesh_object"
+                },
+                {
+                    "source": "not_equal.output",
+                    "target": "if_cache_not_match.condition"
+                },
+                {
+                    "source": "if_has_mesh_hash_prop.output",
+                    "target": "if_cache_not_match.true_case"
+                },
+                {
+                    "source": ".cache_hash",
+                    "target": "not_equal.second"
+                },
+                {
+                    "source": ".cache_hash",
+                    "target": "if_cache_not_match.false_case"
+                },
+                {
+                    "source": "if_cache_not_match.output",
+                    "target": ".out_hash"
+                },
+                {
+                    "source": "has_property.found",
+                    "target": "if2.condition"
+                },
+                {
+                    "source": ".mesh_object",
+                    "target": "if2.true_case"
+                },
+                {
+                    "source": ".mesh_object",
+                    "target": "set_property.object"
+                },
+                {
+                    "source": "make_simple_hash.out_hash",
+                    "target": "set_property.value"
+                },
+                {
+                    "source": "set_property.out_object",
+                    "target": "if2.false_case"
+                },
+                {
+                    "source": "if2.output",
+                    "target": ".out_mesh"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "get_property.default_and_type",
+                    "valueType": "long",
+                    "value": "0"
+                },
+                {
+                    "valueName": "get_property.key",
+                    "valueType": "string",
+                    "value": "mesh_hash"
+                },
+                {
+                    "valueName": "has_property.key",
+                    "valueType": "string",
+                    "value": "mesh_hash"
+                },
+                {
+                    "valueName": "make_simple_hash.mesh_object",
+                    "valueType": "Amino::Object",
+                    "value": {}
+                },
+                {
+                    "valueName": "set_property.key",
+                    "valueType": "string",
+                    "value": "mesh_hash"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                },
+                {
+                    "name": "input1"
+                }
+            ]
+        }
+    ]
+}

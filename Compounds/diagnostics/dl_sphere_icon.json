@@ -1,0 +1,425 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "DL_Core::diagnostics::dl_sphere_icon",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "parent_matrix"
+                                                },
+                                                {
+                                                    "metaName": "center_offset"
+                                                },
+                                                {
+                                                    "metaName": "sphere_size"
+                                                },
+                                                {
+                                                    "metaName": "color"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-923.649 299.795"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1827.52 167.229"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "sphere"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Diagnostic::Display,assign_diagnostic_material"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Constants,float"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Math,multiply"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Geometry::Properties,set_point_position"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,DL_Core::transforms,dl_mult_vector_by_matrix"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-1688.11 35.7199 1590 1296.4"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "-769.385 721.842"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "sphere",
+                    "portDirection": "output",
+                    "portType": "Amino::Object"
+                },
+                {
+                    "portName": "parent_matrix",
+                    "portDirection": "input",
+                    "portType": "Math::float4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                },
+                {
+                    "portName": "center_offset",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "sphere_size",
+                    "portDirection": "input",
+                    "portType": "float",
+                    "portDefault": "1f"
+                },
+                {
+                    "portName": "color",
+                    "portDirection": "input",
+                    "portType": "Math::float3",
+                    "portDefault": {
+                        "x": "1f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "mesh_sphere",
+                    "nodeType": "Geometry::Internal::mesh_sphere",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-297.364 285.953"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-12.0291 316.053"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "add",
+                    "nodeType": "Core::Math::add",
+                    "multiInPortNames": [
+                        "center_offset",
+                        "point_position"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "251.511 180.929"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dl_mult_vector_by_matrix",
+                    "nodeType": "DL_Core::transforms::dl_mult_vector_by_matrix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "598.008 132.951"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_point_position",
+                    "nodeType": "Geometry::Properties::set_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "782.806 488.334"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "multiply",
+                    "nodeType": "Core::Math::multiply",
+                    "multiInPortNames": [
+                        "sphere_size",
+                        "output1"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-538.425 390.544"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value",
+                    "valueType": "float",
+                    "metadata": [
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-760.746 703.228"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "assign_diagnostic_material",
+                    "nodeType": "Diagnostic::Display::assign_diagnostic_material",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1360.95 305.573"
+                        },
+                        {
+                            "metaName": "PortExpandedState",
+                            "metadata": [
+                                {
+                                    "metaName": "Shader",
+                                    "metaType": "string",
+                                    "metaValue": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": "mesh_sphere.sphere",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": ".center_offset",
+                    "target": "add.first.center_offset"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "add.first.point_position"
+                },
+                {
+                    "source": "add.output",
+                    "target": "dl_mult_vector_by_matrix.vector"
+                },
+                {
+                    "source": ".parent_matrix",
+                    "target": "dl_mult_vector_by_matrix.matrix"
+                },
+                {
+                    "source": "mesh_sphere.sphere",
+                    "target": "set_point_position.geometry"
+                },
+                {
+                    "source": "dl_mult_vector_by_matrix.output",
+                    "target": "set_point_position.positions"
+                },
+                {
+                    "source": ".sphere_size",
+                    "target": "multiply.first.sphere_size"
+                },
+                {
+                    "source": "multiply.output",
+                    "target": "mesh_sphere.radius"
+                },
+                {
+                    "source": "value.output",
+                    "target": "multiply.first.output1"
+                },
+                {
+                    "source": "assign_diagnostic_material.geometry_with_material",
+                    "target": ".sphere"
+                },
+                {
+                    "source": ".color",
+                    "target": "assign_diagnostic_material.emission_color"
+                },
+                {
+                    "source": "set_point_position.out_geometry",
+                    "target": "assign_diagnostic_material.geometry"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "value.value",
+                    "valueType": "float",
+                    "value": "0.5f"
+                },
+                {
+                    "valueName": "assign_diagnostic_material.specular",
+                    "valueType": "float",
+                    "value": "1f"
+                },
+                {
+                    "valueName": "assign_diagnostic_material.emission",
+                    "valueType": "float",
+                    "value": "1f"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
