@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_translate",
-            "uriImported": "stream:/stream",
+            "uriImported": "file:///dl_translate.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -39,6 +39,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-2174.34 223.875"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -54,11 +59,6 @@
                                                     "metaName": "not_groups"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-2174.34 223.875"
                                         }
                                     ]
                                 },
@@ -144,14 +144,6 @@
                                     "metaName": "translate_input",
                                     "metadata": [
                                         {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "translate"
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
                                             "metaValue": "2"
@@ -160,6 +152,14 @@
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "-258.627 -582.174"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "translate"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -313,7 +313,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-2659.36 -839.308 4737.14 2180.45"
+                    "metaValue": "-2261.31 -517.489 3323.85 2758.6"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -323,7 +323,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "15.8685 -326.297"
+                    "metaValue": "996.481 -640.503"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -415,7 +415,7 @@
             "compounds": [
                 {
                     "name": "apply_delta_position",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///dl_translate.json",
                     "metadata": [
                         {
                             "metaName": "io_nodes",
@@ -888,10 +888,6 @@
                 },
                 {
                     "source": "get_property.value",
-                    "target": "dl_compute_deformer_weights1.input_hash"
-                },
-                {
-                    "source": "get_property.value",
                     "target": "dl_cache_mesh_bind.input_hash"
                 },
                 {
@@ -965,6 +961,10 @@
                 {
                     "source": "dl_cache_mesh_bind.current_pos",
                     "target": "dl_compute_deformer_weights1.current_point_position"
+                },
+                {
+                    "source": "dl_cache_mesh_bind.vert_deform_hash",
+                    "target": "dl_compute_deformer_weights1.input_hash"
                 }
             ],
             "values": [

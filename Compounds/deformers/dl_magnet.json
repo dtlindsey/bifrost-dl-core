@@ -39,17 +39,17 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-811.62 128.406"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "dl_mesh_object"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-811.62 128.406"
                                         }
                                     ]
                                 },
@@ -91,6 +91,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-107.344 1111.21"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -109,11 +114,6 @@
                                                     "metaName": "weight_volumes"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-107.344 1111.21"
                                         }
                                     ]
                                 },
@@ -124,6 +124,11 @@
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
                                             "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "112.063 -168.181"
                                         },
                                         {
                                             "metaName": "io_ports",
@@ -138,25 +143,12 @@
                                                     "metaName": "falseParent"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "112.063 -168.181"
                                         }
                                     ]
                                 },
                                 {
                                     "metaName": "active_input",
                                     "metadata": [
-                                        {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "active"
-                                                }
-                                            ]
-                                        },
                                         {
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
@@ -166,6 +158,14 @@
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "2658.07 422.571"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "active"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -183,17 +183,17 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "3847.15 331.315"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "output_dl_mesh_object"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "3847.15 331.315"
                                         }
                                     ]
                                 }
@@ -334,7 +334,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-938.621 -635.295 4141.5 1924.53"
+                    "metaValue": "0 0 835 693"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -344,7 +344,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "170.5 -343"
+                    "metaValue": "87.0444 -640.565"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -2472,10 +2472,6 @@
                     "target": "get_property.object"
                 },
                 {
-                    "source": "get_property.value",
-                    "target": "dl_compute_deformer_weights1.input_hash"
-                },
-                {
                     "source": ".dl_mesh_object",
                     "target": "dl_cache_mesh_bind.dl_mesh_object"
                 },
@@ -2562,6 +2558,10 @@
                 {
                     "source": "dl_cache_mesh_bind.cache_baseshape_pos",
                     "target": "which_shape_to_use.base_point_positions"
+                },
+                {
+                    "source": "dl_cache_mesh_bind.vert_deform_hash",
+                    "target": "dl_compute_deformer_weights1.input_hash"
                 }
             ],
             "values": [

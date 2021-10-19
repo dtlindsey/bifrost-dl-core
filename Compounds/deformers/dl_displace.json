@@ -338,7 +338,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1601.71 -616.403 4149.52 1686.26"
+                    "metaValue": "-349.03 -413.485 1850.47 1535.78"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -348,7 +348,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-345.5 -296"
+                    "metaValue": "-167.965 -638.25"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -717,7 +717,7 @@
                                                 {
                                                     "metaName": "LayoutPos",
                                                     "metaType": "string",
-                                                    "metaValue": "1420.27 1679.97"
+                                                    "metaValue": "1452.89 1728.04"
                                                 },
                                                 {
                                                     "metaName": "io_ports",
@@ -733,6 +733,9 @@
                                                         },
                                                         {
                                                             "metaName": "not_group_verts"
+                                                        },
+                                                        {
+                                                            "metaName": "vert_deform_hash"
                                                         }
                                                     ]
                                                 }
@@ -842,7 +845,7 @@
                                 {
                                     "metaName": "coords",
                                     "metaType": "string",
-                                    "metaValue": "135.492 1384.4 1561.9 1021.21"
+                                    "metaValue": "135.492 1384.4 1563.59 1207.06"
                                 }
                             ]
                         },
@@ -855,6 +858,11 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "-248.5 -195"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,DL_Core::utilities,dl_string_hash"
                         },
                         {
                             "metaName": "_recentNode_",
@@ -877,14 +885,9 @@
                             "metaValue": "BifrostGraph,Core::Object,has_property"
                         },
                         {
-                            "metaName": "_recentNode_",
-                            "metaType": "string",
-                            "metaValue": "BifrostGraph,DL_Core::utilities,dl_cache_by_hash"
-                        },
-                        {
                             "metaName": "ViewportRect",
                             "metaType": "string",
-                            "metaValue": "-1361.72 -543.196 4009.67 1629.43"
+                            "metaValue": "-583.187 256.559 2343.75 1945.17"
                         }
                     ],
                     "ports": [
@@ -967,11 +970,17 @@
                             "portName": "weight_array",
                             "portDirection": "output",
                             "portType": "array<float>"
+                        },
+                        {
+                            "portName": "vert_deform_hash",
+                            "portDirection": "output",
+                            "portType": "long"
                         }
                     ],
                     "compounds": [
                         {
                             "name": "check_for_baseshape",
+                            "uriImported": "file:///dl_displace.json",
                             "metadata": [
                                 {
                                     "metaName": "icon",
@@ -1356,7 +1365,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "145.492 1805.75"
+                                    "metaValue": "178.082 2250.92"
                                 }
                             ]
                         },
@@ -1372,7 +1381,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "821.941 1394.4"
+                                    "metaValue": "1129.22 1392.68"
                                 }
                             ]
                         },
@@ -1388,7 +1397,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "813.468 1663.06"
+                                    "metaValue": "1120.75 1661.34"
                                 }
                             ]
                         },
@@ -1404,7 +1413,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "826.661 1933.09"
+                                    "metaValue": "1133.94 1931.37"
                                 }
                             ]
                         },
@@ -1420,7 +1429,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "860.226 2168.27"
+                                    "metaValue": "1167.51 2166.55"
                                 }
                             ]
                         },
@@ -1436,7 +1445,7 @@
                                 {
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
-                                    "metaValue": "412.499 1584.75"
+                                    "metaValue": "182.465 1442.27"
                                 }
                             ]
                         },
@@ -1485,6 +1494,136 @@
                                     "metaName": "LayoutPos",
                                     "metaType": "string",
                                     "metaValue": "302.776 -157.229"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "hash_plus_groups",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "output1",
+                                "hash_data",
+                                "hash_data1",
+                                "hash_data2"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "783.043 1450.62"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "hash_plus_deform",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "output1",
+                                "hash_data"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "803.373 1752.44"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "hash_plus_full",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "output1",
+                                "hash_data"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "812.757 2035.49"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "hash_plus_not",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "output1",
+                                "hash_data"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "820.576 2307.6"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_string_hash",
+                            "nodeType": "DL_Core::utilities::dl_string_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "188.46 1653.54"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_string_hash1",
+                            "nodeType": "DL_Core::utilities::dl_string_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "189.956 1844.5"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "dl_string_hash2",
+                            "nodeType": "DL_Core::utilities::dl_string_hash",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "186.531 2045.31"
                                 }
                             ]
                         }
@@ -1559,22 +1698,6 @@
                             "target": "dl_cache_by_hash6.live_data"
                         },
                         {
-                            "source": "pass_hash1.output",
-                            "target": "dl_cache_by_hash4.input_hash"
-                        },
-                        {
-                            "source": "pass_hash1.output",
-                            "target": "dl_cache_by_hash5.input_hash"
-                        },
-                        {
-                            "source": "pass_hash1.output",
-                            "target": "dl_cache_by_hash2.input_hash"
-                        },
-                        {
-                            "source": "pass_hash1.output",
-                            "target": "dl_cache_by_hash6.input_hash"
-                        },
-                        {
                             "source": ".input_hash",
                             "target": "pass_hash1.input"
                         },
@@ -1641,6 +1764,78 @@
                         {
                             "source": "check_for_baseshape.out_mesh",
                             "target": ".current_object"
+                        },
+                        {
+                            "source": "pass_hash1.output",
+                            "target": "hash_plus_groups.first.output1"
+                        },
+                        {
+                            "source": "pass_hash1.output",
+                            "target": "hash_plus_deform.first.output1"
+                        },
+                        {
+                            "source": "pass_hash1.output",
+                            "target": "hash_plus_full.first.output1"
+                        },
+                        {
+                            "source": "pass_hash1.output",
+                            "target": "hash_plus_not.first.output1"
+                        },
+                        {
+                            "source": "hash_plus_not.output",
+                            "target": "dl_cache_by_hash6.input_hash"
+                        },
+                        {
+                            "source": "hash_plus_full.output",
+                            "target": "dl_cache_by_hash2.input_hash"
+                        },
+                        {
+                            "source": "hash_plus_deform.output",
+                            "target": "dl_cache_by_hash5.input_hash"
+                        },
+                        {
+                            "source": "hash_plus_groups.output",
+                            "target": "dl_cache_by_hash4.input_hash"
+                        },
+                        {
+                            "source": "dl_string_hash2.hash_data",
+                            "target": "hash_plus_not.first.hash_data"
+                        },
+                        {
+                            "source": "dl_string_hash1.hash_data",
+                            "target": "hash_plus_full.first.hash_data"
+                        },
+                        {
+                            "source": "dl_string_hash.hash_data",
+                            "target": "hash_plus_deform.first.hash_data"
+                        },
+                        {
+                            "source": "dl_string_hash.hash_data",
+                            "target": "hash_plus_groups.first.hash_data"
+                        },
+                        {
+                            "source": "dl_string_hash1.hash_data",
+                            "target": "hash_plus_groups.first.hash_data1"
+                        },
+                        {
+                            "source": "dl_string_hash2.hash_data",
+                            "target": "hash_plus_groups.first.hash_data2"
+                        },
+                        {
+                            "source": ".deform_groups",
+                            "target": "dl_string_hash.input_string"
+                        },
+                        {
+                            "source": ".full_groups",
+                            "target": "dl_string_hash1.input_string"
+                        },
+                        {
+                            "source": ".not_groups",
+                            "target": "dl_string_hash2.input_string"
+                        },
+                        {
+                            "source": "hash_plus_groups.output",
+                            "target": ".vert_deform_hash"
                         }
                     ],
                     "values": [
@@ -1693,6 +1888,16 @@
                             "valueName": "check_for_baseshape.mesh_object",
                             "valueType": "Amino::Object",
                             "value": {}
+                        },
+                        {
+                            "valueName": "dl_string_hash1.input_string",
+                            "valueType": "string",
+                            "value": "0"
+                        },
+                        {
+                            "valueName": "dl_string_hash2.input_string",
+                            "valueType": "string",
+                            "value": "0"
                         }
                     ],
                     "reservedNodeNames": [
@@ -1954,7 +2159,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "189.217 -23.6474"
+                            "metaValue": "206.515 101.762"
                         }
                     ]
                 }
@@ -2015,10 +2220,6 @@
                 {
                     "source": ".weight_multiplier",
                     "target": "dl_compute_deformer_weights.weight_multiplier"
-                },
-                {
-                    "source": "get_property.value",
-                    "target": "dl_compute_deformer_weights.input_hash"
                 },
                 {
                     "source": ".point_offset",
@@ -2135,6 +2336,10 @@
                 {
                     "source": "dl_cache_mesh_bind.current_normals",
                     "target": "get_normals.array"
+                },
+                {
+                    "source": "dl_cache_mesh_bind.vert_deform_hash",
+                    "target": "dl_compute_deformer_weights.input_hash"
                 }
             ],
             "values": [

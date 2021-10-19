@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "DL_Core::deformers::dl_blend_deform",
-            "uriImported": "stream:/stream",
+            "uriImported": "file:///dl_blend_deform.json",
             "metadata": [
                 {
                     "metaName": "icon",
@@ -39,6 +39,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1015.55 26.5882"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -54,11 +59,6 @@
                                                     "metaName": "not_groups"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-1015.55 26.5882"
                                         }
                                     ]
                                 },
@@ -71,6 +71,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-196.34 848.122"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -80,11 +85,6 @@
                                                     "metaName": "weight_volumes"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-196.34 848.122"
                                         }
                                     ]
                                 },
@@ -155,14 +155,6 @@
                                     "metaName": "active_input",
                                     "metadata": [
                                         {
-                                            "metaName": "io_ports",
-                                            "metadata": [
-                                                {
-                                                    "metaName": "active"
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "metaName": "DisplayMode",
                                             "metaType": "string",
                                             "metaValue": "2"
@@ -171,6 +163,14 @@
                                             "metaName": "LayoutPos",
                                             "metaType": "string",
                                             "metaValue": "2238.42 -442.001"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "active"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -369,7 +369,7 @@
                 {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "-1962.06 -865.034 4338.84 1997.12"
+                    "metaValue": "-146.874 -157.038 1259.36 1045.19"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -379,7 +379,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-732.308 -323.961"
+                    "metaValue": "-453.711 -630.176"
                 },
                 {
                     "metaName": "terminal_node_disabled_flags",
@@ -480,7 +480,7 @@
             "compounds": [
                 {
                     "name": "iterate_through_blends",
-                    "uriImported": "stream:/stream",
+                    "uriImported": "file:///dl_blend_deform.json",
                     "metadata": [
                         {
                             "metaName": "icon",
@@ -691,7 +691,7 @@
                     "compounds": [
                         {
                             "name": "dl_get_blend_offsets_by_name",
-                            "uriImported": "stream:/stream",
+                            "uriImported": "file:///dl_blend_deform.json",
                             "metadata": [
                                 {
                                     "metaName": "_recentNode_",
@@ -807,7 +807,7 @@
                             "compounds": [
                                 {
                                     "name": "for_each",
-                                    "uriImported": "stream:/stream",
+                                    "uriImported": "file:///dl_blend_deform.json",
                                     "metadata": [
                                         {
                                             "metaName": "icon",
@@ -2201,10 +2201,6 @@
                     "target": "get_property.object"
                 },
                 {
-                    "source": "get_property.value",
-                    "target": "dl_compute_deformer_weights.input_hash"
-                },
-                {
                     "source": ".dl_mesh_object",
                     "target": "dl_cache_mesh_bind.dl_mesh_object"
                 },
@@ -2287,6 +2283,10 @@
                 {
                     "source": "dl_cache_mesh_bind.weight_array",
                     "target": "dl_compute_deformer_weights.weight_array"
+                },
+                {
+                    "source": "dl_cache_mesh_bind.vert_deform_hash",
+                    "target": "dl_compute_deformer_weights.input_hash"
                 }
             ],
             "values": [
