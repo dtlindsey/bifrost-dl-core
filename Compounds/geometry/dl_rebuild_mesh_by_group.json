@@ -15,6 +15,11 @@
             "uriImported": "stream:/mesh_copyShape",
             "metadata": [
                 {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/dl_core_icon.svg"
+                },
+                {
                     "metaName": "io_nodes",
                     "metadata": [
                         {
